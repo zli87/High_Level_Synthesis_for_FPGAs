@@ -3,6 +3,7 @@
 #include"coefficients1024.h"
 #include "cstring"
 void dft(  DTYPE *real_sample,   DTYPE  *imag_sample,  DTYPE *real_op,  DTYPE *imag_op)
+//void dft(STYPE & real_sample, STYPE & imag_sample,STYPE & real_op,STYPE & imag_op)	//Use pointers while doing the demo for streaming//
 {
 
 #pragma HLS INTERFACE s_axilite port=return
@@ -18,8 +19,12 @@ void dft(  DTYPE *real_sample,   DTYPE  *imag_sample,  DTYPE *real_op,  DTYPE *i
 	//Write your code here
 	DTYPE re_sample[SIZE];
 	DTYPE im_sample[SIZE];
+//#pragma HLS array_partition variable=re_sample cyclic factor=128
+//#pragma HLS array_partition variable=im_sample cyclic factor=128
 	DTYPE re_buff[SIZE];
 	DTYPE im_buff[SIZE];
+//#pragma HLS array_partition variable=re_buff cyclic factor=128
+//#pragma HLS array_partition variable=im_buff cyclic factor=128
 
 	int n,k;
 
@@ -31,17 +36,17 @@ void dft(  DTYPE *real_sample,   DTYPE  *imag_sample,  DTYPE *real_op,  DTYPE *i
 		float Xre;
 		float Xim;
 		loop_n: for (n=0 ; n<SIZE ; ++n) {
-#pragma HLS pipeline II=6
+#pragma HLS pipeline II=11
+#pragma HLS UNROLL factor=2
 			if(0==n){
 				Xre= 0;
-				Xre= 0;
+				Xim= 0;
 			}
 			float c = cos_coefficients_table[n*k %SIZE];
 			float s = sin_coefficients_table[n*k %SIZE];
 
-
 			Xre += re_sample[n] * c + im_sample[n] * s;
-			Xim += re_sample[n] * s + -1*im_sample[n] * c;
+			Xim += re_sample[n] * s - im_sample[n] * c;		// Imaginary part of X[k]
 			if(SIZE-1 == n){
 				re_buff[k]=Xre;
 				im_buff[k]=Xim;
