@@ -1,0 +1,17 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../streamMul_tb.cpp in debug mode
+   Generating csim.exe
+Success: results match: [ans,out]10 20
+Success: results match: [ans,out]20 40
+Success: results match: [ans,out]30 60
+Success: results match: [ans,out]40 80
+Success: results match: [ans,out]50 100
+Success: results match: [ans,out]60 120
+Success: results match: [ans,out]70 140
+Success: results match: [ans,out]80 160
+Success: results match: [ans,out]90 180
+Success: results match: [ans,out]100 200
+The maximum depth reached by any of the 2 hls::stream() instances in the design is 10
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

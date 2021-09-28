@@ -1,0 +1,645 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Sep 18 21:19:33 2021
+# Process ID: 42964
+# Current directory: C:/Xilinx/project_3/project_3.runs/design_1_axi4_sqrt_0_0_synth_1
+# Command line: vivado.exe -log design_1_axi4_sqrt_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axi4_sqrt_0_0.tcl
+# Log file: C:/Xilinx/project_3/project_3.runs/design_1_axi4_sqrt_0_0_synth_1/design_1_axi4_sqrt_0_0.vds
+# Journal file: C:/Xilinx/project_3/project_3.runs/design_1_axi4_sqrt_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_axi4_sqrt_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Xilinx/axi4_burst'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top design_1_axi4_sqrt_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 46956
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 998.363 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi4_sqrt_0_0' [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_axi4_sqrt_0_0/synth/design_1_axi4_sqrt_0_0.v:59]
+INFO: [Synth 8-6157] synthesizing module 'axi4_sqrt' [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt.v:12]
+	Parameter ap_ST_fsm_state1 bound to: 18'b000000000000000001 
+	Parameter ap_ST_fsm_state2 bound to: 18'b000000000000000010 
+	Parameter ap_ST_fsm_state3 bound to: 18'b000000000000000100 
+	Parameter ap_ST_fsm_state4 bound to: 18'b000000000000001000 
+	Parameter ap_ST_fsm_state5 bound to: 18'b000000000000010000 
+	Parameter ap_ST_fsm_state6 bound to: 18'b000000000000100000 
+	Parameter ap_ST_fsm_state7 bound to: 18'b000000000001000000 
+	Parameter ap_ST_fsm_state8 bound to: 18'b000000000010000000 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 18'b000000000100000000 
+	Parameter ap_ST_fsm_state12 bound to: 18'b000000001000000000 
+	Parameter ap_ST_fsm_pp1_stage0 bound to: 18'b000000010000000000 
+	Parameter ap_ST_fsm_state32 bound to: 18'b000000100000000000 
+	Parameter ap_ST_fsm_pp2_stage0 bound to: 18'b000001000000000000 
+	Parameter ap_ST_fsm_state36 bound to: 18'b000010000000000000 
+	Parameter ap_ST_fsm_state37 bound to: 18'b000100000000000000 
+	Parameter ap_ST_fsm_state38 bound to: 18'b001000000000000000 
+	Parameter ap_ST_fsm_state39 bound to: 18'b010000000000000000 
+	Parameter ap_ST_fsm_state40 bound to: 18'b100000000000000000 
+	Parameter C_S_AXI_CONTROL_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CONTROL_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_INPUT_R_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_INPUT_R_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_M_AXI_INPUT_R_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_INPUT_R_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_INPUT_R_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_INPUT_R_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_INPUT_R_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_INPUT_R_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_INPUT_R_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_M_AXI_INPUT_R_PROT_VALUE bound to: 3'b000 
+	Parameter C_M_AXI_INPUT_R_CACHE_VALUE bound to: 4'b0011 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_OUTPUT_R_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_OUTPUT_R_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_M_AXI_OUTPUT_R_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_OUTPUT_R_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_OUTPUT_R_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_OUTPUT_R_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_OUTPUT_R_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_OUTPUT_R_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_OUTPUT_R_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_M_AXI_OUTPUT_R_PROT_VALUE bound to: 3'b000 
+	Parameter C_M_AXI_OUTPUT_R_CACHE_VALUE bound to: 4'b0011 
+	Parameter C_S_AXI_CONTROL_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_M_AXI_INPUT_R_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_M_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_M_AXI_OUTPUT_R_WSTRB_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'axi4_sqrt_control_s_axi' [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_control_s_axi.v:6]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_AP_CTRL bound to: 6'b000000 
+	Parameter ADDR_GIE bound to: 6'b000100 
+	Parameter ADDR_IER bound to: 6'b001000 
+	Parameter ADDR_ISR bound to: 6'b001100 
+	Parameter ADDR_IN_R_DATA_0 bound to: 6'b010000 
+	Parameter ADDR_IN_R_DATA_1 bound to: 6'b010100 
+	Parameter ADDR_IN_R_CTRL bound to: 6'b011000 
+	Parameter ADDR_OUT_R_DATA_0 bound to: 6'b011100 
+	Parameter ADDR_OUT_R_DATA_1 bound to: 6'b100000 
+	Parameter ADDR_OUT_R_CTRL bound to: 6'b100100 
+	Parameter ADDR_LEN_DATA_0 bound to: 6'b101000 
+	Parameter ADDR_LEN_CTRL bound to: 6'b101100 
+	Parameter WRIDLE bound to: 2'b00 
+	Parameter WRDATA bound to: 2'b01 
+	Parameter WRRESP bound to: 2'b10 
+	Parameter WRRESET bound to: 2'b11 
+	Parameter RDIDLE bound to: 2'b00 
+	Parameter RDDATA bound to: 2'b01 
+	Parameter RDRESET bound to: 2'b10 
+	Parameter ADDR_BITS bound to: 6 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_control_s_axi.v:212]
+INFO: [Synth 8-6155] done synthesizing module 'axi4_sqrt_control_s_axi' (1#1) [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_control_s_axi.v:6]
+INFO: [Synth 8-6157] synthesizing module 'axi4_sqrt_input_r_m_axi' [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_input_r_m_axi.v:8]
+	Parameter CONSERVATIVE bound to: 0 - type: integer 
+	Parameter NUM_READ_OUTSTANDING bound to: 16 - type: integer 
+	Parameter NUM_WRITE_OUTSTANDING bound to: 16 - type: integer 
+	Parameter MAX_READ_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter MAX_WRITE_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_TARGET_ADDR bound to: 0 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_PROT_VALUE bound to: 3'b000 
+	Parameter C_CACHE_VALUE bound to: 4'b0011 
+	Parameter USER_DW bound to: 32 - type: integer 
+	Parameter USER_AW bound to: 64 - type: integer 
+	Parameter USER_MAXREQS bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'axi4_sqrt_input_r_m_axi_write' [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_input_r_m_axi.v:1729]
+	Parameter NUM_WRITE_OUTSTANDING bound to: 16 - type: integer 
+	Parameter MAX_WRITE_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_TARGET_ADDR bound to: 0 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_PROT_VALUE bound to: 3'b000 
+	Parameter C_CACHE_VALUE bound to: 4'b0011 
+	Parameter USER_DW bound to: 32 - type: integer 
+	Parameter USER_AW bound to: 64 - type: integer 
+	Parameter USER_MAXREQS bound to: 5 - type: integer 
+	Parameter USER_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter USER_DATA_BYTES bound to: 4 - type: integer 
+	Parameter USER_ADDR_ALIGN bound to: 2 - type: integer 
+	Parameter BUS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter BUS_DATA_BYTES bound to: 4 - type: integer 
+	Parameter BUS_ADDR_ALIGN bound to: 2 - type: integer 
+	Parameter NUM_WRITE_WIDTH bound to: 4 - type: integer 
+	Parameter TARGET_ADDR bound to: 0 - type: integer 
+	Parameter BOUNDARY_BEATS bound to: 10'b1111111111 
+INFO: [Synth 8-6157] synthesizing module 'axi4_sqrt_input_r_m_axi_fifo' [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_input_r_m_axi.v:418]
+	Parameter DATA_BITS bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DEPTH_BITS bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi4_sqrt_input_r_m_axi_fifo' (2#1) [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_input_r_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'axi4_sqrt_input_r_m_axi_reg_slice' [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_input_r_m_axi.v:314]
+	Parameter N bound to: 96 - type: integer 
+	Parameter ZERO bound to: 2'b10 
+	Parameter ONE bound to: 2'b11 
+	Parameter TWO bound to: 2'b01 
+INFO: [Synth 8-6155] done synthesizing module 'axi4_sqrt_input_r_m_axi_reg_slice' (3#1) [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_input_r_m_axi.v:314]
+INFO: [Synth 8-6157] synthesizing module 'axi4_sqrt_input_r_m_axi_fifo__parameterized0' [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_input_r_m_axi.v:418]
+	Parameter DATA_BITS bound to: 96 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DEPTH_BITS bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi4_sqrt_input_r_m_axi_fifo__parameterized0' (3#1) [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_input_r_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'axi4_sqrt_input_r_m_axi_buffer' [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_input_r_m_axi.v:529]
+	Parameter MEM_STYLE bound to: block - type: string 
+	Parameter DATA_WIDTH bound to: 36 - type: integer 
+	Parameter ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 256 - type: integer 
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_input_r_m_axi.v:582]
+INFO: [Synth 8-6155] done synthesizing module 'axi4_sqrt_input_r_m_axi_buffer' (4#1) [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_input_r_m_axi.v:529]
+INFO: [Synth 8-6157] synthesizing module 'axi4_sqrt_input_r_m_axi_fifo__parameterized1' [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_input_r_m_axi.v:418]
+	Parameter DATA_BITS bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 15 - type: integer 
+	Parameter DEPTH_BITS bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi4_sqrt_input_r_m_axi_fifo__parameterized1' (4#1) [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_input_r_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'axi4_sqrt_input_r_m_axi_fifo__parameterized2' [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_input_r_m_axi.v:418]
+	Parameter DATA_BITS bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DEPTH_BITS bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi4_sqrt_input_r_m_axi_fifo__parameterized2' (4#1) [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_input_r_m_axi.v:418]
+INFO: [Synth 8-6155] done synthesizing module 'axi4_sqrt_input_r_m_axi_write' (5#1) [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_input_r_m_axi.v:1729]
+INFO: [Synth 8-6157] synthesizing module 'axi4_sqrt_input_r_m_axi_read' [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_input_r_m_axi.v:932]
+	Parameter NUM_READ_OUTSTANDING bound to: 16 - type: integer 
+	Parameter MAX_READ_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_TARGET_ADDR bound to: 0 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_PROT_VALUE bound to: 3'b000 
+	Parameter C_CACHE_VALUE bound to: 4'b0011 
+	Parameter USER_DW bound to: 32 - type: integer 
+	Parameter USER_AW bound to: 64 - type: integer 
+	Parameter USER_MAXREQS bound to: 5 - type: integer 
+	Parameter USER_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter USER_DATA_BYTES bound to: 4 - type: integer 
+	Parameter USER_ADDR_ALIGN bound to: 2 - type: integer 
+	Parameter BUS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter BUS_DATA_BYTES bound to: 4 - type: integer 
+	Parameter BUS_ADDR_ALIGN bound to: 2 - type: integer 
+	Parameter NUM_READ_WIDTH bound to: 4 - type: integer 
+	Parameter TARGET_ADDR bound to: 0 - type: integer 
+	Parameter BOUNDARY_BEATS bound to: 10'b1111111111 
+INFO: [Synth 8-6157] synthesizing module 'axi4_sqrt_input_r_m_axi_buffer__parameterized0' [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_input_r_m_axi.v:529]
+	Parameter MEM_STYLE bound to: block - type: string 
+	Parameter DATA_WIDTH bound to: 35 - type: integer 
+	Parameter ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 256 - type: integer 
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_input_r_m_axi.v:582]
+INFO: [Synth 8-6155] done synthesizing module 'axi4_sqrt_input_r_m_axi_buffer__parameterized0' (5#1) [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_input_r_m_axi.v:529]
+INFO: [Synth 8-6157] synthesizing module 'axi4_sqrt_input_r_m_axi_reg_slice__parameterized0' [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_input_r_m_axi.v:314]
+	Parameter N bound to: 34 - type: integer 
+	Parameter ZERO bound to: 2'b10 
+	Parameter ONE bound to: 2'b11 
+	Parameter TWO bound to: 2'b01 
+INFO: [Synth 8-6155] done synthesizing module 'axi4_sqrt_input_r_m_axi_reg_slice__parameterized0' (5#1) [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_input_r_m_axi.v:314]
+INFO: [Synth 8-6155] done synthesizing module 'axi4_sqrt_input_r_m_axi_read' (6#1) [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_input_r_m_axi.v:932]
+INFO: [Synth 8-6157] synthesizing module 'axi4_sqrt_input_r_m_axi_throttle' [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_input_r_m_axi.v:710]
+	Parameter USED_FIX bound to: 0 - type: integer 
+	Parameter FIX_VALUE bound to: 4 - type: integer 
+	Parameter ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter DEPTH bound to: 16 - type: integer 
+	Parameter USER_MAXREQS bound to: 16 - type: integer 
+	Parameter CONSERVATIVE bound to: 0 - type: integer 
+	Parameter AVERAGE_MODE bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi4_sqrt_input_r_m_axi_throttle' (7#1) [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_input_r_m_axi.v:710]
+INFO: [Synth 8-6155] done synthesizing module 'axi4_sqrt_input_r_m_axi' (8#1) [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_input_r_m_axi.v:8]
+INFO: [Synth 8-6157] synthesizing module 'axi4_sqrt_output_r_m_axi' [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_output_r_m_axi.v:8]
+	Parameter CONSERVATIVE bound to: 0 - type: integer 
+	Parameter NUM_READ_OUTSTANDING bound to: 16 - type: integer 
+	Parameter NUM_WRITE_OUTSTANDING bound to: 16 - type: integer 
+	Parameter MAX_READ_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter MAX_WRITE_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_TARGET_ADDR bound to: 0 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_PROT_VALUE bound to: 3'b000 
+	Parameter C_CACHE_VALUE bound to: 4'b0011 
+	Parameter USER_DW bound to: 32 - type: integer 
+	Parameter USER_AW bound to: 64 - type: integer 
+	Parameter USER_MAXREQS bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'axi4_sqrt_output_r_m_axi_write' [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_output_r_m_axi.v:1729]
+	Parameter NUM_WRITE_OUTSTANDING bound to: 16 - type: integer 
+	Parameter MAX_WRITE_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_TARGET_ADDR bound to: 0 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_PROT_VALUE bound to: 3'b000 
+	Parameter C_CACHE_VALUE bound to: 4'b0011 
+	Parameter USER_DW bound to: 32 - type: integer 
+	Parameter USER_AW bound to: 64 - type: integer 
+	Parameter USER_MAXREQS bound to: 5 - type: integer 
+	Parameter USER_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter USER_DATA_BYTES bound to: 4 - type: integer 
+	Parameter USER_ADDR_ALIGN bound to: 2 - type: integer 
+	Parameter BUS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter BUS_DATA_BYTES bound to: 4 - type: integer 
+	Parameter BUS_ADDR_ALIGN bound to: 2 - type: integer 
+	Parameter NUM_WRITE_WIDTH bound to: 4 - type: integer 
+	Parameter TARGET_ADDR bound to: 0 - type: integer 
+	Parameter BOUNDARY_BEATS bound to: 10'b1111111111 
+INFO: [Synth 8-6157] synthesizing module 'axi4_sqrt_output_r_m_axi_fifo' [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_output_r_m_axi.v:418]
+	Parameter DATA_BITS bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DEPTH_BITS bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi4_sqrt_output_r_m_axi_fifo' (9#1) [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_output_r_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'axi4_sqrt_output_r_m_axi_reg_slice' [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_output_r_m_axi.v:314]
+	Parameter N bound to: 96 - type: integer 
+	Parameter ZERO bound to: 2'b10 
+	Parameter ONE bound to: 2'b11 
+	Parameter TWO bound to: 2'b01 
+INFO: [Synth 8-6155] done synthesizing module 'axi4_sqrt_output_r_m_axi_reg_slice' (10#1) [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_output_r_m_axi.v:314]
+INFO: [Synth 8-6157] synthesizing module 'axi4_sqrt_output_r_m_axi_fifo__parameterized0' [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_output_r_m_axi.v:418]
+	Parameter DATA_BITS bound to: 96 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DEPTH_BITS bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi4_sqrt_output_r_m_axi_fifo__parameterized0' (10#1) [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_output_r_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'axi4_sqrt_output_r_m_axi_buffer' [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_output_r_m_axi.v:529]
+	Parameter MEM_STYLE bound to: block - type: string 
+	Parameter DATA_WIDTH bound to: 36 - type: integer 
+	Parameter ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 256 - type: integer 
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_output_r_m_axi.v:582]
+INFO: [Synth 8-6155] done synthesizing module 'axi4_sqrt_output_r_m_axi_buffer' (11#1) [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_output_r_m_axi.v:529]
+INFO: [Synth 8-6157] synthesizing module 'axi4_sqrt_output_r_m_axi_fifo__parameterized1' [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_output_r_m_axi.v:418]
+	Parameter DATA_BITS bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 15 - type: integer 
+	Parameter DEPTH_BITS bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi4_sqrt_output_r_m_axi_fifo__parameterized1' (11#1) [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_output_r_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'axi4_sqrt_output_r_m_axi_fifo__parameterized2' [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_output_r_m_axi.v:418]
+	Parameter DATA_BITS bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DEPTH_BITS bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi4_sqrt_output_r_m_axi_fifo__parameterized2' (11#1) [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_output_r_m_axi.v:418]
+INFO: [Synth 8-6155] done synthesizing module 'axi4_sqrt_output_r_m_axi_write' (12#1) [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_output_r_m_axi.v:1729]
+INFO: [Synth 8-6157] synthesizing module 'axi4_sqrt_output_r_m_axi_read' [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_output_r_m_axi.v:932]
+	Parameter NUM_READ_OUTSTANDING bound to: 16 - type: integer 
+	Parameter MAX_READ_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_TARGET_ADDR bound to: 0 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_PROT_VALUE bound to: 3'b000 
+	Parameter C_CACHE_VALUE bound to: 4'b0011 
+	Parameter USER_DW bound to: 32 - type: integer 
+	Parameter USER_AW bound to: 64 - type: integer 
+	Parameter USER_MAXREQS bound to: 5 - type: integer 
+	Parameter USER_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter USER_DATA_BYTES bound to: 4 - type: integer 
+	Parameter USER_ADDR_ALIGN bound to: 2 - type: integer 
+	Parameter BUS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter BUS_DATA_BYTES bound to: 4 - type: integer 
+	Parameter BUS_ADDR_ALIGN bound to: 2 - type: integer 
+	Parameter NUM_READ_WIDTH bound to: 4 - type: integer 
+	Parameter TARGET_ADDR bound to: 0 - type: integer 
+	Parameter BOUNDARY_BEATS bound to: 10'b1111111111 
+INFO: [Synth 8-6157] synthesizing module 'axi4_sqrt_output_r_m_axi_buffer__parameterized0' [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_output_r_m_axi.v:529]
+	Parameter MEM_STYLE bound to: block - type: string 
+	Parameter DATA_WIDTH bound to: 35 - type: integer 
+	Parameter ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 256 - type: integer 
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_output_r_m_axi.v:582]
+INFO: [Synth 8-6155] done synthesizing module 'axi4_sqrt_output_r_m_axi_buffer__parameterized0' (12#1) [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_output_r_m_axi.v:529]
+INFO: [Synth 8-6157] synthesizing module 'axi4_sqrt_output_r_m_axi_reg_slice__parameterized0' [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_output_r_m_axi.v:314]
+	Parameter N bound to: 34 - type: integer 
+	Parameter ZERO bound to: 2'b10 
+	Parameter ONE bound to: 2'b11 
+	Parameter TWO bound to: 2'b01 
+INFO: [Synth 8-6155] done synthesizing module 'axi4_sqrt_output_r_m_axi_reg_slice__parameterized0' (12#1) [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_output_r_m_axi.v:314]
+INFO: [Synth 8-6155] done synthesizing module 'axi4_sqrt_output_r_m_axi_read' (13#1) [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_output_r_m_axi.v:932]
+INFO: [Synth 8-6157] synthesizing module 'axi4_sqrt_output_r_m_axi_throttle' [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_output_r_m_axi.v:710]
+	Parameter USED_FIX bound to: 0 - type: integer 
+	Parameter FIX_VALUE bound to: 4 - type: integer 
+	Parameter ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter DEPTH bound to: 16 - type: integer 
+	Parameter USER_MAXREQS bound to: 16 - type: integer 
+	Parameter CONSERVATIVE bound to: 0 - type: integer 
+	Parameter AVERAGE_MODE bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi4_sqrt_output_r_m_axi_throttle' (14#1) [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_output_r_m_axi.v:710]
+INFO: [Synth 8-6155] done synthesizing module 'axi4_sqrt_output_r_m_axi' (15#1) [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_output_r_m_axi.v:8]
+INFO: [Synth 8-6157] synthesizing module 'axi4_sqrt_buff' [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_buff.v:46]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 50 - type: integer 
+	Parameter AddressWidth bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'axi4_sqrt_buff_ram' [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_buff.v:6]
+	Parameter DWIDTH bound to: 32 - type: integer 
+	Parameter AWIDTH bound to: 6 - type: integer 
+	Parameter MEM_SIZE bound to: 50 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi4_sqrt_buff_ram' (16#1) [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_buff.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axi4_sqrt_buff' (17#1) [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_buff.v:46]
+INFO: [Synth 8-6157] synthesizing module 'axi4_sqrt_fsqrt_32ns_32ns_32_16_no_dsp_1' [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_fsqrt_32ns_32ns_32_16_no_dsp_1.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 16 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'axi4_sqrt_ap_fsqrt_14_no_dsp_32' [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/ip/axi4_sqrt_ap_fsqrt_14_no_dsp_32.v:60]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39137]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (18#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39137]
+INFO: [Synth 8-6155] done synthesizing module 'axi4_sqrt_ap_fsqrt_14_no_dsp_32' (33#1) [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/ip/axi4_sqrt_ap_fsqrt_14_no_dsp_32.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'axi4_sqrt_fsqrt_32ns_32ns_32_16_no_dsp_1' (34#1) [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_fsqrt_32ns_32ns_32_16_no_dsp_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'axi4_sqrt' (35#1) [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi4_sqrt_0_0' (36#1) [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_axi4_sqrt_0_0/synth/design_1_axi4_sqrt_0_0.v:59]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1043.168 ; gain = 44.805
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1059.926 ; gain = 61.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1059.926 ; gain = 61.562
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.213 . Memory (MB): peak = 1059.926 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 873 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_axi4_sqrt_0_0/constraints/axi4_sqrt_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Xilinx/project_3/project_3.gen/sources_1/bd/design_1/ip/design_1_axi4_sqrt_0_0/constraints/axi4_sqrt_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/Xilinx/project_3/project_3.runs/design_1_axi4_sqrt_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Xilinx/project_3/project_3.runs/design_1_axi4_sqrt_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1124.887 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.132 . Memory (MB): peak = 1130.586 ; gain = 5.699
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1130.586 ; gain = 132.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1130.586 ; gain = 132.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Xilinx/project_3/project_3.runs/design_1_axi4_sqrt_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1130.586 ; gain = 132.223
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'axi4_sqrt_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'axi4_sqrt_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi4_sqrt_input_r_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi4_sqrt_input_r_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi4_sqrt_output_r_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi4_sqrt_output_r_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'axi4_sqrt_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'axi4_sqrt_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'axi4_sqrt_input_r_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'axi4_sqrt_input_r_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'axi4_sqrt_output_r_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'axi4_sqrt_output_r_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1130.586 ; gain = 132.223
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/fsqrt_32ns_32ns_32_16_no_dsp_1_U1/axi4_sqrt_ap_fsqrt_14_no_dsp_32_u/inst/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized0) to 'inst/fsqrt_32ns_32ns_32_16_no_dsp_1_U1/axi4_sqrt_ap_fsqrt_14_no_dsp_32_u/inst/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/fsqrt_32ns_32ns_32_16_no_dsp_1_U1/axi4_sqrt_ap_fsqrt_14_no_dsp_32_u/inst/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXP_INC_DELAY' (delay__parameterized0) to 'inst/fsqrt_32ns_32ns_32_16_no_dsp_1_U1/axi4_sqrt_ap_fsqrt_14_no_dsp_32_u/inst/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/fsqrt_32ns_32ns_32_16_no_dsp_1_U1/axi4_sqrt_ap_fsqrt_14_no_dsp_32_u/inst/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized26) to 'inst/fsqrt_32ns_32ns_32_16_no_dsp_1_U1/axi4_sqrt_ap_fsqrt_14_no_dsp_32_u/inst/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/fsqrt_32ns_32ns_32_16_no_dsp_1_U1/axi4_sqrt_ap_fsqrt_14_no_dsp_32_u/inst/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized26) to 'inst/fsqrt_32ns_32ns_32_16_no_dsp_1_U1/axi4_sqrt_ap_fsqrt_14_no_dsp_32_u/inst/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/fsqrt_32ns_32ns_32_16_no_dsp_1_U1/axi4_sqrt_ap_fsqrt_14_no_dsp_32_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/fsqrt_32ns_32ns_32_16_no_dsp_1_U1/axi4_sqrt_ap_fsqrt_14_no_dsp_32_u/inst/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fsqrt_32ns_32ns_32_16_no_dsp_1_U1/axi4_sqrt_ap_fsqrt_14_no_dsp_32_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/fsqrt_32ns_32ns_32_16_no_dsp_1_U1/axi4_sqrt_ap_fsqrt_14_no_dsp_32_u/inst/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fsqrt_32ns_32ns_32_16_no_dsp_1_U1/axi4_sqrt_ap_fsqrt_14_no_dsp_32_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/fsqrt_32ns_32ns_32_16_no_dsp_1_U1/axi4_sqrt_ap_fsqrt_14_no_dsp_32_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fsqrt_32ns_32ns_32_16_no_dsp_1_U1/axi4_sqrt_ap_fsqrt_14_no_dsp_32_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/fsqrt_32ns_32ns_32_16_no_dsp_1_U1/axi4_sqrt_ap_fsqrt_14_no_dsp_32_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+warning: Removed RAM bus_write/buff_wdata/mem_reg due to inactive write enable
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1130.586 ; gain = 132.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1130.586 ; gain = 132.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1130.586 ; gain = 132.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/input_r_m_axi_U/bus_read/buff_rdata/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/output_r_m_axi_U/bus_write/buff_wdata/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1130.586 ; gain = 132.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1130.586 ; gain = 132.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1130.586 ; gain = 132.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1130.586 ; gain = 132.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1130.586 ; gain = 132.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1130.586 ; gain = 132.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1130.586 ; gain = 132.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   125|
+|2     |LUT1     |    61|
+|3     |LUT2     |   216|
+|4     |LUT3     |   978|
+|5     |LUT4     |   254|
+|6     |LUT5     |   119|
+|7     |LUT6     |   246|
+|8     |MUXCY    |   423|
+|9     |RAMB18E1 |     3|
+|11    |SRL16E   |   167|
+|12    |XORCY    |   408|
+|13    |FDRE     |  2611|
+|14    |FDSE     |     4|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1130.586 ; gain = 132.223
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:34 . Memory (MB): peak = 1130.586 ; gain = 61.562
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1130.586 ; gain = 132.223
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.097 . Memory (MB): peak = 1130.586 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 959 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1139.215 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 122 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 122 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+107 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 1139.215 ; gain = 140.852
+INFO: [Common 17-1381] The checkpoint 'C:/Xilinx/project_3/project_3.runs/design_1_axi4_sqrt_0_0_synth_1/design_1_axi4_sqrt_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_axi4_sqrt_0_0, cache-ID = 5724079c8d96260b
+INFO: [Coretcl 2-1174] Renamed 159 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Xilinx/project_3/project_3.runs/design_1_axi4_sqrt_0_0_synth_1/design_1_axi4_sqrt_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_axi4_sqrt_0_0_utilization_synth.rpt -pb design_1_axi4_sqrt_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Sep 18 21:20:35 2021...

@@ -1,0 +1,58 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
+| Date         : Tue Sep 28 12:35:52 2021
+| Host         : DESKTOP-X300 running 64-bit Ubuntu 20.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_dft_0_4'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_dft_0_4 (xilinx.com:hls:dft:1.0) from (Rev. 2109281136) to (Rev. 2109281234)
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
+| Date         : Tue Sep 28 11:47:29 2021
+| Host         : DESKTOP-X300 running 64-bit Ubuntu 20.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_dft_0_4'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_dft_0_4 (xilinx.com:hls:dft:1.0) from (Rev. 2109280918) to (Rev. 2109281136)
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
+| Date         : Tue Sep 28 09:19:22 2021
+| Host         : DESKTOP-X300 running 64-bit Ubuntu 20.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_dft_0_4'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_dft_0_4 (xilinx.com:hls:dft:1.0) from (Rev. 2109280751) to (Rev. 2109280918)
+

@@ -1,0 +1,45 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sun Sep 26 20:33:24 2021
+# Process ID: 5195
+# Current directory: /mnt/c/Xilinx/Projects/DFT_v
+# Command line: vivado
+# Log file: /mnt/c/Xilinx/Projects/DFT_v/vivado.log
+# Journal file: /mnt/c/Xilinx/Projects/DFT_v/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /mnt/c/Xilinx/Projects/DFT_v/DFT_v.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Xilinx/DFT_v' since last save.
+WARNING: [BD 41-2576] File '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/ip\design_1_processing_system7_0_2\design_1_processing_system7_0_2.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/ip\design_1_axi_dma_0_3\design_1_axi_dma_0_3.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/ip\design_1_axi_dma_1_1\design_1_axi_dma_1_1.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/ip\design_1_xbar_2\design_1_xbar_2.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/ip\design_1_auto_pc_0\design_1_auto_pc_0.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/ip\design_1_ps7_0_axi_periph_5\design_1_ps7_0_axi_periph_5.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/ip\design_1_rst_ps7_0_100M_5\design_1_rst_ps7_0_100M_5.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/ip\design_1_xbar_3\design_1_xbar_3.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/ip\design_1_auto_us_0\design_1_auto_us_0.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/ip\design_1_auto_us_1\design_1_auto_us_1.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/ip\design_1_auto_us_2\design_1_auto_us_2.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/ip\design_1_auto_pc_1\design_1_auto_pc_1.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/ip\design_1_axi_mem_intercon_7\design_1_axi_mem_intercon_7.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/ip\design_1_auto_pc_2\design_1_auto_pc_2.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/ip\design_1_auto_us_3\design_1_auto_us_3.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/ip\design_1_axi_mem_intercon_1_3\design_1_axi_mem_intercon_1_3.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/ip\design_1_dft_0_2\design_1_dft_0_2.xci' referenced by design 'design_1' could not be found.
+Scanning sources...
+Finished scanning sources
+CRITICAL WARNING: [Board 49-67] The board_part definition was not found for tul.com.tw:pynq-z2:part0:1.0. This can happen sometimes when you use custom board part. You can resolve this issue by setting 'board.repoPaths' parameter, pointing to the location of custom board files. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command.
+WARNING: [Project 1-533] File '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_2/design_1_processing_system7_0_2.xci' could not be found in the subdesign '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/design_1.bd', but fileset 'design_1_processing_system7_0_2' still exists. The fileset and corresponding run(s) will be deleted the next time top-level synthesis is run.
+WARNING: [Project 1-533] File '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/ip/design_1_xbar_3/design_1_xbar_3.xci' could not be found in the subdesign '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/design_1.bd', but fileset 'design_1_xbar_3' still exists. The fileset and corresponding run(s) will be deleted the next time top-level synthesis is run.
+WARNING: [Project 1-533] File '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/ip/design_1_dft_0_2/design_1_dft_0_2.xci' could not be found in the subdesign '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/design_1.bd', but fileset 'design_1_dft_0_2' still exists. The fileset and corresponding run(s) will be deleted the next time top-level synthesis is run.
+INFO: [Project 1-230] Project 'DFT_v.xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/mnt/c/Xilinx/Projects/DFT/dft_32_precomputed'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2021.1/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 7503.410 ; gain = 97.367 ; free physical = 8665 ; free virtual = 15032
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Sep 26 20:37:07 2021...

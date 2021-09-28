@@ -1,0 +1,1099 @@
+<profile>
+    <ReportVersion>
+        <Version>2021.1</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>zynq</ProductFamily>
+        <Part>xc7z020-clg400-1</Part>
+        <TopModelName>dft</TopModelName>
+        <TargetClockPeriod>10.00</TargetClockPeriod>
+        <ClockUncertainty>2.70</ClockUncertainty>
+        <FlowTarget>vivado</FlowTarget>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>no</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>7.256</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>12583951</Best-caseLatency>
+            <Average-caseLatency>12583951</Average-caseLatency>
+            <Worst-caseLatency>12583951</Worst-caseLatency>
+            <Best-caseRealTimeLatency>0.126 sec</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>0.126 sec</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>0.126 sec</Worst-caseRealTimeLatency>
+            <Interval-min>12583952</Interval-min>
+            <Interval-max>12583952</Interval-max>
+        </SummaryOfOverallLatency>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <BRAM_18K>4</BRAM_18K>
+            <DSP>5</DSP>
+            <FF>9124</FF>
+            <LUT>7716</LUT>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>280</BRAM_18K>
+            <DSP>220</DSP>
+            <FF>106400</FF>
+            <LUT>53200</LUT>
+            <URAM>0</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>s_axi_CTRL_AWVALID</name>
+            <Object>CTRL</Object>
+            <Type>return void</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_AWREADY</name>
+            <Object>CTRL</Object>
+            <Type>return void</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_AWADDR</name>
+            <Object>CTRL</Object>
+            <Type>return void</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_WVALID</name>
+            <Object>CTRL</Object>
+            <Type>return void</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_WREADY</name>
+            <Object>CTRL</Object>
+            <Type>return void</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_WDATA</name>
+            <Object>CTRL</Object>
+            <Type>return void</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_WSTRB</name>
+            <Object>CTRL</Object>
+            <Type>return void</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_ARVALID</name>
+            <Object>CTRL</Object>
+            <Type>return void</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_ARREADY</name>
+            <Object>CTRL</Object>
+            <Type>return void</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_ARADDR</name>
+            <Object>CTRL</Object>
+            <Type>return void</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_RVALID</name>
+            <Object>CTRL</Object>
+            <Type>return void</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_RREADY</name>
+            <Object>CTRL</Object>
+            <Type>return void</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_RDATA</name>
+            <Object>CTRL</Object>
+            <Type>return void</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_RRESP</name>
+            <Object>CTRL</Object>
+            <Type>return void</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_BVALID</name>
+            <Object>CTRL</Object>
+            <Type>return void</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_BREADY</name>
+            <Object>CTRL</Object>
+            <Type>return void</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_BRESP</name>
+            <Object>CTRL</Object>
+            <Type>return void</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>dft</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst_n</name>
+            <Object>dft</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>interrupt</name>
+            <Object>dft</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>real_sample_TDATA</name>
+            <Object>real_sample_V_data_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>real_sample_TVALID</name>
+            <Object>real_sample_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>real_sample_TREADY</name>
+            <Object>real_sample_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>real_sample_TLAST</name>
+            <Object>real_sample_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>real_sample_TKEEP</name>
+            <Object>real_sample_V_keep_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>4</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>real_sample_TSTRB</name>
+            <Object>real_sample_V_strb_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>4</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>imag_sample_TDATA</name>
+            <Object>imag_sample_V_data_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>imag_sample_TVALID</name>
+            <Object>imag_sample_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>imag_sample_TREADY</name>
+            <Object>imag_sample_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>imag_sample_TLAST</name>
+            <Object>imag_sample_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>imag_sample_TKEEP</name>
+            <Object>imag_sample_V_keep_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>4</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>imag_sample_TSTRB</name>
+            <Object>imag_sample_V_strb_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>4</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>real_op_TDATA</name>
+            <Object>real_op_V_data_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>real_op_TVALID</name>
+            <Object>real_op_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>real_op_TREADY</name>
+            <Object>real_op_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>real_op_TLAST</name>
+            <Object>real_op_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>real_op_TKEEP</name>
+            <Object>real_op_V_keep_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>4</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>real_op_TSTRB</name>
+            <Object>real_op_V_strb_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>4</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>imag_op_TDATA</name>
+            <Object>imag_op_V_data_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>imag_op_TVALID</name>
+            <Object>imag_op_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>imag_op_TREADY</name>
+            <Object>imag_op_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>imag_op_TLAST</name>
+            <Object>imag_op_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>imag_op_TKEEP</name>
+            <Object>imag_op_V_keep_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>4</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>imag_op_TSTRB</name>
+            <Object>imag_op_V_strb_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>4</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule MAX_DEPTH="3">
+            <ModuleName>dft</ModuleName>
+            <InstancesList>
+                <Instance>
+                    <InstName>grp_dft_Pipeline_loop_sample_fu_580</InstName>
+                    <ModuleName>dft_Pipeline_loop_sample</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>580</ID>
+                    <BindInstances>add_ln20_fu_2148_p2</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_dft_Pipeline_loop_k_loop_n_fu_728</InstName>
+                    <ModuleName>dft_Pipeline_loop_k_loop_n</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>728</ID>
+                    <BindInstances>add_ln28_fu_2123_p2 add_ln28_1_fu_2149_p2 mul_10s_10s_10_1_1_U139 fmul_32ns_32ns_32_4_max_dsp_1_U138 fadd_32ns_32ns_32_5_full_dsp_1_U137 fmul_32ns_32ns_32_4_max_dsp_1_U138 fadd_32ns_32ns_32_5_full_dsp_1_U137 fmul_32ns_32ns_32_4_max_dsp_1_U138 fadd_32ns_32ns_32_5_full_dsp_1_U137 fmul_32ns_32ns_32_4_max_dsp_1_U138 fadd_32ns_32ns_32_5_full_dsp_1_U137 add_ln32_fu_2335_p2 cos_coefficients_table_U sin_coefficients_table_U</BindInstances>
+                </Instance>
+            </InstancesList>
+            <BindInstances>re_sample_0_U re_sample_1_U re_sample_2_U re_sample_3_U re_sample_4_U re_sample_5_U re_sample_6_U re_sample_7_U re_sample_8_U re_sample_9_U re_sample_10_U re_sample_11_U re_sample_12_U re_sample_13_U re_sample_14_U re_sample_15_U re_sample_16_U re_sample_17_U re_sample_18_U re_sample_19_U re_sample_20_U re_sample_21_U re_sample_22_U re_sample_23_U re_sample_24_U re_sample_25_U re_sample_26_U re_sample_27_U re_sample_28_U re_sample_29_U re_sample_30_U re_sample_31_U re_sample_32_U re_sample_33_U re_sample_34_U re_sample_35_U re_sample_36_U re_sample_37_U re_sample_38_U re_sample_39_U re_sample_40_U re_sample_41_U re_sample_42_U re_sample_43_U re_sample_44_U re_sample_45_U re_sample_46_U re_sample_47_U re_sample_48_U re_sample_49_U re_sample_50_U re_sample_51_U re_sample_52_U re_sample_53_U re_sample_54_U re_sample_55_U re_sample_56_U re_sample_57_U re_sample_58_U re_sample_59_U re_sample_60_U re_sample_61_U re_sample_62_U re_sample_63_U im_sample_0_U im_sample_1_U im_sample_2_U im_sample_3_U im_sample_4_U im_sample_5_U im_sample_6_U im_sample_7_U im_sample_8_U im_sample_9_U im_sample_10_U im_sample_11_U im_sample_12_U im_sample_13_U im_sample_14_U im_sample_15_U im_sample_16_U im_sample_17_U im_sample_18_U im_sample_19_U im_sample_20_U im_sample_21_U im_sample_22_U im_sample_23_U im_sample_24_U im_sample_25_U im_sample_26_U im_sample_27_U im_sample_28_U im_sample_29_U im_sample_30_U im_sample_31_U im_sample_32_U im_sample_33_U im_sample_34_U im_sample_35_U im_sample_36_U im_sample_37_U im_sample_38_U im_sample_39_U im_sample_40_U im_sample_41_U im_sample_42_U im_sample_43_U im_sample_44_U im_sample_45_U im_sample_46_U im_sample_47_U im_sample_48_U im_sample_49_U im_sample_50_U im_sample_51_U im_sample_52_U im_sample_53_U im_sample_54_U im_sample_55_U im_sample_56_U im_sample_57_U im_sample_58_U im_sample_59_U im_sample_60_U im_sample_61_U im_sample_62_U im_sample_63_U</BindInstances>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>dft_Pipeline_loop_sample</Name>
+            <Loops>
+                <loop_sample/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>4.202</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>1026</Best-caseLatency>
+                    <Average-caseLatency>1026</Average-caseLatency>
+                    <Worst-caseLatency>1026</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>10.260 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>10.260 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>10.260 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>1026</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <loop_sample>
+                        <Name>loop_sample</Name>
+                        <TripCount>1024</TripCount>
+                        <Latency>1024</Latency>
+                        <AbsoluteTimeLatency>10.240 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>1</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                    </loop_sample>
+                </SummaryOfLoopLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>13</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>73</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="loop_sample" OPTYPE="add" PRAGMA="" RTLNAME="add_ln20_fu_2148_p2" SOURCE="dft.cpp:20" URAM="0" VARIABLE="add_ln20"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>dft_Pipeline_loop_k_loop_n</Name>
+            <Loops>
+                <loop_k_loop_n/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>7.256</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>12582919</Best-caseLatency>
+                    <Average-caseLatency>12582919</Average-caseLatency>
+                    <Worst-caseLatency>12582919</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.126 sec</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.126 sec</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.126 sec</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>12582919</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <loop_k_loop_n>
+                        <Name>loop_k_loop_n</Name>
+                        <TripCount>1048576</TripCount>
+                        <Latency>12582917</Latency>
+                        <AbsoluteTimeLatency>0.126 sec</AbsoluteTimeLatency>
+                        <PipelineII>12</PipelineII>
+                        <PipelineDepth>18</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                    </loop_k_loop_n>
+                </SummaryOfLoopLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>4</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>1</UTIL_BRAM>
+                    <DSP>5</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>2</UTIL_DSP>
+                    <FF>874</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>1777</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>3</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="loop_k_loop_n" OPTYPE="add" PRAGMA="" RTLNAME="add_ln28_fu_2123_p2" SOURCE="dft.cpp:28" URAM="0" VARIABLE="add_ln28"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="loop_k_loop_n" OPTYPE="add" PRAGMA="" RTLNAME="add_ln28_1_fu_2149_p2" SOURCE="dft.cpp:28" URAM="0" VARIABLE="add_ln28_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="loop_k_loop_n" OPTYPE="mul" PRAGMA="" RTLNAME="mul_10s_10s_10_1_1_U139" SOURCE="dft.cpp:41" URAM="0" VARIABLE="mul_ln41"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="3" LOOP="loop_k_loop_n" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_4_max_dsp_1_U138" SOURCE="dft.cpp:46" URAM="0" VARIABLE="mul"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="4" LOOP="loop_k_loop_n" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_5_full_dsp_1_U137" SOURCE="dft.cpp:46" URAM="0" VARIABLE="buff_re_3"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="3" LOOP="loop_k_loop_n" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_4_max_dsp_1_U138" SOURCE="dft.cpp:47" URAM="0" VARIABLE="mul1"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="4" LOOP="loop_k_loop_n" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_5_full_dsp_1_U137" SOURCE="dft.cpp:47" URAM="0" VARIABLE="buff_re"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="3" LOOP="loop_k_loop_n" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_4_max_dsp_1_U138" SOURCE="dft.cpp:48" URAM="0" VARIABLE="mul2"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="4" LOOP="loop_k_loop_n" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_5_full_dsp_1_U137" SOURCE="dft.cpp:48" URAM="0" VARIABLE="buff_im_3"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="3" LOOP="loop_k_loop_n" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_4_max_dsp_1_U138" SOURCE="dft.cpp:49" URAM="0" VARIABLE="mul3"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="4" LOOP="loop_k_loop_n" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_5_full_dsp_1_U137" SOURCE="dft.cpp:49" URAM="0" VARIABLE="buff_im"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="loop_k_loop_n" OPTYPE="add" PRAGMA="" RTLNAME="add_ln32_fu_2335_p2" SOURCE="dft.cpp:32" URAM="0" VARIABLE="add_ln32"/>
+                <BindNode BINDTYPE="storage" BRAM="2" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="cos_coefficients_table_U" SOURCE="" URAM="0" VARIABLE="cos_coefficients_table"/>
+                <BindNode BINDTYPE="storage" BRAM="2" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="sin_coefficients_table_U" SOURCE="" URAM="0" VARIABLE="sin_coefficients_table"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>dft</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>7.256</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>12583951</Best-caseLatency>
+                    <Average-caseLatency>12583951</Average-caseLatency>
+                    <Worst-caseLatency>12583951</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.126 sec</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.126 sec</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.126 sec</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>12583952</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>4</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>1</UTIL_BRAM>
+                    <DSP>5</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>2</UTIL_DSP>
+                    <FF>9124</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>8</UTIL_FF>
+                    <LUT>7716</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>14</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_0_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_0"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_1_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_1"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_2_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_2"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_3_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_3"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_4_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_4"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_5_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_5"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_6_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_6"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_7_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_7"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_8_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_8"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_9_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_9"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_10_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_10"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_11_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_11"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_12_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_12"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_13_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_13"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_14_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_14"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_15_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_15"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_16_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_16"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_17_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_17"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_18_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_18"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_19_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_19"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_20_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_20"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_21_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_21"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_22_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_22"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_23_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_23"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_24_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_24"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_25_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_25"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_26_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_26"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_27_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_27"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_28_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_28"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_29_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_29"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_30_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_30"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_31_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_31"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_32_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_32"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_33_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_33"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_34_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_34"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_35_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_35"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_36_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_36"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_37_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_37"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_38_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_38"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_39_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_39"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_40_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_40"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_41_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_41"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_42_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_42"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_43_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_43"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_44_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_44"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_45_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_45"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_46_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_46"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_47_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_47"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_48_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_48"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_49_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_49"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_50_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_50"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_51_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_51"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_52_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_52"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_53_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_53"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_54_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_54"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_55_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_55"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_56_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_56"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_57_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_57"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_58_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_58"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_59_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_59"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_60_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_60"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_61_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_61"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_62_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_62"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="re_sample_63_U" SOURCE="dft.cpp:13" URAM="0" VARIABLE="re_sample_63"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_0_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_0"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_1_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_1"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_2_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_2"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_3_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_3"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_4_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_4"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_5_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_5"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_6_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_6"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_7_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_7"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_8_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_8"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_9_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_9"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_10_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_10"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_11_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_11"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_12_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_12"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_13_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_13"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_14_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_14"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_15_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_15"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_16_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_16"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_17_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_17"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_18_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_18"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_19_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_19"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_20_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_20"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_21_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_21"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_22_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_22"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_23_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_23"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_24_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_24"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_25_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_25"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_26_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_26"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_27_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_27"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_28_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_28"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_29_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_29"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_30_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_30"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_31_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_31"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_32_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_32"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_33_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_33"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_34_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_34"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_35_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_35"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_36_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_36"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_37_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_37"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_38_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_38"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_39_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_39"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_40_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_40"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_41_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_41"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_42_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_42"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_43_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_43"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_44_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_44"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_45_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_45"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_46_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_46"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_47_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_47"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_48_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_48"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_49_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_49"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_50_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_50"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_51_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_51"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_52_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_52"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_53_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_53"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_54_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_54"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_55_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_55"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_56_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_56"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_57_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_57"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_58_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_58"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_59_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_59"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_60_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_60"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_61_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_61"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_62_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_62"/>
+                <BindNode BINDTYPE="storage" BRAM="0" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="im_sample_63_U" SOURCE="dft.cpp:14" URAM="0" VARIABLE="im_sample_63"/>
+            </BindNodes>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <UserConfigCommands/>
+    <Args>
+        <Arg ArgName="real_sample" index="0" direction="in" srcType="stream&lt;hls::axis&lt;float, 0, 0, 0&gt;, 0&gt;&amp;" srcSize="96">
+            <hwRefs>
+                <hwRef type="interface" interface="real_sample" name="" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="imag_sample" index="1" direction="in" srcType="stream&lt;hls::axis&lt;float, 0, 0, 0&gt;, 0&gt;&amp;" srcSize="96">
+            <hwRefs>
+                <hwRef type="interface" interface="imag_sample" name="" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="real_op" index="2" direction="out" srcType="stream&lt;hls::axis&lt;float, 0, 0, 0&gt;, 0&gt;&amp;" srcSize="96">
+            <hwRefs>
+                <hwRef type="interface" interface="real_op" name="" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="imag_op" index="3" direction="out" srcType="stream&lt;hls::axis&lt;float, 0, 0, 0&gt;, 0&gt;&amp;" srcSize="96">
+            <hwRefs>
+                <hwRef type="interface" interface="imag_op" name="" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="s_axi_CTRL" type="axi4lite" busTypeName="aximm" mode="slave" dataWidth="32" addrWidth="4" portPrefix="s_axi_CTRL_" paramPrefix="C_S_AXI_CTRL_">
+            <ports>
+                <port>s_axi_CTRL_ARADDR</port>
+                <port>s_axi_CTRL_ARREADY</port>
+                <port>s_axi_CTRL_ARVALID</port>
+                <port>s_axi_CTRL_AWADDR</port>
+                <port>s_axi_CTRL_AWREADY</port>
+                <port>s_axi_CTRL_AWVALID</port>
+                <port>s_axi_CTRL_BREADY</port>
+                <port>s_axi_CTRL_BRESP</port>
+                <port>s_axi_CTRL_BVALID</port>
+                <port>s_axi_CTRL_RDATA</port>
+                <port>s_axi_CTRL_RREADY</port>
+                <port>s_axi_CTRL_RRESP</port>
+                <port>s_axi_CTRL_RVALID</port>
+                <port>s_axi_CTRL_WDATA</port>
+                <port>s_axi_CTRL_WREADY</port>
+                <port>s_axi_CTRL_WSTRB</port>
+                <port>s_axi_CTRL_WVALID</port>
+            </ports>
+            <registers>
+                <register offset="0x00" name="CTRL" access="RW" description="Control signals" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="AP_START" access="RW" description="Control signal Register for 'ap_start'."/>
+                        <field offset="1" width="1" name="AP_DONE" access="R" description="Control signal Register for 'ap_done'."/>
+                        <field offset="2" width="1" name="AP_IDLE" access="R" description="Control signal Register for 'ap_idle'."/>
+                        <field offset="3" width="1" name="AP_READY" access="R" description="Control signal Register for 'ap_ready'."/>
+                        <field offset="4" width="3" name="RESERVED_1" access="R" description="Reserved.  0s on read."/>
+                        <field offset="7" width="1" name="AUTO_RESTART" access="RW" description="Control signal Register for 'auto_restart'."/>
+                        <field offset="8" width="1" name="RESERVED_2" access="R" description="Reserved.  0s on read."/>
+                        <field offset="9" width="1" name="RESERVED_3" access="R" description="Reserved.  0s on read."/>
+                        <field offset="10" width="22" name="RESERVED_4" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x04" name="GIER" access="RW" description="Global Interrupt Enable Register" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="Enable" access="RW" description="Master enable for the device interrupt output to the system interrupt controller: 0 = Disabled, 1 = Enabled"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x08" name="IP_IER" access="RW" description="IP Interrupt Enable Register" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="CHAN0_INT_EN" access="RW" description="Enable Channel 0 (ap_done) Interrupt.  0 = Disabled, 1 = Enabled."/>
+                        <field offset="1" width="1" name="CHAN1_INT_EN" access="RW" description="Enable Channel 1 (ap_ready) Interrupt.  0 = Disabled, 1 = Enabled."/>
+                        <field offset="2" width="30" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                        <field offset="2" width="30" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x0c" name="IP_ISR" access="RW" description="IP Interrupt Status Register" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="CHAN0_INT_ST" access="RTOW" description="Channel 0 (ap_done) Interrupt Status. 0 = No Channel 0 input interrupt, 1 = Channel 0 input interrup"/>
+                        <field offset="1" width="1" name="CHAN1_INT_ST" access="RTOW" description="Channel 1 (ap_ready) Interrupt Status. 0 = No Channel 1 input interrupt, 1 = Channel 1 input interrup"/>
+                        <field offset="2" width="30" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+            </registers>
+        </Interface>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_BUSIF">s_axi_CTRL:real_sample:imag_sample:real_op:imag_op</busParam>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst_n</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst_n" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_LOW</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst_n">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst_n</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="interrupt" type="interrupt" busTypeName="interrupt" mode="master" dataWidth="1">
+            <busParams>
+                <busParam busParamName="SENSITIVITY">LEVEL_HIGH</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="interrupt">INTERRUPT</portMap>
+            </portMaps>
+            <ports>
+                <port>interrupt</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="real_sample" type="axi4stream" busTypeName="axis" mode="slave" dataWidth="32" portPrefix="real_sample_">
+            <ports>
+                <port>real_sample_TDATA</port>
+                <port>real_sample_TKEEP</port>
+                <port>real_sample_TLAST</port>
+                <port>real_sample_TREADY</port>
+                <port>real_sample_TSTRB</port>
+                <port>real_sample_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="0" register_mode="both" argName="real_sample"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="imag_sample" type="axi4stream" busTypeName="axis" mode="slave" dataWidth="32" portPrefix="imag_sample_">
+            <ports>
+                <port>imag_sample_TDATA</port>
+                <port>imag_sample_TKEEP</port>
+                <port>imag_sample_TLAST</port>
+                <port>imag_sample_TREADY</port>
+                <port>imag_sample_TSTRB</port>
+                <port>imag_sample_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="0" register_mode="both" argName="imag_sample"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="real_op" type="axi4stream" busTypeName="axis" mode="master" dataWidth="32" portPrefix="real_op_">
+            <ports>
+                <port>real_op_TDATA</port>
+                <port>real_op_TKEEP</port>
+                <port>real_op_TLAST</port>
+                <port>real_op_TREADY</port>
+                <port>real_op_TSTRB</port>
+                <port>real_op_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="0" register_mode="both" argName="real_op"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="imag_op" type="axi4stream" busTypeName="axis" mode="master" dataWidth="32" portPrefix="imag_op_">
+            <ports>
+                <port>imag_op_TDATA</port>
+                <port>imag_op_TKEEP</port>
+                <port>imag_op_TLAST</port>
+                <port>imag_op_TREADY</port>
+                <port>imag_op_TSTRB</port>
+                <port>imag_op_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="0" register_mode="both" argName="imag_op"/>
+            </constraints>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="S_AXILITE">
+                <table isCollapsed="0">
+                    <keys size="3">Interface, Data Width, Address Width</keys>
+                    <column name="s_axi_CTRL">32, 4</column>
+                </table>
+            </item>
+            <item name="AXIS">
+                <table isCollapsed="0">
+                    <keys size="8">Interface, Register Mode, TDATA, TKEEP, TLAST, TREADY, TSTRB, TVALID</keys>
+                    <column name="imag_op">both, 32, 4, 1, 1, 4, 1</column>
+                    <column name="imag_sample">both, 32, 4, 1, 1, 4, 1</column>
+                    <column name="real_op">both, 32, 4, 1, 1, 4, 1</column>
+                    <column name="real_sample">both, 32, 4, 1, 1, 4, 1</column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table isCollapsed="0">
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk</column>
+                    <column name="ap_rst_n">reset, ap_rst_n</column>
+                    <column name="interrupt">interrupt, interrupt</column>
+                    <column name="ap_ctrl">ap_ctrl_hs</column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table isCollapsed="1">
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="real_sample">in, stream&lt;hls::axis&lt;float 0 0 0&gt; 0&gt;&amp;</column>
+                    <column name="imag_sample">in, stream&lt;hls::axis&lt;float 0 0 0&gt; 0&gt;&amp;</column>
+                    <column name="real_op">out, stream&lt;hls::axis&lt;float 0 0 0&gt; 0&gt;&amp;</column>
+                    <column name="imag_op">out, stream&lt;hls::axis&lt;float 0 0 0&gt; 0&gt;&amp;</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table isCollapsed="1">
+                    <keys size="3">Argument, HW Name, HW Type</keys>
+                    <column name="real_sample">real_sample, interface</column>
+                    <column name="imag_sample">imag_sample, interface</column>
+                    <column name="real_op">real_op, interface</column>
+                    <column name="imag_op">imag_op, interface</column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <ReportBurst>
+        <section name="M_AXI Burst Information" level="0"/>
+    </ReportBurst>
+</profile>
+

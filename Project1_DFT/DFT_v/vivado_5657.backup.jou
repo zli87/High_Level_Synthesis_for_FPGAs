@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sun Sep 26 20:37:27 2021
+# Process ID: 5657
+# Current directory: /mnt/c/Xilinx/Projects/DFT_v
+# Command line: vivado
+# Log file: /mnt/c/Xilinx/Projects/DFT_v/vivado.log
+# Journal file: /mnt/c/Xilinx/Projects/DFT_v/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /mnt/c/Xilinx/Projects/DFT_v/DFT_v.xpr
+update_compile_order -fileset sources_1

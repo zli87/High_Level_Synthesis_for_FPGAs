@@ -1,0 +1,556 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'dft_Pipeline_4'" level="0">
+<item name = "Date">Tue Sep 28 09:17:35 2021
+</item>
+<item name = "Version">2021.1 (Build 3247384 on Thu Jun 10 19:36:07 MDT 2021)</item>
+<item name = "Project">hls</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.300 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">1027, 1027, 10.270 us, 10.270 us, 1027, 1027, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop 1">1025, 1025, 3, 1, 1, 1024, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 28, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, 0, 673, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, 45, -</column>
+<column name="Register">-, -, 56, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, 1, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="mux_12864_32_1_1_U784">mux_12864_32_1_1, 0, 0, 0, 673, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="empty_26_fu_2010_p2">+, 0, 0, 12, 11, 1</column>
+<column name="ap_block_pp0_stage0_11001">and, 0, 0, 2, 1, 1</column>
+<column name="exitcond166_fu_2004_p2">icmp, 0, 0, 12, 11, 12</column>
+<column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_done_int">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter2">9, 2, 1, 2</column>
+<column name="ap_sig_allocacmp_loop_index9_load">9, 2, 11, 22</column>
+<column name="loop_index9_fu_310">9, 2, 11, 22</column>
+<column name="output_re_r_blk_n_W">9, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">1, 0, 1, 0</column>
+<column name="ap_done_reg">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter2">1, 0, 1, 0</column>
+<column name="ap_loop_exit_ready_pp0_iter1_reg">1, 0, 1, 0</column>
+<column name="empty_27_reg_2457">7, 0, 7, 0</column>
+<column name="exitcond166_reg_2453">1, 0, 1, 0</column>
+<column name="loop_index9_fu_310">11, 0, 11, 0</column>
+<column name="tmp_reg_3107">32, 0, 32, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, dft_Pipeline_4, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, dft_Pipeline_4, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, dft_Pipeline_4, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, dft_Pipeline_4, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, dft_Pipeline_4, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, dft_Pipeline_4, return value</column>
+<column name="m_axi_output_re_r_AWVALID">out, 1, m_axi, output_re_r, pointer</column>
+<column name="m_axi_output_re_r_AWREADY">in, 1, m_axi, output_re_r, pointer</column>
+<column name="m_axi_output_re_r_AWADDR">out, 64, m_axi, output_re_r, pointer</column>
+<column name="m_axi_output_re_r_AWID">out, 1, m_axi, output_re_r, pointer</column>
+<column name="m_axi_output_re_r_AWLEN">out, 32, m_axi, output_re_r, pointer</column>
+<column name="m_axi_output_re_r_AWSIZE">out, 3, m_axi, output_re_r, pointer</column>
+<column name="m_axi_output_re_r_AWBURST">out, 2, m_axi, output_re_r, pointer</column>
+<column name="m_axi_output_re_r_AWLOCK">out, 2, m_axi, output_re_r, pointer</column>
+<column name="m_axi_output_re_r_AWCACHE">out, 4, m_axi, output_re_r, pointer</column>
+<column name="m_axi_output_re_r_AWPROT">out, 3, m_axi, output_re_r, pointer</column>
+<column name="m_axi_output_re_r_AWQOS">out, 4, m_axi, output_re_r, pointer</column>
+<column name="m_axi_output_re_r_AWREGION">out, 4, m_axi, output_re_r, pointer</column>
+<column name="m_axi_output_re_r_AWUSER">out, 1, m_axi, output_re_r, pointer</column>
+<column name="m_axi_output_re_r_WVALID">out, 1, m_axi, output_re_r, pointer</column>
+<column name="m_axi_output_re_r_WREADY">in, 1, m_axi, output_re_r, pointer</column>
+<column name="m_axi_output_re_r_WDATA">out, 32, m_axi, output_re_r, pointer</column>
+<column name="m_axi_output_re_r_WSTRB">out, 4, m_axi, output_re_r, pointer</column>
+<column name="m_axi_output_re_r_WLAST">out, 1, m_axi, output_re_r, pointer</column>
+<column name="m_axi_output_re_r_WID">out, 1, m_axi, output_re_r, pointer</column>
+<column name="m_axi_output_re_r_WUSER">out, 1, m_axi, output_re_r, pointer</column>
+<column name="m_axi_output_re_r_ARVALID">out, 1, m_axi, output_re_r, pointer</column>
+<column name="m_axi_output_re_r_ARREADY">in, 1, m_axi, output_re_r, pointer</column>
+<column name="m_axi_output_re_r_ARADDR">out, 64, m_axi, output_re_r, pointer</column>
+<column name="m_axi_output_re_r_ARID">out, 1, m_axi, output_re_r, pointer</column>
+<column name="m_axi_output_re_r_ARLEN">out, 32, m_axi, output_re_r, pointer</column>
+<column name="m_axi_output_re_r_ARSIZE">out, 3, m_axi, output_re_r, pointer</column>
+<column name="m_axi_output_re_r_ARBURST">out, 2, m_axi, output_re_r, pointer</column>
+<column name="m_axi_output_re_r_ARLOCK">out, 2, m_axi, output_re_r, pointer</column>
+<column name="m_axi_output_re_r_ARCACHE">out, 4, m_axi, output_re_r, pointer</column>
+<column name="m_axi_output_re_r_ARPROT">out, 3, m_axi, output_re_r, pointer</column>
+<column name="m_axi_output_re_r_ARQOS">out, 4, m_axi, output_re_r, pointer</column>
+<column name="m_axi_output_re_r_ARREGION">out, 4, m_axi, output_re_r, pointer</column>
+<column name="m_axi_output_re_r_ARUSER">out, 1, m_axi, output_re_r, pointer</column>
+<column name="m_axi_output_re_r_RVALID">in, 1, m_axi, output_re_r, pointer</column>
+<column name="m_axi_output_re_r_RREADY">out, 1, m_axi, output_re_r, pointer</column>
+<column name="m_axi_output_re_r_RDATA">in, 32, m_axi, output_re_r, pointer</column>
+<column name="m_axi_output_re_r_RLAST">in, 1, m_axi, output_re_r, pointer</column>
+<column name="m_axi_output_re_r_RID">in, 1, m_axi, output_re_r, pointer</column>
+<column name="m_axi_output_re_r_RUSER">in, 1, m_axi, output_re_r, pointer</column>
+<column name="m_axi_output_re_r_RRESP">in, 2, m_axi, output_re_r, pointer</column>
+<column name="m_axi_output_re_r_BVALID">in, 1, m_axi, output_re_r, pointer</column>
+<column name="m_axi_output_re_r_BREADY">out, 1, m_axi, output_re_r, pointer</column>
+<column name="m_axi_output_re_r_BRESP">in, 2, m_axi, output_re_r, pointer</column>
+<column name="m_axi_output_re_r_BID">in, 1, m_axi, output_re_r, pointer</column>
+<column name="m_axi_output_re_r_BUSER">in, 1, m_axi, output_re_r, pointer</column>
+<column name="sext_ln67">in, 62, ap_none, sext_ln67, scalar</column>
+<column name="re_buff_0_address0">out, 3, ap_memory, re_buff_0, array</column>
+<column name="re_buff_0_ce0">out, 1, ap_memory, re_buff_0, array</column>
+<column name="re_buff_0_q0">in, 32, ap_memory, re_buff_0, array</column>
+<column name="re_buff_1_address0">out, 3, ap_memory, re_buff_1, array</column>
+<column name="re_buff_1_ce0">out, 1, ap_memory, re_buff_1, array</column>
+<column name="re_buff_1_q0">in, 32, ap_memory, re_buff_1, array</column>
+<column name="re_buff_2_address0">out, 3, ap_memory, re_buff_2, array</column>
+<column name="re_buff_2_ce0">out, 1, ap_memory, re_buff_2, array</column>
+<column name="re_buff_2_q0">in, 32, ap_memory, re_buff_2, array</column>
+<column name="re_buff_3_address0">out, 3, ap_memory, re_buff_3, array</column>
+<column name="re_buff_3_ce0">out, 1, ap_memory, re_buff_3, array</column>
+<column name="re_buff_3_q0">in, 32, ap_memory, re_buff_3, array</column>
+<column name="re_buff_4_address0">out, 3, ap_memory, re_buff_4, array</column>
+<column name="re_buff_4_ce0">out, 1, ap_memory, re_buff_4, array</column>
+<column name="re_buff_4_q0">in, 32, ap_memory, re_buff_4, array</column>
+<column name="re_buff_5_address0">out, 3, ap_memory, re_buff_5, array</column>
+<column name="re_buff_5_ce0">out, 1, ap_memory, re_buff_5, array</column>
+<column name="re_buff_5_q0">in, 32, ap_memory, re_buff_5, array</column>
+<column name="re_buff_6_address0">out, 3, ap_memory, re_buff_6, array</column>
+<column name="re_buff_6_ce0">out, 1, ap_memory, re_buff_6, array</column>
+<column name="re_buff_6_q0">in, 32, ap_memory, re_buff_6, array</column>
+<column name="re_buff_7_address0">out, 3, ap_memory, re_buff_7, array</column>
+<column name="re_buff_7_ce0">out, 1, ap_memory, re_buff_7, array</column>
+<column name="re_buff_7_q0">in, 32, ap_memory, re_buff_7, array</column>
+<column name="re_buff_8_address0">out, 3, ap_memory, re_buff_8, array</column>
+<column name="re_buff_8_ce0">out, 1, ap_memory, re_buff_8, array</column>
+<column name="re_buff_8_q0">in, 32, ap_memory, re_buff_8, array</column>
+<column name="re_buff_9_address0">out, 3, ap_memory, re_buff_9, array</column>
+<column name="re_buff_9_ce0">out, 1, ap_memory, re_buff_9, array</column>
+<column name="re_buff_9_q0">in, 32, ap_memory, re_buff_9, array</column>
+<column name="re_buff_10_address0">out, 3, ap_memory, re_buff_10, array</column>
+<column name="re_buff_10_ce0">out, 1, ap_memory, re_buff_10, array</column>
+<column name="re_buff_10_q0">in, 32, ap_memory, re_buff_10, array</column>
+<column name="re_buff_11_address0">out, 3, ap_memory, re_buff_11, array</column>
+<column name="re_buff_11_ce0">out, 1, ap_memory, re_buff_11, array</column>
+<column name="re_buff_11_q0">in, 32, ap_memory, re_buff_11, array</column>
+<column name="re_buff_12_address0">out, 3, ap_memory, re_buff_12, array</column>
+<column name="re_buff_12_ce0">out, 1, ap_memory, re_buff_12, array</column>
+<column name="re_buff_12_q0">in, 32, ap_memory, re_buff_12, array</column>
+<column name="re_buff_13_address0">out, 3, ap_memory, re_buff_13, array</column>
+<column name="re_buff_13_ce0">out, 1, ap_memory, re_buff_13, array</column>
+<column name="re_buff_13_q0">in, 32, ap_memory, re_buff_13, array</column>
+<column name="re_buff_14_address0">out, 3, ap_memory, re_buff_14, array</column>
+<column name="re_buff_14_ce0">out, 1, ap_memory, re_buff_14, array</column>
+<column name="re_buff_14_q0">in, 32, ap_memory, re_buff_14, array</column>
+<column name="re_buff_15_address0">out, 3, ap_memory, re_buff_15, array</column>
+<column name="re_buff_15_ce0">out, 1, ap_memory, re_buff_15, array</column>
+<column name="re_buff_15_q0">in, 32, ap_memory, re_buff_15, array</column>
+<column name="re_buff_16_address0">out, 3, ap_memory, re_buff_16, array</column>
+<column name="re_buff_16_ce0">out, 1, ap_memory, re_buff_16, array</column>
+<column name="re_buff_16_q0">in, 32, ap_memory, re_buff_16, array</column>
+<column name="re_buff_17_address0">out, 3, ap_memory, re_buff_17, array</column>
+<column name="re_buff_17_ce0">out, 1, ap_memory, re_buff_17, array</column>
+<column name="re_buff_17_q0">in, 32, ap_memory, re_buff_17, array</column>
+<column name="re_buff_18_address0">out, 3, ap_memory, re_buff_18, array</column>
+<column name="re_buff_18_ce0">out, 1, ap_memory, re_buff_18, array</column>
+<column name="re_buff_18_q0">in, 32, ap_memory, re_buff_18, array</column>
+<column name="re_buff_19_address0">out, 3, ap_memory, re_buff_19, array</column>
+<column name="re_buff_19_ce0">out, 1, ap_memory, re_buff_19, array</column>
+<column name="re_buff_19_q0">in, 32, ap_memory, re_buff_19, array</column>
+<column name="re_buff_20_address0">out, 3, ap_memory, re_buff_20, array</column>
+<column name="re_buff_20_ce0">out, 1, ap_memory, re_buff_20, array</column>
+<column name="re_buff_20_q0">in, 32, ap_memory, re_buff_20, array</column>
+<column name="re_buff_21_address0">out, 3, ap_memory, re_buff_21, array</column>
+<column name="re_buff_21_ce0">out, 1, ap_memory, re_buff_21, array</column>
+<column name="re_buff_21_q0">in, 32, ap_memory, re_buff_21, array</column>
+<column name="re_buff_22_address0">out, 3, ap_memory, re_buff_22, array</column>
+<column name="re_buff_22_ce0">out, 1, ap_memory, re_buff_22, array</column>
+<column name="re_buff_22_q0">in, 32, ap_memory, re_buff_22, array</column>
+<column name="re_buff_23_address0">out, 3, ap_memory, re_buff_23, array</column>
+<column name="re_buff_23_ce0">out, 1, ap_memory, re_buff_23, array</column>
+<column name="re_buff_23_q0">in, 32, ap_memory, re_buff_23, array</column>
+<column name="re_buff_24_address0">out, 3, ap_memory, re_buff_24, array</column>
+<column name="re_buff_24_ce0">out, 1, ap_memory, re_buff_24, array</column>
+<column name="re_buff_24_q0">in, 32, ap_memory, re_buff_24, array</column>
+<column name="re_buff_25_address0">out, 3, ap_memory, re_buff_25, array</column>
+<column name="re_buff_25_ce0">out, 1, ap_memory, re_buff_25, array</column>
+<column name="re_buff_25_q0">in, 32, ap_memory, re_buff_25, array</column>
+<column name="re_buff_26_address0">out, 3, ap_memory, re_buff_26, array</column>
+<column name="re_buff_26_ce0">out, 1, ap_memory, re_buff_26, array</column>
+<column name="re_buff_26_q0">in, 32, ap_memory, re_buff_26, array</column>
+<column name="re_buff_27_address0">out, 3, ap_memory, re_buff_27, array</column>
+<column name="re_buff_27_ce0">out, 1, ap_memory, re_buff_27, array</column>
+<column name="re_buff_27_q0">in, 32, ap_memory, re_buff_27, array</column>
+<column name="re_buff_28_address0">out, 3, ap_memory, re_buff_28, array</column>
+<column name="re_buff_28_ce0">out, 1, ap_memory, re_buff_28, array</column>
+<column name="re_buff_28_q0">in, 32, ap_memory, re_buff_28, array</column>
+<column name="re_buff_29_address0">out, 3, ap_memory, re_buff_29, array</column>
+<column name="re_buff_29_ce0">out, 1, ap_memory, re_buff_29, array</column>
+<column name="re_buff_29_q0">in, 32, ap_memory, re_buff_29, array</column>
+<column name="re_buff_30_address0">out, 3, ap_memory, re_buff_30, array</column>
+<column name="re_buff_30_ce0">out, 1, ap_memory, re_buff_30, array</column>
+<column name="re_buff_30_q0">in, 32, ap_memory, re_buff_30, array</column>
+<column name="re_buff_31_address0">out, 3, ap_memory, re_buff_31, array</column>
+<column name="re_buff_31_ce0">out, 1, ap_memory, re_buff_31, array</column>
+<column name="re_buff_31_q0">in, 32, ap_memory, re_buff_31, array</column>
+<column name="re_buff_32_address0">out, 3, ap_memory, re_buff_32, array</column>
+<column name="re_buff_32_ce0">out, 1, ap_memory, re_buff_32, array</column>
+<column name="re_buff_32_q0">in, 32, ap_memory, re_buff_32, array</column>
+<column name="re_buff_33_address0">out, 3, ap_memory, re_buff_33, array</column>
+<column name="re_buff_33_ce0">out, 1, ap_memory, re_buff_33, array</column>
+<column name="re_buff_33_q0">in, 32, ap_memory, re_buff_33, array</column>
+<column name="re_buff_34_address0">out, 3, ap_memory, re_buff_34, array</column>
+<column name="re_buff_34_ce0">out, 1, ap_memory, re_buff_34, array</column>
+<column name="re_buff_34_q0">in, 32, ap_memory, re_buff_34, array</column>
+<column name="re_buff_35_address0">out, 3, ap_memory, re_buff_35, array</column>
+<column name="re_buff_35_ce0">out, 1, ap_memory, re_buff_35, array</column>
+<column name="re_buff_35_q0">in, 32, ap_memory, re_buff_35, array</column>
+<column name="re_buff_36_address0">out, 3, ap_memory, re_buff_36, array</column>
+<column name="re_buff_36_ce0">out, 1, ap_memory, re_buff_36, array</column>
+<column name="re_buff_36_q0">in, 32, ap_memory, re_buff_36, array</column>
+<column name="re_buff_37_address0">out, 3, ap_memory, re_buff_37, array</column>
+<column name="re_buff_37_ce0">out, 1, ap_memory, re_buff_37, array</column>
+<column name="re_buff_37_q0">in, 32, ap_memory, re_buff_37, array</column>
+<column name="re_buff_38_address0">out, 3, ap_memory, re_buff_38, array</column>
+<column name="re_buff_38_ce0">out, 1, ap_memory, re_buff_38, array</column>
+<column name="re_buff_38_q0">in, 32, ap_memory, re_buff_38, array</column>
+<column name="re_buff_39_address0">out, 3, ap_memory, re_buff_39, array</column>
+<column name="re_buff_39_ce0">out, 1, ap_memory, re_buff_39, array</column>
+<column name="re_buff_39_q0">in, 32, ap_memory, re_buff_39, array</column>
+<column name="re_buff_40_address0">out, 3, ap_memory, re_buff_40, array</column>
+<column name="re_buff_40_ce0">out, 1, ap_memory, re_buff_40, array</column>
+<column name="re_buff_40_q0">in, 32, ap_memory, re_buff_40, array</column>
+<column name="re_buff_41_address0">out, 3, ap_memory, re_buff_41, array</column>
+<column name="re_buff_41_ce0">out, 1, ap_memory, re_buff_41, array</column>
+<column name="re_buff_41_q0">in, 32, ap_memory, re_buff_41, array</column>
+<column name="re_buff_42_address0">out, 3, ap_memory, re_buff_42, array</column>
+<column name="re_buff_42_ce0">out, 1, ap_memory, re_buff_42, array</column>
+<column name="re_buff_42_q0">in, 32, ap_memory, re_buff_42, array</column>
+<column name="re_buff_43_address0">out, 3, ap_memory, re_buff_43, array</column>
+<column name="re_buff_43_ce0">out, 1, ap_memory, re_buff_43, array</column>
+<column name="re_buff_43_q0">in, 32, ap_memory, re_buff_43, array</column>
+<column name="re_buff_44_address0">out, 3, ap_memory, re_buff_44, array</column>
+<column name="re_buff_44_ce0">out, 1, ap_memory, re_buff_44, array</column>
+<column name="re_buff_44_q0">in, 32, ap_memory, re_buff_44, array</column>
+<column name="re_buff_45_address0">out, 3, ap_memory, re_buff_45, array</column>
+<column name="re_buff_45_ce0">out, 1, ap_memory, re_buff_45, array</column>
+<column name="re_buff_45_q0">in, 32, ap_memory, re_buff_45, array</column>
+<column name="re_buff_46_address0">out, 3, ap_memory, re_buff_46, array</column>
+<column name="re_buff_46_ce0">out, 1, ap_memory, re_buff_46, array</column>
+<column name="re_buff_46_q0">in, 32, ap_memory, re_buff_46, array</column>
+<column name="re_buff_47_address0">out, 3, ap_memory, re_buff_47, array</column>
+<column name="re_buff_47_ce0">out, 1, ap_memory, re_buff_47, array</column>
+<column name="re_buff_47_q0">in, 32, ap_memory, re_buff_47, array</column>
+<column name="re_buff_48_address0">out, 3, ap_memory, re_buff_48, array</column>
+<column name="re_buff_48_ce0">out, 1, ap_memory, re_buff_48, array</column>
+<column name="re_buff_48_q0">in, 32, ap_memory, re_buff_48, array</column>
+<column name="re_buff_49_address0">out, 3, ap_memory, re_buff_49, array</column>
+<column name="re_buff_49_ce0">out, 1, ap_memory, re_buff_49, array</column>
+<column name="re_buff_49_q0">in, 32, ap_memory, re_buff_49, array</column>
+<column name="re_buff_50_address0">out, 3, ap_memory, re_buff_50, array</column>
+<column name="re_buff_50_ce0">out, 1, ap_memory, re_buff_50, array</column>
+<column name="re_buff_50_q0">in, 32, ap_memory, re_buff_50, array</column>
+<column name="re_buff_51_address0">out, 3, ap_memory, re_buff_51, array</column>
+<column name="re_buff_51_ce0">out, 1, ap_memory, re_buff_51, array</column>
+<column name="re_buff_51_q0">in, 32, ap_memory, re_buff_51, array</column>
+<column name="re_buff_52_address0">out, 3, ap_memory, re_buff_52, array</column>
+<column name="re_buff_52_ce0">out, 1, ap_memory, re_buff_52, array</column>
+<column name="re_buff_52_q0">in, 32, ap_memory, re_buff_52, array</column>
+<column name="re_buff_53_address0">out, 3, ap_memory, re_buff_53, array</column>
+<column name="re_buff_53_ce0">out, 1, ap_memory, re_buff_53, array</column>
+<column name="re_buff_53_q0">in, 32, ap_memory, re_buff_53, array</column>
+<column name="re_buff_54_address0">out, 3, ap_memory, re_buff_54, array</column>
+<column name="re_buff_54_ce0">out, 1, ap_memory, re_buff_54, array</column>
+<column name="re_buff_54_q0">in, 32, ap_memory, re_buff_54, array</column>
+<column name="re_buff_55_address0">out, 3, ap_memory, re_buff_55, array</column>
+<column name="re_buff_55_ce0">out, 1, ap_memory, re_buff_55, array</column>
+<column name="re_buff_55_q0">in, 32, ap_memory, re_buff_55, array</column>
+<column name="re_buff_56_address0">out, 3, ap_memory, re_buff_56, array</column>
+<column name="re_buff_56_ce0">out, 1, ap_memory, re_buff_56, array</column>
+<column name="re_buff_56_q0">in, 32, ap_memory, re_buff_56, array</column>
+<column name="re_buff_57_address0">out, 3, ap_memory, re_buff_57, array</column>
+<column name="re_buff_57_ce0">out, 1, ap_memory, re_buff_57, array</column>
+<column name="re_buff_57_q0">in, 32, ap_memory, re_buff_57, array</column>
+<column name="re_buff_58_address0">out, 3, ap_memory, re_buff_58, array</column>
+<column name="re_buff_58_ce0">out, 1, ap_memory, re_buff_58, array</column>
+<column name="re_buff_58_q0">in, 32, ap_memory, re_buff_58, array</column>
+<column name="re_buff_59_address0">out, 3, ap_memory, re_buff_59, array</column>
+<column name="re_buff_59_ce0">out, 1, ap_memory, re_buff_59, array</column>
+<column name="re_buff_59_q0">in, 32, ap_memory, re_buff_59, array</column>
+<column name="re_buff_60_address0">out, 3, ap_memory, re_buff_60, array</column>
+<column name="re_buff_60_ce0">out, 1, ap_memory, re_buff_60, array</column>
+<column name="re_buff_60_q0">in, 32, ap_memory, re_buff_60, array</column>
+<column name="re_buff_61_address0">out, 3, ap_memory, re_buff_61, array</column>
+<column name="re_buff_61_ce0">out, 1, ap_memory, re_buff_61, array</column>
+<column name="re_buff_61_q0">in, 32, ap_memory, re_buff_61, array</column>
+<column name="re_buff_62_address0">out, 3, ap_memory, re_buff_62, array</column>
+<column name="re_buff_62_ce0">out, 1, ap_memory, re_buff_62, array</column>
+<column name="re_buff_62_q0">in, 32, ap_memory, re_buff_62, array</column>
+<column name="re_buff_63_address0">out, 3, ap_memory, re_buff_63, array</column>
+<column name="re_buff_63_ce0">out, 1, ap_memory, re_buff_63, array</column>
+<column name="re_buff_63_q0">in, 32, ap_memory, re_buff_63, array</column>
+<column name="re_buff_64_address0">out, 3, ap_memory, re_buff_64, array</column>
+<column name="re_buff_64_ce0">out, 1, ap_memory, re_buff_64, array</column>
+<column name="re_buff_64_q0">in, 32, ap_memory, re_buff_64, array</column>
+<column name="re_buff_65_address0">out, 3, ap_memory, re_buff_65, array</column>
+<column name="re_buff_65_ce0">out, 1, ap_memory, re_buff_65, array</column>
+<column name="re_buff_65_q0">in, 32, ap_memory, re_buff_65, array</column>
+<column name="re_buff_66_address0">out, 3, ap_memory, re_buff_66, array</column>
+<column name="re_buff_66_ce0">out, 1, ap_memory, re_buff_66, array</column>
+<column name="re_buff_66_q0">in, 32, ap_memory, re_buff_66, array</column>
+<column name="re_buff_67_address0">out, 3, ap_memory, re_buff_67, array</column>
+<column name="re_buff_67_ce0">out, 1, ap_memory, re_buff_67, array</column>
+<column name="re_buff_67_q0">in, 32, ap_memory, re_buff_67, array</column>
+<column name="re_buff_68_address0">out, 3, ap_memory, re_buff_68, array</column>
+<column name="re_buff_68_ce0">out, 1, ap_memory, re_buff_68, array</column>
+<column name="re_buff_68_q0">in, 32, ap_memory, re_buff_68, array</column>
+<column name="re_buff_69_address0">out, 3, ap_memory, re_buff_69, array</column>
+<column name="re_buff_69_ce0">out, 1, ap_memory, re_buff_69, array</column>
+<column name="re_buff_69_q0">in, 32, ap_memory, re_buff_69, array</column>
+<column name="re_buff_70_address0">out, 3, ap_memory, re_buff_70, array</column>
+<column name="re_buff_70_ce0">out, 1, ap_memory, re_buff_70, array</column>
+<column name="re_buff_70_q0">in, 32, ap_memory, re_buff_70, array</column>
+<column name="re_buff_71_address0">out, 3, ap_memory, re_buff_71, array</column>
+<column name="re_buff_71_ce0">out, 1, ap_memory, re_buff_71, array</column>
+<column name="re_buff_71_q0">in, 32, ap_memory, re_buff_71, array</column>
+<column name="re_buff_72_address0">out, 3, ap_memory, re_buff_72, array</column>
+<column name="re_buff_72_ce0">out, 1, ap_memory, re_buff_72, array</column>
+<column name="re_buff_72_q0">in, 32, ap_memory, re_buff_72, array</column>
+<column name="re_buff_73_address0">out, 3, ap_memory, re_buff_73, array</column>
+<column name="re_buff_73_ce0">out, 1, ap_memory, re_buff_73, array</column>
+<column name="re_buff_73_q0">in, 32, ap_memory, re_buff_73, array</column>
+<column name="re_buff_74_address0">out, 3, ap_memory, re_buff_74, array</column>
+<column name="re_buff_74_ce0">out, 1, ap_memory, re_buff_74, array</column>
+<column name="re_buff_74_q0">in, 32, ap_memory, re_buff_74, array</column>
+<column name="re_buff_75_address0">out, 3, ap_memory, re_buff_75, array</column>
+<column name="re_buff_75_ce0">out, 1, ap_memory, re_buff_75, array</column>
+<column name="re_buff_75_q0">in, 32, ap_memory, re_buff_75, array</column>
+<column name="re_buff_76_address0">out, 3, ap_memory, re_buff_76, array</column>
+<column name="re_buff_76_ce0">out, 1, ap_memory, re_buff_76, array</column>
+<column name="re_buff_76_q0">in, 32, ap_memory, re_buff_76, array</column>
+<column name="re_buff_77_address0">out, 3, ap_memory, re_buff_77, array</column>
+<column name="re_buff_77_ce0">out, 1, ap_memory, re_buff_77, array</column>
+<column name="re_buff_77_q0">in, 32, ap_memory, re_buff_77, array</column>
+<column name="re_buff_78_address0">out, 3, ap_memory, re_buff_78, array</column>
+<column name="re_buff_78_ce0">out, 1, ap_memory, re_buff_78, array</column>
+<column name="re_buff_78_q0">in, 32, ap_memory, re_buff_78, array</column>
+<column name="re_buff_79_address0">out, 3, ap_memory, re_buff_79, array</column>
+<column name="re_buff_79_ce0">out, 1, ap_memory, re_buff_79, array</column>
+<column name="re_buff_79_q0">in, 32, ap_memory, re_buff_79, array</column>
+<column name="re_buff_80_address0">out, 3, ap_memory, re_buff_80, array</column>
+<column name="re_buff_80_ce0">out, 1, ap_memory, re_buff_80, array</column>
+<column name="re_buff_80_q0">in, 32, ap_memory, re_buff_80, array</column>
+<column name="re_buff_81_address0">out, 3, ap_memory, re_buff_81, array</column>
+<column name="re_buff_81_ce0">out, 1, ap_memory, re_buff_81, array</column>
+<column name="re_buff_81_q0">in, 32, ap_memory, re_buff_81, array</column>
+<column name="re_buff_82_address0">out, 3, ap_memory, re_buff_82, array</column>
+<column name="re_buff_82_ce0">out, 1, ap_memory, re_buff_82, array</column>
+<column name="re_buff_82_q0">in, 32, ap_memory, re_buff_82, array</column>
+<column name="re_buff_83_address0">out, 3, ap_memory, re_buff_83, array</column>
+<column name="re_buff_83_ce0">out, 1, ap_memory, re_buff_83, array</column>
+<column name="re_buff_83_q0">in, 32, ap_memory, re_buff_83, array</column>
+<column name="re_buff_84_address0">out, 3, ap_memory, re_buff_84, array</column>
+<column name="re_buff_84_ce0">out, 1, ap_memory, re_buff_84, array</column>
+<column name="re_buff_84_q0">in, 32, ap_memory, re_buff_84, array</column>
+<column name="re_buff_85_address0">out, 3, ap_memory, re_buff_85, array</column>
+<column name="re_buff_85_ce0">out, 1, ap_memory, re_buff_85, array</column>
+<column name="re_buff_85_q0">in, 32, ap_memory, re_buff_85, array</column>
+<column name="re_buff_86_address0">out, 3, ap_memory, re_buff_86, array</column>
+<column name="re_buff_86_ce0">out, 1, ap_memory, re_buff_86, array</column>
+<column name="re_buff_86_q0">in, 32, ap_memory, re_buff_86, array</column>
+<column name="re_buff_87_address0">out, 3, ap_memory, re_buff_87, array</column>
+<column name="re_buff_87_ce0">out, 1, ap_memory, re_buff_87, array</column>
+<column name="re_buff_87_q0">in, 32, ap_memory, re_buff_87, array</column>
+<column name="re_buff_88_address0">out, 3, ap_memory, re_buff_88, array</column>
+<column name="re_buff_88_ce0">out, 1, ap_memory, re_buff_88, array</column>
+<column name="re_buff_88_q0">in, 32, ap_memory, re_buff_88, array</column>
+<column name="re_buff_89_address0">out, 3, ap_memory, re_buff_89, array</column>
+<column name="re_buff_89_ce0">out, 1, ap_memory, re_buff_89, array</column>
+<column name="re_buff_89_q0">in, 32, ap_memory, re_buff_89, array</column>
+<column name="re_buff_90_address0">out, 3, ap_memory, re_buff_90, array</column>
+<column name="re_buff_90_ce0">out, 1, ap_memory, re_buff_90, array</column>
+<column name="re_buff_90_q0">in, 32, ap_memory, re_buff_90, array</column>
+<column name="re_buff_91_address0">out, 3, ap_memory, re_buff_91, array</column>
+<column name="re_buff_91_ce0">out, 1, ap_memory, re_buff_91, array</column>
+<column name="re_buff_91_q0">in, 32, ap_memory, re_buff_91, array</column>
+<column name="re_buff_92_address0">out, 3, ap_memory, re_buff_92, array</column>
+<column name="re_buff_92_ce0">out, 1, ap_memory, re_buff_92, array</column>
+<column name="re_buff_92_q0">in, 32, ap_memory, re_buff_92, array</column>
+<column name="re_buff_93_address0">out, 3, ap_memory, re_buff_93, array</column>
+<column name="re_buff_93_ce0">out, 1, ap_memory, re_buff_93, array</column>
+<column name="re_buff_93_q0">in, 32, ap_memory, re_buff_93, array</column>
+<column name="re_buff_94_address0">out, 3, ap_memory, re_buff_94, array</column>
+<column name="re_buff_94_ce0">out, 1, ap_memory, re_buff_94, array</column>
+<column name="re_buff_94_q0">in, 32, ap_memory, re_buff_94, array</column>
+<column name="re_buff_95_address0">out, 3, ap_memory, re_buff_95, array</column>
+<column name="re_buff_95_ce0">out, 1, ap_memory, re_buff_95, array</column>
+<column name="re_buff_95_q0">in, 32, ap_memory, re_buff_95, array</column>
+<column name="re_buff_96_address0">out, 3, ap_memory, re_buff_96, array</column>
+<column name="re_buff_96_ce0">out, 1, ap_memory, re_buff_96, array</column>
+<column name="re_buff_96_q0">in, 32, ap_memory, re_buff_96, array</column>
+<column name="re_buff_97_address0">out, 3, ap_memory, re_buff_97, array</column>
+<column name="re_buff_97_ce0">out, 1, ap_memory, re_buff_97, array</column>
+<column name="re_buff_97_q0">in, 32, ap_memory, re_buff_97, array</column>
+<column name="re_buff_98_address0">out, 3, ap_memory, re_buff_98, array</column>
+<column name="re_buff_98_ce0">out, 1, ap_memory, re_buff_98, array</column>
+<column name="re_buff_98_q0">in, 32, ap_memory, re_buff_98, array</column>
+<column name="re_buff_99_address0">out, 3, ap_memory, re_buff_99, array</column>
+<column name="re_buff_99_ce0">out, 1, ap_memory, re_buff_99, array</column>
+<column name="re_buff_99_q0">in, 32, ap_memory, re_buff_99, array</column>
+<column name="re_buff_100_address0">out, 3, ap_memory, re_buff_100, array</column>
+<column name="re_buff_100_ce0">out, 1, ap_memory, re_buff_100, array</column>
+<column name="re_buff_100_q0">in, 32, ap_memory, re_buff_100, array</column>
+<column name="re_buff_101_address0">out, 3, ap_memory, re_buff_101, array</column>
+<column name="re_buff_101_ce0">out, 1, ap_memory, re_buff_101, array</column>
+<column name="re_buff_101_q0">in, 32, ap_memory, re_buff_101, array</column>
+<column name="re_buff_102_address0">out, 3, ap_memory, re_buff_102, array</column>
+<column name="re_buff_102_ce0">out, 1, ap_memory, re_buff_102, array</column>
+<column name="re_buff_102_q0">in, 32, ap_memory, re_buff_102, array</column>
+<column name="re_buff_103_address0">out, 3, ap_memory, re_buff_103, array</column>
+<column name="re_buff_103_ce0">out, 1, ap_memory, re_buff_103, array</column>
+<column name="re_buff_103_q0">in, 32, ap_memory, re_buff_103, array</column>
+<column name="re_buff_104_address0">out, 3, ap_memory, re_buff_104, array</column>
+<column name="re_buff_104_ce0">out, 1, ap_memory, re_buff_104, array</column>
+<column name="re_buff_104_q0">in, 32, ap_memory, re_buff_104, array</column>
+<column name="re_buff_105_address0">out, 3, ap_memory, re_buff_105, array</column>
+<column name="re_buff_105_ce0">out, 1, ap_memory, re_buff_105, array</column>
+<column name="re_buff_105_q0">in, 32, ap_memory, re_buff_105, array</column>
+<column name="re_buff_106_address0">out, 3, ap_memory, re_buff_106, array</column>
+<column name="re_buff_106_ce0">out, 1, ap_memory, re_buff_106, array</column>
+<column name="re_buff_106_q0">in, 32, ap_memory, re_buff_106, array</column>
+<column name="re_buff_107_address0">out, 3, ap_memory, re_buff_107, array</column>
+<column name="re_buff_107_ce0">out, 1, ap_memory, re_buff_107, array</column>
+<column name="re_buff_107_q0">in, 32, ap_memory, re_buff_107, array</column>
+<column name="re_buff_108_address0">out, 3, ap_memory, re_buff_108, array</column>
+<column name="re_buff_108_ce0">out, 1, ap_memory, re_buff_108, array</column>
+<column name="re_buff_108_q0">in, 32, ap_memory, re_buff_108, array</column>
+<column name="re_buff_109_address0">out, 3, ap_memory, re_buff_109, array</column>
+<column name="re_buff_109_ce0">out, 1, ap_memory, re_buff_109, array</column>
+<column name="re_buff_109_q0">in, 32, ap_memory, re_buff_109, array</column>
+<column name="re_buff_110_address0">out, 3, ap_memory, re_buff_110, array</column>
+<column name="re_buff_110_ce0">out, 1, ap_memory, re_buff_110, array</column>
+<column name="re_buff_110_q0">in, 32, ap_memory, re_buff_110, array</column>
+<column name="re_buff_111_address0">out, 3, ap_memory, re_buff_111, array</column>
+<column name="re_buff_111_ce0">out, 1, ap_memory, re_buff_111, array</column>
+<column name="re_buff_111_q0">in, 32, ap_memory, re_buff_111, array</column>
+<column name="re_buff_112_address0">out, 3, ap_memory, re_buff_112, array</column>
+<column name="re_buff_112_ce0">out, 1, ap_memory, re_buff_112, array</column>
+<column name="re_buff_112_q0">in, 32, ap_memory, re_buff_112, array</column>
+<column name="re_buff_113_address0">out, 3, ap_memory, re_buff_113, array</column>
+<column name="re_buff_113_ce0">out, 1, ap_memory, re_buff_113, array</column>
+<column name="re_buff_113_q0">in, 32, ap_memory, re_buff_113, array</column>
+<column name="re_buff_114_address0">out, 3, ap_memory, re_buff_114, array</column>
+<column name="re_buff_114_ce0">out, 1, ap_memory, re_buff_114, array</column>
+<column name="re_buff_114_q0">in, 32, ap_memory, re_buff_114, array</column>
+<column name="re_buff_115_address0">out, 3, ap_memory, re_buff_115, array</column>
+<column name="re_buff_115_ce0">out, 1, ap_memory, re_buff_115, array</column>
+<column name="re_buff_115_q0">in, 32, ap_memory, re_buff_115, array</column>
+<column name="re_buff_116_address0">out, 3, ap_memory, re_buff_116, array</column>
+<column name="re_buff_116_ce0">out, 1, ap_memory, re_buff_116, array</column>
+<column name="re_buff_116_q0">in, 32, ap_memory, re_buff_116, array</column>
+<column name="re_buff_117_address0">out, 3, ap_memory, re_buff_117, array</column>
+<column name="re_buff_117_ce0">out, 1, ap_memory, re_buff_117, array</column>
+<column name="re_buff_117_q0">in, 32, ap_memory, re_buff_117, array</column>
+<column name="re_buff_118_address0">out, 3, ap_memory, re_buff_118, array</column>
+<column name="re_buff_118_ce0">out, 1, ap_memory, re_buff_118, array</column>
+<column name="re_buff_118_q0">in, 32, ap_memory, re_buff_118, array</column>
+<column name="re_buff_119_address0">out, 3, ap_memory, re_buff_119, array</column>
+<column name="re_buff_119_ce0">out, 1, ap_memory, re_buff_119, array</column>
+<column name="re_buff_119_q0">in, 32, ap_memory, re_buff_119, array</column>
+<column name="re_buff_120_address0">out, 3, ap_memory, re_buff_120, array</column>
+<column name="re_buff_120_ce0">out, 1, ap_memory, re_buff_120, array</column>
+<column name="re_buff_120_q0">in, 32, ap_memory, re_buff_120, array</column>
+<column name="re_buff_121_address0">out, 3, ap_memory, re_buff_121, array</column>
+<column name="re_buff_121_ce0">out, 1, ap_memory, re_buff_121, array</column>
+<column name="re_buff_121_q0">in, 32, ap_memory, re_buff_121, array</column>
+<column name="re_buff_122_address0">out, 3, ap_memory, re_buff_122, array</column>
+<column name="re_buff_122_ce0">out, 1, ap_memory, re_buff_122, array</column>
+<column name="re_buff_122_q0">in, 32, ap_memory, re_buff_122, array</column>
+<column name="re_buff_123_address0">out, 3, ap_memory, re_buff_123, array</column>
+<column name="re_buff_123_ce0">out, 1, ap_memory, re_buff_123, array</column>
+<column name="re_buff_123_q0">in, 32, ap_memory, re_buff_123, array</column>
+<column name="re_buff_124_address0">out, 3, ap_memory, re_buff_124, array</column>
+<column name="re_buff_124_ce0">out, 1, ap_memory, re_buff_124, array</column>
+<column name="re_buff_124_q0">in, 32, ap_memory, re_buff_124, array</column>
+<column name="re_buff_125_address0">out, 3, ap_memory, re_buff_125, array</column>
+<column name="re_buff_125_ce0">out, 1, ap_memory, re_buff_125, array</column>
+<column name="re_buff_125_q0">in, 32, ap_memory, re_buff_125, array</column>
+<column name="re_buff_126_address0">out, 3, ap_memory, re_buff_126, array</column>
+<column name="re_buff_126_ce0">out, 1, ap_memory, re_buff_126, array</column>
+<column name="re_buff_126_q0">in, 32, ap_memory, re_buff_126, array</column>
+<column name="re_buff_127_address0">out, 3, ap_memory, re_buff_127, array</column>
+<column name="re_buff_127_ce0">out, 1, ap_memory, re_buff_127, array</column>
+<column name="re_buff_127_q0">in, 32, ap_memory, re_buff_127, array</column>
+</table>
+</item>
+</section>
+</profile>

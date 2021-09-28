@@ -1,0 +1,478 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1510] Running: create_clock -period 10 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [Common 17-206] Exiting vitis_hls at Thu Sep 16 15:45:02 2021...
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.015 seconds; current allocated memory: 862.910 MB.
+INFO: [HLS 200-10] Analyzing design file 'streamMul.cpp' ... 
+ERROR: [HLS 207-3796] unknown type name 'axis_t': streamMul.cpp:3:50
+ERROR: [HLS 207-3796] unknown type name 'axis_t': streamMul.cpp:3:65
+WARNING: [HLS 207-5519] invalid variable expr : streamMul.cpp:6:42
+WARNING: [HLS 207-5519] invalid variable expr : streamMul.cpp:7:42
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 3.349 seconds; current allocated memory: 84.611 MB.
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 4.218 seconds; peak allocated memory: 862.910 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.016 seconds; current allocated memory: 862.910 MB.
+INFO: [HLS 200-10] Analyzing design file 'streamMul.cpp' ... 
+ERROR: [HLS 214-122] '#pragma HLS' is only allowed in function scope: streamMul.cpp:5
+ERROR: [HLS 214-122] '#pragma HLS' is only allowed in function scope: streamMul.cpp:6
+ERROR: [HLS 214-122] '#pragma HLS' is only allowed in function scope: streamMul.cpp:7
+ERROR: [HLS 214-123] expected unqualified-id: streamMul.cpp:9
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.203 seconds; current allocated memory: 84.626 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 3.067 seconds; peak allocated memory: 862.910 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.013 seconds; current allocated memory: 862.910 MB.
+INFO: [HLS 200-10] Analyzing design file 'streamMul.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 3.303 seconds; current allocated memory: 84.628 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>::read(hls::axis<ap_int<32>, 0ul, 0ul, 0ul>&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:283:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>::read(hls::axis<ap_int<32>, 0ul, 0ul, 0ul>&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:286:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>::read(hls::axis<ap_int<32>, 0ul, 0ul, 0ul>&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:285:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>::read(hls::axis<ap_int<32>, 0ul, 0ul, 0ul>&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:285:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>::read(hls::axis<ap_int<32>, 0ul, 0ul, 0ul>&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:284:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>::read(hls::axis<ap_int<32>, 0ul, 0ul, 0ul>&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:284:23)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<64, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<32, true>::RType<32, true>::mult operator*<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1345:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<64, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<32, true>::RType<32, true>::mult operator*<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1345:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<32, true>::RType<($_0)32, true>::mult operator*<32, true>(ap_int_base<32, true> const&, int)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1461:483)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<32, true>::mult operator*<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' into 'ap_int_base<32, true>::RType<($_0)32, true>::mult operator*<32, true>(ap_int_base<32, true> const&, int)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1461:481)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_int<32>, 0ul, 0ul, 0ul> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:304:51)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_int<32>, 0ul, 0ul, 0ul> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:307:26)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_int<32>, 0ul, 0ul, 0ul> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:306:68)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_int<32>, 0ul, 0ul, 0ul> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:306:37)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_int<32>, 0ul, 0ul, 0ul> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:305:40)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_int<32>, 0ul, 0ul, 0ul> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:305:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>::read(hls::axis<ap_int<32>, 0ul, 0ul, 0ul>&)' into 'smul(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>&, unsigned int)' (streamMul.cpp:11:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_int<32>, 0ul, 0ul, 0ul> const&)' into 'smul(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>&, unsigned int)' (streamMul.cpp:13:10)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<($_0)32, true>::mult operator*<32, true>(ap_int_base<32, true> const&, int)' into 'smul(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>&, unsigned int)' (streamMul.cpp:12:23)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 3.67 seconds; current allocated memory: 85.848 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.008 seconds; current allocated memory: 85.849 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.057 seconds; current allocated memory: 92.722 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.088 seconds; current allocated memory: 101.786 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_9_1' (streamMul.cpp:9) in function 'smul' automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.158 seconds; current allocated memory: 132.461 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.089 seconds; current allocated memory: 129.233 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'smul' ...
+WARNING: [SYN 201-107] Renaming port name 'smul/length' to 'smul/length_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'smul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_9_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_9_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.058 seconds; current allocated memory: 129.385 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.046 seconds; current allocated memory: 129.540 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'smul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'smul/INPUT_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'smul/INPUT_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'smul/INPUT_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'smul/INPUT_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'smul/OUTPUT_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'smul/OUTPUT_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'smul/OUTPUT_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'smul/OUTPUT_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'smul/length_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'smul' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'length_r' to AXI-Lite port CTRL.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'smul'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.087 seconds; current allocated memory: 130.029 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.688 seconds; current allocated memory: 136.977 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for smul.
+INFO: [VLOG 209-307] Generating Verilog RTL for smul.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 391.85 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 8.349 seconds; current allocated memory: 137.186 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 9.217 seconds; peak allocated memory: 862.910 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file streamMul/solution1/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 4.046 seconds; current allocated memory: 91.633 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: set_directive_top -name smul smul 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 3.717 seconds; current allocated memory: 83.829 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: set_directive_top -name smul smul 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 3.242 seconds; current allocated memory: 83.822 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: set_directive_top -name smul smul 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 1.82 seconds; current allocated memory: 83.828 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: set_directive_top -name smul smul 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 1.819 seconds; current allocated memory: 83.828 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: set_directive_top -name smul smul 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.818 seconds; current allocated memory: 83.828 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: set_directive_top -name smul smul 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 1.861 seconds; current allocated memory: 83.828 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: set_directive_top -name smul smul 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 1.834 seconds; current allocated memory: 83.827 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: set_directive_top -name smul smul 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.017 seconds; current allocated memory: 863.310 MB.
+INFO: [HLS 200-10] Analyzing design file 'streamMul.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 3.326 seconds; current allocated memory: 85.159 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>::read(hls::axis<ap_int<32>, 0ul, 0ul, 0ul>&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:283:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>::read(hls::axis<ap_int<32>, 0ul, 0ul, 0ul>&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:286:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>::read(hls::axis<ap_int<32>, 0ul, 0ul, 0ul>&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:285:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>::read(hls::axis<ap_int<32>, 0ul, 0ul, 0ul>&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:285:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>::read(hls::axis<ap_int<32>, 0ul, 0ul, 0ul>&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:284:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>::read(hls::axis<ap_int<32>, 0ul, 0ul, 0ul>&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:284:23)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<64, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<32, true>::RType<32, true>::mult operator*<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1345:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<64, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<32, true>::RType<32, true>::mult operator*<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1345:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<32, true>::RType<($_0)32, true>::mult operator*<32, true>(ap_int_base<32, true> const&, int)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1461:483)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<32, true>::mult operator*<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' into 'ap_int_base<32, true>::RType<($_0)32, true>::mult operator*<32, true>(ap_int_base<32, true> const&, int)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1461:481)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_int<32>, 0ul, 0ul, 0ul> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:304:51)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_int<32>, 0ul, 0ul, 0ul> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:307:26)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_int<32>, 0ul, 0ul, 0ul> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:306:68)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_int<32>, 0ul, 0ul, 0ul> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:306:37)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_int<32>, 0ul, 0ul, 0ul> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:305:40)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_int<32>, 0ul, 0ul, 0ul> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:305:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>::read(hls::axis<ap_int<32>, 0ul, 0ul, 0ul>&)' into 'smul(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>&, unsigned int)' (streamMul.cpp:11:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_int<32>, 0ul, 0ul, 0ul> const&)' into 'smul(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>&, unsigned int)' (streamMul.cpp:17:10)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<($_0)32, true>::mult operator*<32, true>(ap_int_base<32, true> const&, int)' into 'smul(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>&, unsigned int)' (streamMul.cpp:12:22)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 3.693 seconds; current allocated memory: 86.720 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.007 seconds; current allocated memory: 86.721 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.064 seconds; current allocated memory: 93.630 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.093 seconds; current allocated memory: 102.668 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_9_1' (streamMul.cpp:9) in function 'smul' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_14_2' (streamMul.cpp:14) in function 'smul' automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.171 seconds; current allocated memory: 133.370 MB.
+INFO: [HLS 200-472] Inferring partial write operation for 'buff.V' (streamMul.cpp:12:11)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.096 seconds; current allocated memory: 130.269 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'smul' ...
+WARNING: [SYN 201-107] Renaming port name 'smul/length' to 'smul/length_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'smul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_9_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'VITIS_LOOP_9_1'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_14_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_14_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.074 seconds; current allocated memory: 130.472 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.056 seconds; current allocated memory: 130.678 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'smul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'smul/INPUT_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'smul/INPUT_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'smul/INPUT_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'smul/INPUT_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'smul/OUTPUT_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'smul/OUTPUT_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'smul/OUTPUT_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'smul/OUTPUT_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'smul/length_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'smul' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'length_r' to AXI-Lite port CTRL.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'smul'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.101 seconds; current allocated memory: 131.238 MB.
+INFO: [RTMG 210-278] Implementing memory 'smul_buff_V_ram (RAM)' using auto RAMs.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.773 seconds; current allocated memory: 139.060 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for smul.
+INFO: [VLOG 209-307] Generating Verilog RTL for smul.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 174.61 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 8.561 seconds; current allocated memory: 139.266 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 9.524 seconds; peak allocated memory: 863.310 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: set_directive_top -name smul smul 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.997 seconds; current allocated memory: 83.838 MB.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: set_directive_top -name smul smul 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.018 seconds; current allocated memory: 863.310 MB.
+INFO: [HLS 200-10] Analyzing design file 'streamMul.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 3.736 seconds; current allocated memory: 85.159 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>::read(hls::axis<ap_int<32>, 0ul, 0ul, 0ul>&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:283:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>::read(hls::axis<ap_int<32>, 0ul, 0ul, 0ul>&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:286:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>::read(hls::axis<ap_int<32>, 0ul, 0ul, 0ul>&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:285:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>::read(hls::axis<ap_int<32>, 0ul, 0ul, 0ul>&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:285:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>::read(hls::axis<ap_int<32>, 0ul, 0ul, 0ul>&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:284:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>::read(hls::axis<ap_int<32>, 0ul, 0ul, 0ul>&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:284:23)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<64, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<32, true>::RType<32, true>::mult operator*<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1345:339)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<64, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<32, true>::RType<32, true>::mult operator*<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1345:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<32, true>::RType<($_0)32, true>::mult operator*<32, true>(ap_int_base<32, true> const&, int)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1461:483)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<32, true>::mult operator*<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)' into 'ap_int_base<32, true>::RType<($_0)32, true>::mult operator*<32, true>(ap_int_base<32, true> const&, int)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1461:481)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_int<32>, 0ul, 0ul, 0ul> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:304:51)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_int<32>, 0ul, 0ul, 0ul> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:307:26)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_int<32>, 0ul, 0ul, 0ul> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:306:68)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_int<32>, 0ul, 0ul, 0ul> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:306:37)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_int<32>, 0ul, 0ul, 0ul> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:305:40)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<32>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_int<32>, 0ul, 0ul, 0ul> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:305:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>::read(hls::axis<ap_int<32>, 0ul, 0ul, 0ul>&)' into 'smul(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>&, unsigned int)' (streamMul.cpp:11:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_int<32>, 0ul, 0ul, 0ul> const&)' into 'smul(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>&, unsigned int)' (streamMul.cpp:17:10)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::RType<($_0)32, true>::mult operator*<32, true>(ap_int_base<32, true> const&, int)' into 'smul(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul>, 0>&, unsigned int)' (streamMul.cpp:12:22)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 3.783 seconds; current allocated memory: 86.720 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.007 seconds; current allocated memory: 86.721 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 93.630 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.089 seconds; current allocated memory: 102.668 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_9_1' (streamMul.cpp:9) in function 'smul' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_14_2' (streamMul.cpp:14) in function 'smul' automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.171 seconds; current allocated memory: 133.370 MB.
+INFO: [HLS 200-472] Inferring partial write operation for 'buff.V' (streamMul.cpp:12:11)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.098 seconds; current allocated memory: 130.269 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'smul' ...
+WARNING: [SYN 201-107] Renaming port name 'smul/length' to 'smul/length_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'smul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_9_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'VITIS_LOOP_9_1'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_14_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_14_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.073 seconds; current allocated memory: 130.472 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.056 seconds; current allocated memory: 130.678 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'smul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'smul/INPUT_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'smul/INPUT_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'smul/INPUT_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'smul/INPUT_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'smul/OUTPUT_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'smul/OUTPUT_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'smul/OUTPUT_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'smul/OUTPUT_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'smul/length_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'smul' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'length_r' to AXI-Lite port CTRL.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'smul'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 131.238 MB.
+INFO: [RTMG 210-278] Implementing memory 'smul_buff_V_ram (RAM)' using auto RAMs.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.752 seconds; current allocated memory: 139.060 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for smul.
+INFO: [VLOG 209-307] Generating Verilog RTL for smul.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 174.61 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 9.032 seconds; current allocated memory: 139.266 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 10.008 seconds; peak allocated memory: 863.310 MB.

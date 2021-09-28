@@ -1,0 +1,454 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue Sep 28 07:47:15 2021
+# Process ID: 5764
+# Current directory: /mnt/c/Xilinx/Projects/DFT_v
+# Command line: vivado
+# Log file: /mnt/c/Xilinx/Projects/DFT_v/vivado.log
+# Journal file: /mnt/c/Xilinx/Projects/DFT_v/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /mnt/c/Xilinx/Projects/DFT_v/DFT_v.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/mnt/c/Xilinx/Projects/DFT/dft_1024_precomputed'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2021.1/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'design_1.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+design_1_dft_0_2
+
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:07 . Memory (MB): peak = 7482.395 ; gain = 82.480 ; free physical = 7655 ; free virtual = 13737
+open_bd_design {/mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file </mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- xilinx.com:hls:dft:1.0 - dft_0
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Successfully read diagram <design_1> from block design file </mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/design_1.bd>
+update_compile_order -fileset sources_1
+delete_bd_objs [get_bd_intf_nets processing_system7_0_FIXED_IO] [get_bd_intf_nets processing_system7_0_DDR] [get_bd_cells processing_system7_0]
+delete_bd_objs [get_bd_cells dft_0]
+save_bd_design
+Wrote  : </mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+update_ip_catalog -rebuild -repo_path /mnt/c/Xilinx/Projects/DFT/dft_1024_precomputed
+INFO: [IP_Flow 19-725] Reloaded user IP repository '/mnt/c/Xilinx/Projects/DFT/dft_1024_precomputed'
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:dft:1.0 dft_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.051 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.006 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.051 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.006 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.051 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.006 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+startgroup
+set_property -dict [list CONFIG.PCW_USE_S_AXI_HP0 {1} CONFIG.PCW_USE_S_AXI_HP1 {1}] [get_bd_cells processing_system7_0]
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.051 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.006 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/dft_0/s_axi_control} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins dft_0/s_axi_control]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+Slave segment '/dft_0/s_axi_control/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x4000_0000 [ 64K ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/dft_0/m_axi_gmem} Slave {/processing_system7_0/S_AXI_HP0} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins processing_system7_0/S_AXI_HP0]
+Slave segment '/processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM' is being assigned into address space '/dft_0/Data_m_axi_gmem' at <0x0000_0000 [ 512M ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/dft_0/m_axi_gmem} Slave {/processing_system7_0/S_AXI_HP1} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins processing_system7_0/S_AXI_HP1]
+CRITICAL WARNING: [BD 41-1359] Failed to assign slave segment '/processing_system7_0/S_AXI_HP1/HP1_DDR_LOWOCM' into address space '/dft_0/Data_m_axi_gmem'.
+endgroup
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: /mnt/c/Xilinx/Projects/DFT/dft_1024_precomputed/hls/solution1/impl/ip/component.xml. It will be created.
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/mnt/c/Xilinx/Projects/DFT/dft_1024_precomputed'.
+report_ip_status -name ip_status
+delete_bd_objs [get_bd_intf_nets dft_0_m_axi_gmem] [get_bd_intf_nets ps7_0_axi_periph_M00_AXI] [get_bd_cells dft_0]
+delete_bd_objs [get_bd_nets processing_system7_0_FCLK_RESET0_N] [get_bd_cells rst_ps7_0_100M]
+delete_bd_objs [get_bd_intf_nets axi_mem_intercon_M01_AXI] [get_bd_intf_nets axi_mem_intercon_M00_AXI] [get_bd_cells axi_mem_intercon]
+delete_bd_objs [get_bd_nets rst_ps7_0_100M_peripheral_aresetn] [get_bd_intf_nets processing_system7_0_M_AXI_GP0] [get_bd_cells ps7_0_axi_periph]
+delete_bd_objs [get_bd_nets processing_system7_0_FCLK_CLK0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:dft:1.0 dft_0
+endgroup
+report_ip_status -name ip_status 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.051 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.006 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/dft_0/s_axi_control} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins dft_0/s_axi_control]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+Slave segment '/dft_0/s_axi_control/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x4000_0000 [ 64K ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/dft_0/m_axi_input_re_r} Slave {/processing_system7_0/S_AXI_HP0} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins processing_system7_0/S_AXI_HP0]
+Slave segment '/processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM' is being assigned into address space '/dft_0/Data_m_axi_input_re_r' at <0x0000_0000 [ 512M ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/dft_0/m_axi_input_im_r} Slave {/processing_system7_0/S_AXI_HP1} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins processing_system7_0/S_AXI_HP1]
+Slave segment '/processing_system7_0/S_AXI_HP1/HP1_DDR_LOWOCM' is being assigned into address space '/dft_0/Data_m_axi_input_im_r' at <0x0000_0000 [ 512M ]>.
+endgroup
+report_ip_status -name ip_status 
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_slave {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/dft_0/m_axi_output_im_r} Slave {/processing_system7_0/S_AXI_HP1} ddr_seg {Auto} intc_ip {/axi_mem_intercon_1} master_apm {0}}  [get_bd_intf_pins dft_0/m_axi_output_im_r]
+Slave segment '/processing_system7_0/S_AXI_HP1/HP1_DDR_LOWOCM' is being assigned into address space '/dft_0/Data_m_axi_output_im_r' at <0x0000_0000 [ 512M ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_slave {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/dft_0/m_axi_output_re_r} Slave {/processing_system7_0/S_AXI_HP0} ddr_seg {Auto} intc_ip {/axi_mem_intercon} master_apm {0}}  [get_bd_intf_pins dft_0/m_axi_output_re_r]
+Slave segment '/processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM' is being assigned into address space '/dft_0/Data_m_axi_output_re_r' at <0x0000_0000 [ 512M ]>.
+endgroup
+validate_bd_design
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_S_AXI_HP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_S_AXI_HP1_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+save_bd_design
+Wrote  : </mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s00_couplers/auto_us/s_axi_arlock'(1) to pin: '/axi_mem_intercon/s00_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s00_couplers/auto_us/s_axi_awlock'(1) to pin: '/axi_mem_intercon/s00_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s01_couplers/auto_us/s_axi_awlock'(1) to pin: '/axi_mem_intercon/s01_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s01_couplers/auto_us/s_axi_arlock'(1) to pin: '/axi_mem_intercon/s01_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(1) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(1) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/s00_couplers/auto_us/s_axi_arlock'(1) to pin: '/axi_mem_intercon_1/s00_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/s00_couplers/auto_us/s_axi_awlock'(1) to pin: '/axi_mem_intercon_1/s00_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/s01_couplers/auto_us/s_axi_awlock'(1) to pin: '/axi_mem_intercon_1/s01_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/s01_couplers/auto_us/s_axi_arlock'(1) to pin: '/axi_mem_intercon_1/s01_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/m00_couplers/auto_pc/m_axi_bid'(1) to pin: '/axi_mem_intercon_1/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/m00_couplers/auto_pc/m_axi_rid'(1) to pin: '/axi_mem_intercon_1/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/axi_mem_intercon/M00_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to pin: '/axi_mem_intercon/M00_AXI_wid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/axi_mem_intercon/M00_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_AWID'(6) to pin: '/axi_mem_intercon_1/M00_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_WID'(6) to pin: '/axi_mem_intercon_1/M00_AXI_wid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_ARID'(6) to pin: '/axi_mem_intercon_1/M00_AXI_arid'(1) - Only lower order bits will be connected.
+VHDL Output written to : /mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s00_couplers/auto_us/s_axi_arlock'(1) to pin: '/axi_mem_intercon/s00_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s00_couplers/auto_us/s_axi_awlock'(1) to pin: '/axi_mem_intercon/s00_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s01_couplers/auto_us/s_axi_awlock'(1) to pin: '/axi_mem_intercon/s01_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s01_couplers/auto_us/s_axi_arlock'(1) to pin: '/axi_mem_intercon/s01_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(1) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(1) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/s00_couplers/auto_us/s_axi_arlock'(1) to pin: '/axi_mem_intercon_1/s00_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/s00_couplers/auto_us/s_axi_awlock'(1) to pin: '/axi_mem_intercon_1/s00_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/s01_couplers/auto_us/s_axi_awlock'(1) to pin: '/axi_mem_intercon_1/s01_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/s01_couplers/auto_us/s_axi_arlock'(1) to pin: '/axi_mem_intercon_1/s01_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/m00_couplers/auto_pc/m_axi_bid'(1) to pin: '/axi_mem_intercon_1/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/m00_couplers/auto_pc/m_axi_rid'(1) to pin: '/axi_mem_intercon_1/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/axi_mem_intercon/M00_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to pin: '/axi_mem_intercon/M00_AXI_wid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/axi_mem_intercon/M00_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_AWID'(6) to pin: '/axi_mem_intercon_1/M00_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_WID'(6) to pin: '/axi_mem_intercon_1/M00_AXI_wid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_ARID'(6) to pin: '/axi_mem_intercon_1/M00_AXI_arid'(1) - Only lower order bits will be connected.
+VHDL Output written to : /mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_GP0'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP0'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP1'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dft_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0_1/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ip/design_1_auto_us_0_1/design_1_auto_us_0_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ip/design_1_auto_us_1_1/design_1_auto_us_1_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s01_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon_1/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ip/design_1_auto_us_2_1/design_1_auto_us_2_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon_1/s00_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ip/design_1_auto_us_3_1/design_1_auto_us_3_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon_1/s01_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ip/design_1_auto_pc_2_1/design_1_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon_1/m00_couplers/auto_pc .
+Exporting to file /mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file /mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File /mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 389fdd81c3da7e4a; cache size = 29.070 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = 416ebc0bf6218438; cache size = 29.070 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_2, cache-ID = 416ebc0bf6218438; cache size = 29.070 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_processing_system7_0_4, cache-ID = 36bec23132b5b53a; cache size = 29.070 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_rst_ps7_0_100M_1, cache-ID = 8ae31c5a119ce7b4; cache size = 29.070 MB.
+[Tue Sep 28 07:55:23 2021] Launched design_1_dft_0_4_synth_1, design_1_auto_us_1_synth_1, design_1_auto_us_0_synth_1, design_1_auto_us_3_synth_1, design_1_auto_us_2_synth_1, design_1_xbar_1_synth_1, design_1_xbar_2_synth_1, synth_1...
+Run output will be captured here:
+design_1_dft_0_4_synth_1: /mnt/c/Xilinx/Projects/DFT_v/DFT_v.runs/design_1_dft_0_4_synth_1/runme.log
+design_1_auto_us_1_synth_1: /mnt/c/Xilinx/Projects/DFT_v/DFT_v.runs/design_1_auto_us_1_synth_1/runme.log
+design_1_auto_us_0_synth_1: /mnt/c/Xilinx/Projects/DFT_v/DFT_v.runs/design_1_auto_us_0_synth_1/runme.log
+design_1_auto_us_3_synth_1: /mnt/c/Xilinx/Projects/DFT_v/DFT_v.runs/design_1_auto_us_3_synth_1/runme.log
+design_1_auto_us_2_synth_1: /mnt/c/Xilinx/Projects/DFT_v/DFT_v.runs/design_1_auto_us_2_synth_1/runme.log
+design_1_xbar_1_synth_1: /mnt/c/Xilinx/Projects/DFT_v/DFT_v.runs/design_1_xbar_1_synth_1/runme.log
+design_1_xbar_2_synth_1: /mnt/c/Xilinx/Projects/DFT_v/DFT_v.runs/design_1_xbar_2_synth_1/runme.log
+synth_1: /mnt/c/Xilinx/Projects/DFT_v/DFT_v.runs/synth_1/runme.log
+[Tue Sep 28 07:55:24 2021] Launched impl_1...
+Run output will be captured here: /mnt/c/Xilinx/Projects/DFT_v/DFT_v.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:23 ; elapsed = 00:00:46 . Memory (MB): peak = 9443.238 ; gain = 0.000 ; free physical = 6583 ; free virtual = 12696
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: /mnt/c/Xilinx/Projects/DFT/dft_1024_precomputed/hls/solution1/impl/ip/component.xml. It will be created.
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/mnt/c/Xilinx/Projects/DFT/dft_1024_precomputed'.
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:hls:dft:1.0 [get_ips  design_1_dft_0_4] -log ip_upgrade.log
+Upgrading '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3422] Upgraded design_1_dft_0_4 (Dft 1.0) from revision 2109280751 to revision 2109280918
+Wrote  : </mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/mnt/c/Xilinx/Projects/DFT_v/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips design_1_dft_0_4] -no_script -sync -force -quiet
+generate_target all [get_files  /mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/design_1.bd]
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_S_AXI_HP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_S_AXI_HP1_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+Wrote  : </mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/design_1.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s00_couplers/auto_us/s_axi_arlock'(1) to pin: '/axi_mem_intercon/s00_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s00_couplers/auto_us/s_axi_awlock'(1) to pin: '/axi_mem_intercon/s00_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s01_couplers/auto_us/s_axi_awlock'(1) to pin: '/axi_mem_intercon/s01_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s01_couplers/auto_us/s_axi_arlock'(1) to pin: '/axi_mem_intercon/s01_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(1) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(1) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/s00_couplers/auto_us/s_axi_arlock'(1) to pin: '/axi_mem_intercon_1/s00_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/s00_couplers/auto_us/s_axi_awlock'(1) to pin: '/axi_mem_intercon_1/s00_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/s01_couplers/auto_us/s_axi_awlock'(1) to pin: '/axi_mem_intercon_1/s01_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/s01_couplers/auto_us/s_axi_arlock'(1) to pin: '/axi_mem_intercon_1/s01_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/m00_couplers/auto_pc/m_axi_bid'(1) to pin: '/axi_mem_intercon_1/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/m00_couplers/auto_pc/m_axi_rid'(1) to pin: '/axi_mem_intercon_1/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/axi_mem_intercon/M00_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to pin: '/axi_mem_intercon/M00_AXI_wid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/axi_mem_intercon/M00_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_AWID'(6) to pin: '/axi_mem_intercon_1/M00_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_WID'(6) to pin: '/axi_mem_intercon_1/M00_AXI_wid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_ARID'(6) to pin: '/axi_mem_intercon_1/M00_AXI_arid'(1) - Only lower order bits will be connected.
+VHDL Output written to : /mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s00_couplers/auto_us/s_axi_arlock'(1) to pin: '/axi_mem_intercon/s00_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s00_couplers/auto_us/s_axi_awlock'(1) to pin: '/axi_mem_intercon/s00_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s01_couplers/auto_us/s_axi_awlock'(1) to pin: '/axi_mem_intercon/s01_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s01_couplers/auto_us/s_axi_arlock'(1) to pin: '/axi_mem_intercon/s01_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(1) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(1) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/s00_couplers/auto_us/s_axi_arlock'(1) to pin: '/axi_mem_intercon_1/s00_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/s00_couplers/auto_us/s_axi_awlock'(1) to pin: '/axi_mem_intercon_1/s00_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/s01_couplers/auto_us/s_axi_awlock'(1) to pin: '/axi_mem_intercon_1/s01_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/s01_couplers/auto_us/s_axi_arlock'(1) to pin: '/axi_mem_intercon_1/s01_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/m00_couplers/auto_pc/m_axi_bid'(1) to pin: '/axi_mem_intercon_1/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/m00_couplers/auto_pc/m_axi_rid'(1) to pin: '/axi_mem_intercon_1/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/axi_mem_intercon/M00_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to pin: '/axi_mem_intercon/M00_AXI_wid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/axi_mem_intercon/M00_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_AWID'(6) to pin: '/axi_mem_intercon_1/M00_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_WID'(6) to pin: '/axi_mem_intercon_1/M00_AXI_wid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_ARID'(6) to pin: '/axi_mem_intercon_1/M00_AXI_arid'(1) - Only lower order bits will be connected.
+VHDL Output written to : /mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dft_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0_1/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ip/design_1_auto_us_0_1/design_1_auto_us_0_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ip/design_1_auto_us_1_1/design_1_auto_us_1_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s01_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ip/design_1_auto_us_2_1/design_1_auto_us_2_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon_1/s00_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ip/design_1_auto_us_3_1/design_1_auto_us_3_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon_1/s01_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ip/design_1_auto_pc_2_1/design_1_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon_1/m00_couplers/auto_pc .
+Exporting to file /mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file /mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File /mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/synth/design_1.hwdef
+generate_target: Time (s): cpu = 00:00:30 ; elapsed = 00:02:01 . Memory (MB): peak = 9502.508 ; gain = 0.000 ; free physical = 3428 ; free virtual = 9135
+catch { config_ip_cache -export [get_ips -all design_1_dft_0_4] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 389fdd81c3da7e4a; cache size = 54.029 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_us_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_us_0, cache-ID = ff0924ee7903786b; cache size = 54.029 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_us_1] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_us_1, cache-ID = ff0924ee7903786b; cache size = 54.029 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_1] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = 416ebc0bf6218438; cache size = 54.029 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_us_2] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_us_2, cache-ID = ff0924ee7903786b; cache size = 54.029 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_us_3] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_us_3, cache-ID = ff0924ee7903786b; cache size = 54.029 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_2] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_2, cache-ID = 416ebc0bf6218438; cache size = 54.029 MB.
+export_ip_user_files -of_objects [get_files /mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs design_1_dft_0_4_synth_1 -jobs 6
+[Tue Sep 28 09:21:51 2021] Launched design_1_dft_0_4_synth_1...
+Run output will be captured here: /mnt/c/Xilinx/Projects/DFT_v/DFT_v.runs/design_1_dft_0_4_synth_1/runme.log
+export_simulation -of_objects [get_files /mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/design_1.bd] -directory /mnt/c/Xilinx/Projects/DFT_v/DFT_v.ip_user_files/sim_scripts -ip_user_files_dir /mnt/c/Xilinx/Projects/DFT_v/DFT_v.ip_user_files -ipstatic_source_dir /mnt/c/Xilinx/Projects/DFT_v/DFT_v.ip_user_files/ipstatic -lib_map_path [list {modelsim=/mnt/c/Xilinx/Projects/DFT_v/DFT_v.cache/compile_simlib/modelsim} {questa=/mnt/c/Xilinx/Projects/DFT_v/DFT_v.cache/compile_simlib/questa} {ies=/mnt/c/Xilinx/Projects/DFT_v/DFT_v.cache/compile_simlib/ies} {xcelium=/mnt/c/Xilinx/Projects/DFT_v/DFT_v.cache/compile_simlib/xcelium} {vcs=/mnt/c/Xilinx/Projects/DFT_v/DFT_v.cache/compile_simlib/vcs} {riviera=/mnt/c/Xilinx/Projects/DFT_v/DFT_v.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Sep 28 09:25:51 2021] Launched synth_1...
+Run output will be captured here: /mnt/c/Xilinx/Projects/DFT_v/DFT_v.runs/synth_1/runme.log
+[Tue Sep 28 09:25:51 2021] Launched impl_1...
+Run output will be captured here: /mnt/c/Xilinx/Projects/DFT_v/DFT_v.runs/impl_1/runme.log
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: /mnt/c/Xilinx/Projects/DFT/dft_1024_precomputed/hls/solution1/impl/ip/component.xml. It will be created.
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/mnt/c/Xilinx/Projects/DFT/dft_1024_precomputed'.
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:hls:dft:1.0 [get_ips  design_1_dft_0_4] -log ip_upgrade.log
+Upgrading '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3422] Upgraded design_1_dft_0_4 (Dft 1.0) from revision 2109280918 to revision 2109281136
+Wrote  : </mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/design_1.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/mnt/c/Xilinx/Projects/DFT_v/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips design_1_dft_0_4] -no_script -sync -force -quiet
+generate_target all [get_files  /mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/design_1.bd]
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_S_AXI_HP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_S_AXI_HP1_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+Wrote  : </mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/design_1.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s00_couplers/auto_us/s_axi_arlock'(1) to pin: '/axi_mem_intercon/s00_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s00_couplers/auto_us/s_axi_awlock'(1) to pin: '/axi_mem_intercon/s00_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s01_couplers/auto_us/s_axi_awlock'(1) to pin: '/axi_mem_intercon/s01_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s01_couplers/auto_us/s_axi_arlock'(1) to pin: '/axi_mem_intercon/s01_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(1) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(1) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/s00_couplers/auto_us/s_axi_arlock'(1) to pin: '/axi_mem_intercon_1/s00_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/s00_couplers/auto_us/s_axi_awlock'(1) to pin: '/axi_mem_intercon_1/s00_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/s01_couplers/auto_us/s_axi_awlock'(1) to pin: '/axi_mem_intercon_1/s01_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/s01_couplers/auto_us/s_axi_arlock'(1) to pin: '/axi_mem_intercon_1/s01_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/m00_couplers/auto_pc/m_axi_bid'(1) to pin: '/axi_mem_intercon_1/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/m00_couplers/auto_pc/m_axi_rid'(1) to pin: '/axi_mem_intercon_1/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/axi_mem_intercon/M00_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to pin: '/axi_mem_intercon/M00_AXI_wid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/axi_mem_intercon/M00_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_AWID'(6) to pin: '/axi_mem_intercon_1/M00_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_WID'(6) to pin: '/axi_mem_intercon_1/M00_AXI_wid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_ARID'(6) to pin: '/axi_mem_intercon_1/M00_AXI_arid'(1) - Only lower order bits will be connected.
+VHDL Output written to : /mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s00_couplers/auto_us/s_axi_arlock'(1) to pin: '/axi_mem_intercon/s00_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s00_couplers/auto_us/s_axi_awlock'(1) to pin: '/axi_mem_intercon/s00_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s01_couplers/auto_us/s_axi_awlock'(1) to pin: '/axi_mem_intercon/s01_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/s01_couplers/auto_us/s_axi_arlock'(1) to pin: '/axi_mem_intercon/s01_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(1) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(1) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/s00_couplers/auto_us/s_axi_arlock'(1) to pin: '/axi_mem_intercon_1/s00_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/s00_couplers/auto_us/s_axi_awlock'(1) to pin: '/axi_mem_intercon_1/s00_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/s01_couplers/auto_us/s_axi_awlock'(1) to pin: '/axi_mem_intercon_1/s01_couplers/S_AXI_awlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/s01_couplers/auto_us/s_axi_arlock'(1) to pin: '/axi_mem_intercon_1/s01_couplers/S_AXI_arlock'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/m00_couplers/auto_pc/m_axi_bid'(1) to pin: '/axi_mem_intercon_1/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/m00_couplers/auto_pc/m_axi_rid'(1) to pin: '/axi_mem_intercon_1/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/axi_mem_intercon/M00_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to pin: '/axi_mem_intercon/M00_AXI_wid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/axi_mem_intercon/M00_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_AWID'(6) to pin: '/axi_mem_intercon_1/M00_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_WID'(6) to pin: '/axi_mem_intercon_1/M00_AXI_wid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_ARID'(6) to pin: '/axi_mem_intercon_1/M00_AXI_arid'(1) - Only lower order bits will be connected.
+VHDL Output written to : /mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dft_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0_1/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ip/design_1_auto_us_0_1/design_1_auto_us_0_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ip/design_1_auto_us_1_1/design_1_auto_us_1_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s01_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ip/design_1_auto_us_2_1/design_1_auto_us_2_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon_1/s00_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ip/design_1_auto_us_3_1/design_1_auto_us_3_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon_1/s01_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ip/design_1_auto_pc_2_1/design_1_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon_1/m00_couplers/auto_pc .
+Exporting to file /mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file /mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File /mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/synth/design_1.hwdef
+generate_target: Time (s): cpu = 00:00:31 ; elapsed = 00:02:12 . Memory (MB): peak = 9579.551 ; gain = 0.000 ; free physical = 1199 ; free virtual = 6476
+catch { config_ip_cache -export [get_ips -all design_1_dft_0_4] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 389fdd81c3da7e4a; cache size = 115.410 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_us_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_us_0, cache-ID = ff0924ee7903786b; cache size = 115.410 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_us_1] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_us_1, cache-ID = ff0924ee7903786b; cache size = 115.410 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_1] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = 416ebc0bf6218438; cache size = 115.410 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_us_2] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_us_2, cache-ID = ff0924ee7903786b; cache size = 115.410 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_us_3] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_us_3, cache-ID = ff0924ee7903786b; cache size = 115.410 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_2] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_2, cache-ID = 416ebc0bf6218438; cache size = 115.410 MB.
+export_ip_user_files -of_objects [get_files /mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs design_1_dft_0_4_synth_1 -jobs 6
+[Tue Sep 28 11:50:17 2021] Launched design_1_dft_0_4_synth_1...
+Run output will be captured here: /mnt/c/Xilinx/Projects/DFT_v/DFT_v.runs/design_1_dft_0_4_synth_1/runme.log
+export_simulation -of_objects [get_files /mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/design_1.bd] -directory /mnt/c/Xilinx/Projects/DFT_v/DFT_v.ip_user_files/sim_scripts -ip_user_files_dir /mnt/c/Xilinx/Projects/DFT_v/DFT_v.ip_user_files -ipstatic_source_dir /mnt/c/Xilinx/Projects/DFT_v/DFT_v.ip_user_files/ipstatic -lib_map_path [list {modelsim=/mnt/c/Xilinx/Projects/DFT_v/DFT_v.cache/compile_simlib/modelsim} {questa=/mnt/c/Xilinx/Projects/DFT_v/DFT_v.cache/compile_simlib/questa} {ies=/mnt/c/Xilinx/Projects/DFT_v/DFT_v.cache/compile_simlib/ies} {xcelium=/mnt/c/Xilinx/Projects/DFT_v/DFT_v.cache/compile_simlib/xcelium} {vcs=/mnt/c/Xilinx/Projects/DFT_v/DFT_v.cache/compile_simlib/vcs} {riviera=/mnt/c/Xilinx/Projects/DFT_v/DFT_v.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run impl_1 -prev_step 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Sep 28 12:05:55 2021] Launched synth_1...
+Run output will be captured here: /mnt/c/Xilinx/Projects/DFT_v/DFT_v.runs/synth_1/runme.log
+[Tue Sep 28 12:05:55 2021] Launched impl_1...
+Run output will be captured here: /mnt/c/Xilinx/Projects/DFT_v/DFT_v.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.13 . Memory (MB): peak = 9579.551 ; gain = 0.000 ; free physical = 3304 ; free virtual = 8066
+INFO: [Netlist 29-17] Analyzing 321 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.56 ; elapsed = 00:00:00.60 . Memory (MB): peak = 9888.152 ; gain = 8.000 ; free physical = 2696 ; free virtual = 7464
+Restored from archive | CPU: 0.560000 secs | Memory: 14.571999 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.56 ; elapsed = 00:00:00.60 . Memory (MB): peak = 9888.152 ; gain = 8.000 ; free physical = 2696 ; free virtual = 7464
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9888.152 ; gain = 0.000 ; free physical = 2698 ; free virtual = 7466
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 12 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 4 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 2 instances
+  SRLC32E => SRL16E: 6 instances
+
+open_run: Time (s): cpu = 00:00:18 ; elapsed = 00:00:13 . Memory (MB): peak = 10107.512 ; gain = 527.961 ; free physical = 2554 ; free virtual = 7334

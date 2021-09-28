@@ -1,0 +1,39 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.16063",
+   "Default View_TopLeft":"587,18",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 5 -x 2560 -y -60 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 5 -x 2560 -y -30 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -x 490 -y 0 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 1 -x 490 -y -190 -defaultsOSRD
+preplace inst axi_mem_intercon -pg 1 -lvl 3 -x 1290 -y -170 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 2 -x 880 -y 350 -defaultsOSRD
+preplace inst axi_mem_intercon_1 -pg 1 -lvl 3 -x 1290 -y -420 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 3 -x 1290 -y 120 -defaultsOSRD
+preplace inst streamAdd -pg 1 -lvl 4 -x 1740 -y 52 -defaultsOSRD
+preplace netloc xlconstant_0_dout 1 1 3 N -190 1070 360 1520
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 4 40 120 700 30 1110 350 1490
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 1 690 50n
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 2 2 1090 370 1510
+preplace netloc sadd_dma2_M_AXI_MM2S 1 2 3 1130 340 1440 714 1900
+preplace netloc sadd_dma1_M_AXI_MM2S 1 2 3 1140 320 1480 694 1890
+preplace netloc axi_mem_intercon_M00_AXI 1 0 4 20 240 NJ 240 1080J 280 1430
+preplace netloc ps7_0_axi_periph_M00_AXI 1 3 1 1450 22n
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 2 NJ 10 1120
+preplace netloc ps7_0_axi_periph_M01_AXI 1 3 1 1480 42n
+preplace netloc axi_mem_intercon_1_M00_AXI 1 0 4 30 250 NJ 250 1050J 290 1440
+preplace netloc processing_system7_0_FIXED_IO 1 1 4 NJ -30 1060 310 1500 684 1910
+preplace netloc ps7_0_axi_periph_M02_AXI 1 3 1 1470 2n
+preplace netloc processing_system7_0_DDR 1 1 4 NJ -50 1100 300 1460 -60 N
+preplace netloc sadd_dma1_M_AXI_S2MM 1 2 3 1150 330 1460 704 1880
+levelinfo -pg 1 0 490 880 1290 1740 2560
+pagesize -pg 1 -db -bbox -sgen 0 -540 2670 730
+"
+}
+{
+   "da_axi4_cnt":"6",
+   "da_ps7_cnt":"1"
+}

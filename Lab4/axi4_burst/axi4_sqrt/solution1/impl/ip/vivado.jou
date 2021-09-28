@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Sep 18 21:18:14 2021
+# Process ID: 43404
+# Current directory: C:/Xilinx/axi4_burst/axi4_sqrt/solution1/impl/ip
+# Command line: vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file: C:/Xilinx/axi4_burst/axi4_sqrt/solution1/impl/ip/vivado.log
+# Journal file: C:/Xilinx/axi4_burst/axi4_sqrt/solution1/impl/ip\vivado.jou
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace

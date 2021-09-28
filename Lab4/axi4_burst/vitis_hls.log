@@ -1,0 +1,81 @@
+INFO: [HLS 200-10] Running 'C:/Xilinx/VITIS_~1/2020.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'monja' on host 'desktop-x300' (Windows NT_amd64 version 6.2) on Sat Sep 18 21:18:11 -0400 2021
+INFO: [HLS 200-10] In directory 'C:/Xilinx/axi4_burst'
+Sourcing Tcl script 'C:/Xilinx/axi4_burst/axi4_sqrt/solution1/export.tcl'
+INFO: [HLS 200-1510] Running: open_project axi4_sqrt 
+INFO: [HLS 200-10] Opening project 'C:/Xilinx/axi4_burst/axi4_sqrt'.
+INFO: [HLS 200-1510] Running: set_top axi4_sqrt 
+INFO: [HLS 200-1510] Running: add_files axi4_sqrt.cpp 
+INFO: [HLS 200-10] Adding design file 'axi4_sqrt.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files axi4_sqrt.hpp 
+INFO: [HLS 200-10] Adding design file 'axi4_sqrt.hpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb axi4_sqrt_test.cpp -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'axi4_sqrt_test.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'C:/Xilinx/axi4_burst/axi4_sqrt/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: set_directive_top -name axi4_sqrt axi4_sqrt 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 1[2Kvitis_hls> v[12C[2Kvitis_hls> vi[13C[2Kvitis_hls> v[12C[2Kvitis_hls> [11C[2Kvitis_hls> [11C[2Kvitis_hls> [11C[2Kvitis_hls> c[12C[2Kvitis_hls> cd[13C[2Kvitis_hls> cd [14C[2Kvitis_hls> cd .[15C[2Kvitis_hls> cd ..[16C[2Kvitis_hls> cd ../[17C
+[2Kvitis_hls> [11C[2Kvitis_hls> d[12C[2Kvitis_hls> di[13C[2Kvitis_hls> dir[14C
+ Volume in drive C is OS
+ Volume Serial Number is F20F-998F
+
+ Directory of C:\Xilinx
+
+09/18/2021  09:10 PM    <DIR>          .
+09/18/2021  09:10 PM    <DIR>          ..
+09/18/2021  09:19 PM    <DIR>          .Xil
+09/16/2021  04:18 AM    <DIR>          .xinstall
+09/18/2021  03:24 PM    <DIR>          axi4_burst
+09/18/2021  03:23 PM             1,439 axi4_burst.zip
+09/16/2021  04:41 AM    <DIR>          Downloads
+09/18/2021  08:51 PM    <DIR>          NA
+09/18/2021  03:22 PM    <DIR>          project_1
+09/16/2021  04:08 PM    <DIR>          project_2
+09/18/2021  09:24 PM    <DIR>          project_3
+09/16/2021  12:30 AM     1,795,849,528 pynq_z2_v2.6.0.zip
+09/16/2021  05:04 AM    <DIR>          streamAdd
+09/16/2021  04:54 AM             1,196 streamAdd.zip
+09/16/2021  03:45 PM    <DIR>          streamMul
+09/16/2021  03:43 PM             1,154 streamMul.zip
+09/16/2021  04:38 AM    <DIR>          Vitis_HLS
+09/16/2021  04:38 AM    <DIR>          Vivado
+09/18/2021  09:09 PM               456 vivado.jou
+09/18/2021  09:09 PM               456 vivado.log
+09/18/2021  07:53 PM             7,639 vivado_12652.backup.jou
+09/18/2021  07:54 PM            62,717 vivado_12652.backup.log
+09/18/2021  09:05 PM             2,800 vivado_24424.backup.jou
+09/18/2021  09:05 PM            17,040 vivado_24424.backup.log
+09/18/2021  07:45 PM            98,872 vivado_pid12652.str
+09/18/2021  09:10 PM                 0 vivado_pid21720.str
+09/16/2021  04:40 AM    <DIR>          xic
+              12 File(s)  1,796,043,297 bytes
+              15 Dir(s)  340,202,598,400 bytes free
+[2Kvitis_hls> [11C[2Kvitis_hls> m[12C[2Kvitis_hls> mk[13C[2Kvitis_hls> mkd[14C[2Kvitis_hls> mkdi[15C[2Kvitis_hls> mkdir[16C[2Kvitis_hls> mkdir [17C[2Kvitis_hls> mkdir M[18C[2Kvitis_hls> mkdir Mu[19C[2Kvitis_hls> mkdir Mul[20C[2Kvitis_hls> mkdir Mult[21C[2Kvitis_hls> mkdir Multe[22C[2Kvitis_hls> mkdir Multes[23C[2Kvitis_hls> mkdir Multest[24C[2Kvitis_hls> mkdir Multes[23C[2Kvitis_hls> mkdir Multe[22C[2Kvitis_hls> mkdir Mult[21C[2Kvitis_hls> mkdir Mul[20C[2Kvitis_hls> mkdir Mu[19C[2Kvitis_hls> mkdir M[18C[2Kvitis_hls> mkdir Mu[19C[2Kvitis_hls> mkdir Mul[20C[2Kvitis_hls> mkdir MulT[21C[2Kvitis_hls> mkdir MulTe[22C[2Kvitis_hls> mkdir MulTes[23C[2Kvitis_hls> mkdir MulTest[24C[2Kvitis_hls> mkdir MulTes[23C[2Kvitis_hls> mkdir MulTe[22C[2Kvitis_hls> mkdir MulT[21C[2Kvitis_hls> mkdir Mul[20C[2Kvitis_hls> mkdir Mu[19C[2Kvitis_hls> mkdir M[18C[2Kvitis_hls> mkdir [17C[2Kvitis_hls> mkdir m[18C[2Kvitis_hls> mkdir mu[19C[2Kvitis_hls> mkdir mul[20C[2Kvitis_hls> mkdir mulT[21C[2Kvitis_hls> mkdir mulTe[22C[2Kvitis_hls> mkdir mulTes[23C[2Kvitis_hls> mkdir mulTest[24C[2Kvitis_hls> mkdir mulTes[23C[2Kvitis_hls> mkdir mulTe[22C[2Kvitis_hls> mkdir mulT[21C[2Kvitis_hls> mkdir mul[20C[2Kvitis_hls> mkdir mu[19C[2Kvitis_hls> mkdir m[18C[2Kvitis_hls> mkdir [17C[2Kvitis_hls> mkdir M[18C[2Kvitis_hls> mkdir Mu[19C[2Kvitis_hls> mkdir Mul[20C
+[2Kvitis_hls> [11C[2Kvitis_hls> c[12C[2Kvitis_hls> cd[13C[2Kvitis_hls> cd [14C[2Kvitis_hls> cd M[15C[2Kvitis_hls> cd Mu[16C[2Kvitis_hls> cd Mul[17C
+[2Kvitis_hls> [11C[2Kvitis_hls> d[12C[2Kvitis_hls> di[13C[2Kvitis_hls> dir[14C
+ Volume in drive C is OS
+ Volume Serial Number is F20F-998F
+
+ Directory of C:\Xilinx\Mul
+
+09/18/2021  09:46 PM    <DIR>          .
+09/18/2021  09:46 PM    <DIR>          ..
+               0 File(s)              0 bytes
+               2 Dir(s)  340,202,934,272 bytes free
+[2Kvitis_hls> [11C[2Kvitis_hls> v[12C[2Kvitis_hls> vi[13C[2Kvitis_hls> vit[14C[2Kvitis_hls> viti[15C[2Kvitis_hls> vitis[16C
+INFO: [HLS 200-10] Bringing up Vitis HLS GUI ... 
+INFO: [Common 17-206] Exiting vitis_hls at Sat Sep 18 22:06:41 2021...

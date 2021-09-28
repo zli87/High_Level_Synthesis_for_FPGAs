@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1632070887339">
+  <ports id="1" name="INPUT_V_data_V" type="PortType" originalName="INPUT" coreId="4104080848" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="INPUT_V_keep_V" type="PortType" originalName="INPUT" coreId="1" bitwidth="4">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="INPUT_V_strb_V" type="PortType" originalName="INPUT" coreId="0" bitwidth="4">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="4" name="INPUT_V_last_V" type="PortType" originalName="INPUT" coreId="4294967292" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="5" name="OUTPUT_V_data_V" type="PortType" originalName="OUTPUT" coreId="4294967295" bitwidth="32" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="6" name="OUTPUT_V_keep_V" type="PortType" originalName="OUTPUT" coreId="4294967295" bitwidth="4" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="7" name="OUTPUT_V_strb_V" type="PortType" originalName="OUTPUT" coreId="4294967295" bitwidth="4" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="8" name="OUTPUT_V_last_V" type="PortType" originalName="OUTPUT" coreId="1126180709" bitwidth="1" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="9" name="length_r" type="PortType" originalName="length" coreId="1667855461" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <edges id="70" source_obj="//@ports.8" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="73" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="76" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="77" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="78" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="79" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="80" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="81" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="84" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="85" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="88" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="89" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="90" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="91" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="92" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="93" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="94" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.0" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="95" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="98" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="99" source_obj="//@ports.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="100" source_obj="//@ports.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="101" source_obj="//@ports.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="102" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="103" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="106" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="109" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="110" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="111" source_obj="//@regions.0/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="112" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="113" source_obj="//@regions.1/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="114" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.1" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="116" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.0"/>
+  <edges id="117" source_obj="//@regions.1/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.1"/>
+  <edges id="119" source_obj="//@regions.1/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.2"/>
+  <edges id="120" source_obj="//@regions.1/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.3"/>
+  <edges id="121" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.3"/>
+  <edges id="122" source_obj="//@regions.1/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.4"/>
+  <edges id="123" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.1" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.4"/>
+  <edges id="124" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.4"/>
+  <edges id="125" source_obj="//@regions.1/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.0"/>
+  <edges id="126" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.1"/>
+  <edges id="128" source_obj="//@regions.1/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.1"/>
+  <edges id="129" source_obj="//@regions.1/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.2"/>
+  <edges id="132" source_obj="//@regions.1/@basic_blocks.1/@node_objs.3" sink_obj="//@ports.4"/>
+  <edges id="133" source_obj="//@regions.1/@basic_blocks.1/@node_objs.3" sink_obj="//@ports.5"/>
+  <edges id="134" source_obj="//@regions.1/@basic_blocks.1/@node_objs.3" sink_obj="//@ports.6"/>
+  <edges id="135" source_obj="//@regions.1/@basic_blocks.1/@node_objs.3" sink_obj="//@ports.7"/>
+  <edges id="136" source_obj="//@regions.1/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.3"/>
+  <edges id="142" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.0" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.4"/>
+  <edges id="143" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="288" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.4"/>
+  <edges id="289" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="290" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="291" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.2"/>
+  <edges id="292" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="293" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="294" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@regions.1/@basic_blocks.0"/>
+  <edges id="295" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.0" sink_obj="//@blocks.3"/>
+  <edges id="296" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.0" sink_obj="//@regions.1/@basic_blocks.1"/>
+  <edges id="297" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.1" sink_obj="//@regions.1/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="298" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.4"/>
+  <blocks id="28" name="block_28" type="BlockType">
+    <controlOutputObjs>._crit_edge</controlOutputObjs>
+    <controlOutputObjs>.lr.ph83.preheader</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="length_read" originalName="length" coreName="s_axilite" implIndex="UNSUPPORTED" control="auto" coreId="114" bitwidth="32" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <dataInputObjs>length_r</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="buff_V" lineNumber="8" originalName="buff.V" fileName="streamMul.cpp" fileDirectory=".." rtlName="buff_V_U" coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="smul" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="streamMul.cpp" linenumber="8" fileDirectory="C:\Xilinx\streamMul" functionName="smul"/>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="icmp_ln9" lineNumber="9" fileName="streamMul.cpp" fileDirectory=".." rtlName="icmp_ln9_fu_163_p2" opType="icmp" coreId="4294967295" contextFuncName="smul" bitwidth="1" opcode="icmp" m_display="0" m_delay="2.47" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="streamMul.cpp" linenumber="9" fileDirectory="C:\Xilinx\streamMul" functionName="smul"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="br_ln9" lineNumber="9" fileName="streamMul.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="smul" opcode="br" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="streamMul.cpp" linenumber="9" fileDirectory="C:\Xilinx\streamMul" functionName="smul"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>.lr.ph83.preheader</controlInputObjs>
+      <controlInputObjs>._crit_edge</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="streamMul.cpp">
+      <validLinenumbers>8</validLinenumbers>
+      <validLinenumbers>9</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="30" name=".lr.ph83.preheader" type="BlockType">
+    <controlInputObjs>block_28</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>.lr.ph83</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="br_ln0" coreId="4058815904" opcode="br" m_display="0" m_delay="1.58" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <controlInputObjs>.lr.ph83</controlInputObjs>
+    </node_objs>
+  </blocks>
+  <blocks id="48" name=".lr.ph.preheader" type="BlockType">
+    <controlInputObjs>.lr.ph83</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>.lr.ph</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="47" name="br_ln0" coreId="4099227696" opcode="br" nodeLabel="2.0" m_display="0" m_delay="1.58" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <controlInputObjs>.lr.ph</controlInputObjs>
+    </node_objs>
+  </blocks>
+  <blocks id="65" name="._crit_edge.loopexit" type="BlockType">
+    <controlInputObjs>.lr.ph</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>._crit_edge</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="64" name="br_ln0" coreId="4071151520" opcode="br" nodeLabel="6.0" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
+      <controlInputObjs>._crit_edge</controlInputObjs>
+    </node_objs>
+  </blocks>
+  <blocks id="67" name="._crit_edge" type="BlockType">
+    <controlInputObjs>block_28</controlInputObjs>
+    <controlInputObjs>._crit_edge.loopexit</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="66" name="_ln19" lineNumber="19" fileName="streamMul.cpp" fileDirectory=".." coreId="80" contextFuncName="smul" opcode="ret" nodeLabel="6.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="streamMul.cpp" linenumber="19" fileDirectory="C:\Xilinx\streamMul" functionName="smul"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="streamMul.cpp">
+      <validLinenumbers>19</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="206" pipe_depth="1" RegionName="VITIS_LOOP_9_1">
+    <basic_blocks id="37" name=".lr.ph83" type="BlockType">
+      <controlInputObjs>.lr.ph83.preheader</controlInputObjs>
+      <controlInputObjs>.split2</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>.lr.ph.preheader</controlOutputObjs>
+      <controlOutputObjs>.split2</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="i" lineNumber="9" originalName="i" fileName="streamMul.cpp" fileDirectory=".." coreId="4069818768" contextFuncName="smul" bitwidth="6" opcode="phi" nodeLabel="1.0" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="streamMul.cpp" linenumber="9" fileDirectory="C:\Xilinx\streamMul" functionName="smul"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <controlInputObjs>.split2</controlInputObjs>
+        <controlInputObjs>.lr.ph83.preheader</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="add_ln9" lineNumber="9" fileName="streamMul.cpp" fileDirectory=".." rtlName="add_ln9_fu_169_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="smul" bitwidth="6" opcode="add" nodeLabel="1.0" m_display="0" m_delay="1.82" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="streamMul.cpp" linenumber="9" fileDirectory="C:\Xilinx\streamMul" functionName="smul"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="i_cast" lineNumber="9" fileName="streamMul.cpp" fileDirectory=".." rtlName="i_cast_fu_175_p1" coreId="4294967295" contextFuncName="smul" bitwidth="32" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="streamMul.cpp" linenumber="9" fileDirectory="C:\Xilinx\streamMul" functionName="smul"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="icmp_ln9_1" lineNumber="9" fileName="streamMul.cpp" fileDirectory=".." rtlName="icmp_ln9_1_fu_179_p2" opType="icmp" coreId="0" contextFuncName="smul" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="2.47" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="streamMul.cpp" linenumber="9" fileDirectory="C:\Xilinx\streamMul" functionName="smul"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="br_ln9" lineNumber="9" fileName="streamMul.cpp" fileDirectory=".." coreId="4099228080" contextFuncName="smul" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="streamMul.cpp" linenumber="9" fileDirectory="C:\Xilinx\streamMul" functionName="smul"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>.split2</controlInputObjs>
+        <controlInputObjs>.lr.ph.preheader</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="streamMul.cpp">
+        <validLinenumbers>9</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="46" name=".split2" type="BlockType">
+      <controlInputObjs>.lr.ph83</controlInputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>.lr.ph83</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="i_cast1" lineNumber="9" fileName="streamMul.cpp" fileDirectory=".." rtlName="i_cast1_fu_184_p1" coreId="4103474016" contextFuncName="smul" bitwidth="64" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="streamMul.cpp" linenumber="9" fileDirectory="C:\Xilinx\streamMul" functionName="smul"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="empty" lineNumber="283" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h" fileDirectory=".." coreName="axis" implIndex="axi4stream" control="auto" opType="adapter" coreId="115" contextFuncName="read" bitwidth="41" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h" linenumber="283" fileDirectory="C:\Xilinx\streamMul" functionName="read"/>
+        <dataInputObjs>INPUT_V_data_V</dataInputObjs>
+        <dataInputObjs>INPUT_V_keep_V</dataInputObjs>
+        <dataInputObjs>INPUT_V_strb_V</dataInputObjs>
+        <dataInputObjs>INPUT_V_last_V</dataInputObjs>
+        <dataOutputObjs>extractvalue</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="tmp_data_V" lineNumber="283" originalName="tmp.data.V" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h" fileDirectory=".." coreId="4058807752" contextFuncName="read" bitwidth="32" opcode="extractvalue" nodeLabel="1.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h" linenumber="283" fileDirectory="C:\Xilinx\streamMul" functionName="read"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>shl</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="shl_ln69" lineNumber="69" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int.h" fileDirectory=".." rtlName="buff_V_d0" coreId="4099228080" contextFuncName="ap_int_64_s" bitwidth="32" opcode="shl" nodeLabel="1.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int.h" linenumber="69" fileDirectory="C:\Xilinx\streamMul" functionName="ap_int&amp;lt;64&amp;gt;"/>
+        <dataInputObjs>extractvalue</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="buff_V_addr" lineNumber="12" fileName="streamMul.cpp" fileDirectory=".." coreId="4067242544" contextFuncName="smul" bitwidth="6" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="streamMul.cpp" linenumber="12" fileDirectory="C:\Xilinx\streamMul" functionName="smul"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="buff_V_addr_write_ln12" lineNumber="12" fileName="streamMul.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="smul" opcode="store" nodeLabel="1.0" m_display="0" m_delay="3.25" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="streamMul.cpp" linenumber="12" fileDirectory="C:\Xilinx\streamMul" functionName="smul"/>
+        <dataInputObjs>shl</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="45" name="br_ln0" coreId="8" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <controlInputObjs>.lr.ph83</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="streamMul.cpp">
+        <validLinenumbers>9</validLinenumbers>
+        <validLinenumbers>12</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int.h">
+        <validLinenumbers>69</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h">
+        <validLinenumbers>283</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="207" pipe_depth="3" RegionName="VITIS_LOOP_14_2">
+    <basic_blocks id="56" name=".lr.ph" type="BlockType">
+      <controlInputObjs>.lr.ph.preheader</controlInputObjs>
+      <controlInputObjs>.split</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>._crit_edge.loopexit</controlOutputObjs>
+      <controlOutputObjs>.split</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="i_1" lineNumber="14" originalName="i" fileName="streamMul.cpp" fileDirectory=".." coreId="8" contextFuncName="smul" bitwidth="6" opcode="phi" nodeLabel="3.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="streamMul.cpp" linenumber="14" fileDirectory="C:\Xilinx\streamMul" functionName="smul"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <controlInputObjs>.split</controlInputObjs>
+        <controlInputObjs>.lr.ph.preheader</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="50" name="add_ln14" lineNumber="14" fileName="streamMul.cpp" fileDirectory=".." rtlName="add_ln14_fu_200_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="smul" bitwidth="6" opcode="add" nodeLabel="3.0" m_display="0" m_delay="1.82" m_topoIndex="20" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="streamMul.cpp" linenumber="14" fileDirectory="C:\Xilinx\streamMul" functionName="smul"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="51" name="i_1_cast4" lineNumber="14" fileName="streamMul.cpp" fileDirectory=".." rtlName="i_1_cast4_fu_206_p1" coreId="50" contextFuncName="smul" bitwidth="32" opcode="zext" nodeLabel="3.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="streamMul.cpp" linenumber="14" fileDirectory="C:\Xilinx\streamMul" functionName="smul"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="53" name="icmp_ln14" lineNumber="14" fileName="streamMul.cpp" fileDirectory=".." rtlName="icmp_ln14_fu_210_p2" opType="icmp" coreId="4294967295" contextFuncName="smul" bitwidth="1" opcode="icmp" nodeLabel="3.0" m_display="0" m_delay="2.47" m_topoIndex="22" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="streamMul.cpp" linenumber="14" fileDirectory="C:\Xilinx\streamMul" functionName="smul"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="55" name="br_ln14" lineNumber="14" fileName="streamMul.cpp" fileDirectory=".." coreId="8" contextFuncName="smul" opcode="br" nodeLabel="3.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="streamMul.cpp" linenumber="14" fileDirectory="C:\Xilinx\streamMul" functionName="smul"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>.split</controlInputObjs>
+        <controlInputObjs>._crit_edge.loopexit</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="streamMul.cpp">
+        <validLinenumbers>14</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="63" name=".split" type="BlockType">
+      <controlInputObjs>.lr.ph</controlInputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>.lr.ph</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="57" name="i_1_cast" lineNumber="14" fileName="streamMul.cpp" fileDirectory=".." rtlName="i_1_cast_fu_215_p1" coreId="4071149408" contextFuncName="smul" bitwidth="64" opcode="zext" nodeLabel="3.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="streamMul.cpp" linenumber="14" fileDirectory="C:\Xilinx\streamMul" functionName="smul"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="59" name="buff_V_addr_1" lineNumber="16" fileName="streamMul.cpp" fileDirectory=".." coreId="69" contextFuncName="smul" bitwidth="6" opcode="getelementptr" nodeLabel="3.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="streamMul.cpp" linenumber="16" fileDirectory="C:\Xilinx\streamMul" functionName="smul"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="60" name="tmp_data_V_1" lineNumber="16" originalName="tmp.data.V" fileName="streamMul.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="smul" bitwidth="32" opcode="load" nodeLabel="3.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="26" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="streamMul.cpp" linenumber="16" fileDirectory="C:\Xilinx\streamMul" functionName="smul"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="61" name="OUTPUT_V_data_V_write_ln304" lineNumber="304" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h" fileDirectory=".." coreName="axis" implIndex="axi4stream" control="auto" opType="adapter" coreId="115" contextFuncName="write" opcode="write" nodeLabel="4.0" nodeLatency="1" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h" linenumber="304" fileDirectory="C:\Xilinx\streamMul" functionName="write"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>OUTPUT_V_data_V</dataOutputObjs>
+        <dataOutputObjs>OUTPUT_V_keep_V</dataOutputObjs>
+        <dataOutputObjs>OUTPUT_V_strb_V</dataOutputObjs>
+        <dataOutputObjs>OUTPUT_V_last_V</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="62" name="br_ln0" coreId="4294967295" opcode="br" nodeLabel="5.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+        <controlInputObjs>.lr.ph</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="streamMul.cpp">
+        <validLinenumbers>14</validLinenumbers>
+        <validLinenumbers>16</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h">
+        <validLinenumbers>304</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <regnodes realName="add_ln9_reg_230">
+    <nodeIds>32</nodeIds>
+  </regnodes>
+  <regnodes realName="buff_V_addr_1_reg_247">
+    <nodeIds>59</nodeIds>
+  </regnodes>
+  <regnodes realName="i_1_reg_152">
+    <nodeIds>49</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_data_V_1_reg_252">
+    <nodeIds>60</nodeIds>
+  </regnodes>
+  <regnodes realName="i_reg_141">
+    <nodeIds>31</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln14_reg_243">
+    <nodeIds>53</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln9_reg_226">
+    <nodeIds>26</nodeIds>
+  </regnodes>
+  <regnodes realName="length_read_reg_220">
+    <nodeIds>24</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln14_reg_238">
+    <nodeIds>50</nodeIds>
+  </regnodes>
+  <expressionNodes realName="buff_V_addr_gep_fu_121">
+    <nodeIds>43</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_data_V_fu_189">
+    <nodeIds>41</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln14_fu_200">
+    <nodeIds>50</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_cast1_fu_184">
+    <nodeIds>38</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_phi_fu_145">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln9_1_fu_179">
+    <nodeIds>35</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln9_fu_163">
+    <nodeIds>26</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln14_fu_210">
+    <nodeIds>53</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_1_phi_fu_156">
+    <nodeIds>49</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_1_cast4_fu_206">
+    <nodeIds>51</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_1_cast_fu_215">
+    <nodeIds>57</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="buff_V_addr_1_gep_fu_133">
+    <nodeIds>59</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln9_fu_169">
+    <nodeIds>32</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="shl_ln69_fu_193">
+    <nodeIds>42</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_cast_fu_175">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="buff_V_alloca_fu_80">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="grp_write_fu_102">
+    <nodeIds>61</nodeIds>
+  </ioNodes>
+  <ioNodes realName="empty_read_fu_90">
+    <nodeIds>40</nodeIds>
+  </ioNodes>
+  <ioNodes realName="length_read_read_fu_84">
+    <nodeIds>24</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="buff_V">
+    <nodeIds>44</nodeIds>
+    <nodeIds>60</nodeIds>
+  </memoryPorts>
+  <ioPorts name="INPUT_V_data_V">
+    <contents name="read">
+      <nodeIds>40</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="INPUT_V_keep_V">
+    <contents name="read">
+      <nodeIds>40</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="INPUT_V_last_V">
+    <contents name="read">
+      <nodeIds>40</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="INPUT_V_strb_V">
+    <contents name="read">
+      <nodeIds>40</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="OUTPUT_V_data_V">
+    <contents name="write">
+      <nodeIds>61</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="OUTPUT_V_keep_V">
+    <contents name="write">
+      <nodeIds>61</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="OUTPUT_V_last_V">
+    <contents name="write">
+      <nodeIds>61</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="OUTPUT_V_strb_V">
+    <contents name="write">
+      <nodeIds>61</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="length_r">
+    <contents name="read">
+      <nodeIds>24</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="47" stage="1" latency="1"/>
+    </states>
+    <states id="4">
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="57" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="1"/>
+      <operations id="60" stage="2" latency="2"/>
+    </states>
+    <states id="5">
+      <operations id="60" stage="1" latency="2"/>
+      <operations id="61" stage="2" latency="2"/>
+    </states>
+    <states id="6">
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="61" stage="1" latency="2"/>
+      <operations id="62" stage="1" latency="1"/>
+    </states>
+    <states id="7">
+      <operations id="64" stage="1" latency="1"/>
+      <operations id="66" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="smul" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="-1" mMaxLatency="-1">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <subRegions>5</subRegions>
+      <subRegions>6</subRegions>
+      <subRegions>7</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>28</basicBlocks>
+      <basicBlocks>30</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="VITIS_LOOP_9_1" mII="1" mDepth="1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="-1" mMaxLatency="-1" mType="1">
+      <basicBlocks>37</basicBlocks>
+      <basicBlocks>46</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Region 1" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>48</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="5" mTag="VITIS_LOOP_14_2" mII="1" mDepth="3" mMaxTripCount="63" mMaxLatency="64" mType="1">
+      <basicBlocks>56</basicBlocks>
+      <basicBlocks>63</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="6" mTag="Region 2" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>65</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="7" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>67</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

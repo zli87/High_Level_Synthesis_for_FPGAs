@@ -1,0 +1,123 @@
+
+
+================================================================
+== Synthesis Summary Report of 'dft'
+================================================================
++ General Information: 
+    * Date:           Tue Sep 28 09:17:37 2021
+    * Version:        2021.1 (Build 3247384 on Thu Jun 10 19:36:07 MDT 2021)
+    * Project:        hls
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-------------------------------------------+--------+-------+---------+-----------+----------+---------+---------+----------+---------+--------+-------------+-------------+-----+
+    |                  Modules                  |  Issue |       | Latency |  Latency  | Iteration|         |   Trip  |          |         |        |             |             |     |
+    |                  & Loops                  |  Type  | Slack | (cycles)|    (ns)   |  Latency | Interval|  Count  | Pipelined|  BRAM   |   DSP  |      FF     |     LUT     | URAM|
+    +-------------------------------------------+--------+-------+---------+-----------+----------+---------+---------+----------+---------+--------+-------------+-------------+-----+
+    |+ dft                                      |  Timing|  -0.00|  6293544|  6.294e+07|         -|  6293545|        -|        no|  20 (7%)|  5 (2%)|  36764 (34%)|  28865 (54%)|    -|
+    | + grp_dft_Pipeline_1_fu_2194              |  Timing|  -0.00|     1027|  1.027e+04|         -|     1027|        -|        no|        -|       -|     69 (~0%)|     75 (~0%)|    -|
+    |  o Loop 1                                 |       -|   7.30|     1025|  1.025e+04|         3|        1|     1024|       yes|        -|       -|            -|            -|    -|
+    | + grp_dft_Pipeline_2_fu_2329              |  Timing|  -0.00|     1027|  1.027e+04|         -|     1027|        -|        no|        -|       -|     69 (~0%)|     75 (~0%)|    -|
+    |  o Loop 1                                 |       -|   7.30|     1025|  1.025e+04|         3|        1|     1024|       yes|        -|       -|            -|            -|    -|
+    | + grp_dft_Pipeline_loop_k_loop_n_fu_2464  |       -|   0.04|  6291472|  6.291e+07|         -|  6291472|        -|        no|   4 (1%)|  5 (2%)|    1110 (1%)|    2639 (4%)|    -|
+    |  o loop_k_loop_n                          |       -|   7.30|  6291470|  6.291e+07|        21|        6|  1048576|       yes|        -|       -|            -|            -|    -|
+    | + grp_dft_Pipeline_4_fu_2984              |  Timing|  -0.00|     1027|  1.027e+04|         -|     1027|        -|        no|        -|       -|     56 (~0%)|     746 (1%)|    -|
+    |  o Loop 1                                 |       -|   7.30|     1025|  1.025e+04|         3|        1|     1024|       yes|        -|       -|            -|            -|    -|
+    | + grp_dft_Pipeline_5_fu_3119              |  Timing|  -0.00|     1027|  1.027e+04|         -|     1027|        -|        no|        -|       -|     56 (~0%)|     746 (1%)|    -|
+    |  o Loop 1                                 |       -|   7.30|     1025|  1.025e+04|         3|        1|     1024|       yes|        -|       -|            -|            -|    -|
+    +-------------------------------------------+--------+-------+---------+-----------+----------+---------+---------+----------+---------+--------+-------------+-------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* M_AXI
++-------------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
+| Interface         | Data Width | Address Width | Latency | Offset | Register | Max Widen | Max Read     | Max Write    | Num Read    | Num Write   |
+|                   | (SW->HW)   |               |         |        |          | Bitwidth  | Burst Length | Burst Length | Outstanding | Outstanding |
++-------------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
+| m_axi_input_im_r  | 32 -> 32   | 64            | 0       | slave  | 0        | 32        | 16           | 16           | 16          | 16          |
+| m_axi_input_re_r  | 32 -> 32   | 64            | 0       | slave  | 0        | 32        | 16           | 16           | 16          | 16          |
+| m_axi_output_im_r | 32 -> 32   | 64            | 0       | slave  | 0        | 32        | 16           | 16           | 16          | 16          |
+| m_axi_output_re_r | 32 -> 32   | 64            | 0       | slave  | 0        | 32        | 16           | 16           | 16          | 16          |
++-------------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
+
+* S_AXILITE
++---------------+------------+---------------+--------+----------+
+| Interface     | Data Width | Address Width | Offset | Register |
++---------------+------------+---------------+--------+----------+
+| s_axi_control | 32         | 6             | 16     | 0        |
++---------------+------------+---------------+--------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++-------------+-----------+----------+
+| Argument    | Direction | Datatype |
++-------------+-----------+----------+
+| real_sample | in        | float*   |
+| imag_sample | in        | float*   |
+| real_op     | out       | float*   |
+| imag_op     | out       | float*   |
++-------------+-----------+----------+
+
+* SW-to-HW Mapping
++-------------+-----------------------------+-----------+----------+-----------------------+
+| Argument    | HW Name                     | HW Type   | HW Usage | HW Info               |
++-------------+-----------------------------+-----------+----------+-----------------------+
+| real_sample | m_axi_input_re_r            | interface |          |                       |
+| real_sample | s_axi_control real_sample_1 | register  | offset   | offset=0x10, range=32 |
+| real_sample | s_axi_control real_sample_2 | register  | offset   | offset=0x14, range=32 |
+| imag_sample | m_axi_input_im_r            | interface |          |                       |
+| imag_sample | s_axi_control imag_sample_1 | register  | offset   | offset=0x1c, range=32 |
+| imag_sample | s_axi_control imag_sample_2 | register  | offset   | offset=0x20, range=32 |
+| real_op     | m_axi_output_re_r           | interface |          |                       |
+| real_op     | s_axi_control real_op_1     | register  | offset   | offset=0x28, range=32 |
+| real_op     | s_axi_control real_op_2     | register  | offset   | offset=0x2c, range=32 |
+| imag_op     | m_axi_output_im_r           | interface |          |                       |
+| imag_op     | s_axi_control imag_op_1     | register  | offset   | offset=0x34, range=32 |
+| imag_op     | s_axi_control imag_op_2     | register  | offset   | offset=0x38, range=32 |
++-------------+-----------------------------+-----------+----------+-----------------------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+* Burst Summary
++-------------------+-----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+| HW Interface      | Loop      | Message                                                                                                                                                                                                                    | Location     |
++-------------------+-----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+| m_axi_input_re_r  | anonymous | Multiple burst reads of length 1024 and bit width 32. These bursts requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.  | dft.cpp:35:2 |
+| m_axi_input_im_r  | anonymous | Multiple burst reads of length 1024 and bit width 32. These bursts requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.  | dft.cpp:36:2 |
+| m_axi_output_re_r | anonymous | Multiple burst writes of length 1024 and bit width 32. These bursts requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. | dft.cpp:67:2 |
+| m_axi_output_im_r | anonymous | Multiple burst writes of length 1024 and bit width 32. These bursts requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. | dft.cpp:68:2 |
++-------------------+-----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+
+* Bursts and Widening Missed
++-------------------+-------------+---------------------------------------------------------------------------------------------------------------------+--------------+
+| HW Interface      | Variable    | Problem                                                                                                             | Location     |
++-------------------+-------------+---------------------------------------------------------------------------------------------------------------------+--------------+
+| m_axi_output_im_r | imag_op     | Could not widen since the size of type 'float' is greater than or equal to the max_widen_bitwidth threshold of '4'. | dft.cpp:68:2 |
+| m_axi_output_re_r | real_op     | Could not widen since the size of type 'float' is greater than or equal to the max_widen_bitwidth threshold of '4'. | dft.cpp:67:2 |
+| m_axi_input_im_r  | imag_sample | Could not widen since the size of type 'float' is greater than or equal to the max_widen_bitwidth threshold of '4'. | dft.cpp:36:2 |
+| m_axi_input_re_r  | real_sample | Could not widen since the size of type 'float' is greater than or equal to the max_widen_bitwidth threshold of '4'. | dft.cpp:35:2 |
++-------------------+-------------+---------------------------------------------------------------------------------------------------------------------+--------------+
+
+

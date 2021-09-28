@@ -1,0 +1,11 @@
+smul_buff_V
+smul_CTRL_s_axi
+smul_regslice_both
+smul_regslice_both
+smul_regslice_both
+smul_regslice_both
+smul_regslice_both
+smul_regslice_both
+smul_regslice_both
+smul_regslice_both
+smul

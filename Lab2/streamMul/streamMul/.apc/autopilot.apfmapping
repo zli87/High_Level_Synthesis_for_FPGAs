@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="streamMul.hpp" path="C:\Xilinx\streamMul\streamMul.hpp"/>
+    <originFiles name="streamMul.cpp" path="C:\Xilinx\streamMul\streamMul.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="streamMul_tb.cpp" path="C:\Xilinx\streamMul\streamMul_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

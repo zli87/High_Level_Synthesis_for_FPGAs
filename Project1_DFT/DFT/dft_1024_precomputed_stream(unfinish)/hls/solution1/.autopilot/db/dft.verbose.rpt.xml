@@ -1,0 +1,670 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'dft'" level="0">
+<item name = "Date">Sun Sep 26 20:29:54 2021
+</item>
+<item name = "Version">2021.1 (Build 3247384 on Thu Jun 10 19:36:07 MDT 2021)</item>
+<item name = "Project">hls</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.256 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">12583951, 12583951, 0.126 sec, 0.126 sec, 12583952, 12583952, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_dft_Pipeline_loop_sample_fu_580">dft_Pipeline_loop_sample, 1026, 1026, 10.260 us, 10.260 us, 1026, 1026, no</column>
+<column name="grp_dft_Pipeline_loop_k_loop_n_fu_728">dft_Pipeline_loop_k_loop_n, 12582919, 12582919, 0.126 sec, 0.126 sec, 12582919, 12582919, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 6, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">4, 5, 923, 1890, -</column>
+<column name="Memory">0, -, 8192, 1024, 0</column>
+<column name="Multiplexer">-, -, -, 4796, -</column>
+<column name="Register">-, -, 9, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">1, 2, 8, 14, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="CTRL_s_axi_U">CTRL_s_axi, 0, 0, 36, 40, 0</column>
+<column name="grp_dft_Pipeline_loop_k_loop_n_fu_728">dft_Pipeline_loop_k_loop_n, 4, 5, 874, 1777, 0</column>
+<column name="grp_dft_Pipeline_loop_sample_fu_580">dft_Pipeline_loop_sample, 0, 0, 13, 73, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="re_sample_0_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_1_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_2_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_3_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_4_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_5_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_6_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_7_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_8_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_9_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_10_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_11_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_12_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_13_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_14_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_15_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_16_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_17_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_18_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_19_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_20_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_21_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_22_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_23_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_24_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_25_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_26_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_27_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_28_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_29_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_30_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_31_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_32_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_33_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_34_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_35_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_36_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_37_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_38_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_39_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_40_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_41_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_42_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_43_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_44_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_45_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_46_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_47_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_48_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_49_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_50_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_51_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_52_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_53_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_54_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_55_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_56_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_57_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_58_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_59_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_60_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_61_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_62_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="re_sample_63_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_0_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_1_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_2_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_3_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_4_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_5_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_6_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_7_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_8_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_9_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_10_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_11_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_12_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_13_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_14_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_15_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_16_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_17_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_18_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_19_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_20_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_21_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_22_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_23_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_24_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_25_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_26_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_27_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_28_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_29_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_30_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_31_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_32_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_33_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_34_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_35_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_36_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_37_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_38_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_39_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_40_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_41_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_42_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_43_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_44_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_45_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_46_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_47_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_48_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_49_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_50_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_51_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_52_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_53_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_54_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_55_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_56_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_57_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_58_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_59_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_60_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_61_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_62_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="im_sample_63_U">re_sample_0, 0, 64, 8, 0, 16, 32, 1, 512</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="grp_dft_Pipeline_loop_k_loop_n_fu_728_imag_op_TREADY">and, 0, 0, 2, 1, 1</column>
+<column name="grp_dft_Pipeline_loop_k_loop_n_fu_728_real_op_TREADY">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state7">or, 0, 0, 2, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">42, 8, 1, 8</column>
+<column name="im_sample_0_address0">14, 3, 4, 12</column>
+<column name="im_sample_0_ce0">14, 3, 1, 3</column>
+<column name="im_sample_0_we0">9, 2, 1, 2</column>
+<column name="im_sample_10_address0">14, 3, 4, 12</column>
+<column name="im_sample_10_ce0">14, 3, 1, 3</column>
+<column name="im_sample_10_we0">9, 2, 1, 2</column>
+<column name="im_sample_11_address0">14, 3, 4, 12</column>
+<column name="im_sample_11_ce0">14, 3, 1, 3</column>
+<column name="im_sample_11_we0">9, 2, 1, 2</column>
+<column name="im_sample_12_address0">14, 3, 4, 12</column>
+<column name="im_sample_12_ce0">14, 3, 1, 3</column>
+<column name="im_sample_12_we0">9, 2, 1, 2</column>
+<column name="im_sample_13_address0">14, 3, 4, 12</column>
+<column name="im_sample_13_ce0">14, 3, 1, 3</column>
+<column name="im_sample_13_we0">9, 2, 1, 2</column>
+<column name="im_sample_14_address0">14, 3, 4, 12</column>
+<column name="im_sample_14_ce0">14, 3, 1, 3</column>
+<column name="im_sample_14_we0">9, 2, 1, 2</column>
+<column name="im_sample_15_address0">14, 3, 4, 12</column>
+<column name="im_sample_15_ce0">14, 3, 1, 3</column>
+<column name="im_sample_15_we0">9, 2, 1, 2</column>
+<column name="im_sample_16_address0">14, 3, 4, 12</column>
+<column name="im_sample_16_ce0">14, 3, 1, 3</column>
+<column name="im_sample_16_we0">9, 2, 1, 2</column>
+<column name="im_sample_17_address0">14, 3, 4, 12</column>
+<column name="im_sample_17_ce0">14, 3, 1, 3</column>
+<column name="im_sample_17_we0">9, 2, 1, 2</column>
+<column name="im_sample_18_address0">14, 3, 4, 12</column>
+<column name="im_sample_18_ce0">14, 3, 1, 3</column>
+<column name="im_sample_18_we0">9, 2, 1, 2</column>
+<column name="im_sample_19_address0">14, 3, 4, 12</column>
+<column name="im_sample_19_ce0">14, 3, 1, 3</column>
+<column name="im_sample_19_we0">9, 2, 1, 2</column>
+<column name="im_sample_1_address0">14, 3, 4, 12</column>
+<column name="im_sample_1_ce0">14, 3, 1, 3</column>
+<column name="im_sample_1_we0">9, 2, 1, 2</column>
+<column name="im_sample_20_address0">14, 3, 4, 12</column>
+<column name="im_sample_20_ce0">14, 3, 1, 3</column>
+<column name="im_sample_20_we0">9, 2, 1, 2</column>
+<column name="im_sample_21_address0">14, 3, 4, 12</column>
+<column name="im_sample_21_ce0">14, 3, 1, 3</column>
+<column name="im_sample_21_we0">9, 2, 1, 2</column>
+<column name="im_sample_22_address0">14, 3, 4, 12</column>
+<column name="im_sample_22_ce0">14, 3, 1, 3</column>
+<column name="im_sample_22_we0">9, 2, 1, 2</column>
+<column name="im_sample_23_address0">14, 3, 4, 12</column>
+<column name="im_sample_23_ce0">14, 3, 1, 3</column>
+<column name="im_sample_23_we0">9, 2, 1, 2</column>
+<column name="im_sample_24_address0">14, 3, 4, 12</column>
+<column name="im_sample_24_ce0">14, 3, 1, 3</column>
+<column name="im_sample_24_we0">9, 2, 1, 2</column>
+<column name="im_sample_25_address0">14, 3, 4, 12</column>
+<column name="im_sample_25_ce0">14, 3, 1, 3</column>
+<column name="im_sample_25_we0">9, 2, 1, 2</column>
+<column name="im_sample_26_address0">14, 3, 4, 12</column>
+<column name="im_sample_26_ce0">14, 3, 1, 3</column>
+<column name="im_sample_26_we0">9, 2, 1, 2</column>
+<column name="im_sample_27_address0">14, 3, 4, 12</column>
+<column name="im_sample_27_ce0">14, 3, 1, 3</column>
+<column name="im_sample_27_we0">9, 2, 1, 2</column>
+<column name="im_sample_28_address0">14, 3, 4, 12</column>
+<column name="im_sample_28_ce0">14, 3, 1, 3</column>
+<column name="im_sample_28_we0">9, 2, 1, 2</column>
+<column name="im_sample_29_address0">14, 3, 4, 12</column>
+<column name="im_sample_29_ce0">14, 3, 1, 3</column>
+<column name="im_sample_29_we0">9, 2, 1, 2</column>
+<column name="im_sample_2_address0">14, 3, 4, 12</column>
+<column name="im_sample_2_ce0">14, 3, 1, 3</column>
+<column name="im_sample_2_we0">9, 2, 1, 2</column>
+<column name="im_sample_30_address0">14, 3, 4, 12</column>
+<column name="im_sample_30_ce0">14, 3, 1, 3</column>
+<column name="im_sample_30_we0">9, 2, 1, 2</column>
+<column name="im_sample_31_address0">14, 3, 4, 12</column>
+<column name="im_sample_31_ce0">14, 3, 1, 3</column>
+<column name="im_sample_31_we0">9, 2, 1, 2</column>
+<column name="im_sample_32_address0">14, 3, 4, 12</column>
+<column name="im_sample_32_ce0">14, 3, 1, 3</column>
+<column name="im_sample_32_we0">9, 2, 1, 2</column>
+<column name="im_sample_33_address0">14, 3, 4, 12</column>
+<column name="im_sample_33_ce0">14, 3, 1, 3</column>
+<column name="im_sample_33_we0">9, 2, 1, 2</column>
+<column name="im_sample_34_address0">14, 3, 4, 12</column>
+<column name="im_sample_34_ce0">14, 3, 1, 3</column>
+<column name="im_sample_34_we0">9, 2, 1, 2</column>
+<column name="im_sample_35_address0">14, 3, 4, 12</column>
+<column name="im_sample_35_ce0">14, 3, 1, 3</column>
+<column name="im_sample_35_we0">9, 2, 1, 2</column>
+<column name="im_sample_36_address0">14, 3, 4, 12</column>
+<column name="im_sample_36_ce0">14, 3, 1, 3</column>
+<column name="im_sample_36_we0">9, 2, 1, 2</column>
+<column name="im_sample_37_address0">14, 3, 4, 12</column>
+<column name="im_sample_37_ce0">14, 3, 1, 3</column>
+<column name="im_sample_37_we0">9, 2, 1, 2</column>
+<column name="im_sample_38_address0">14, 3, 4, 12</column>
+<column name="im_sample_38_ce0">14, 3, 1, 3</column>
+<column name="im_sample_38_we0">9, 2, 1, 2</column>
+<column name="im_sample_39_address0">14, 3, 4, 12</column>
+<column name="im_sample_39_ce0">14, 3, 1, 3</column>
+<column name="im_sample_39_we0">9, 2, 1, 2</column>
+<column name="im_sample_3_address0">14, 3, 4, 12</column>
+<column name="im_sample_3_ce0">14, 3, 1, 3</column>
+<column name="im_sample_3_we0">9, 2, 1, 2</column>
+<column name="im_sample_40_address0">14, 3, 4, 12</column>
+<column name="im_sample_40_ce0">14, 3, 1, 3</column>
+<column name="im_sample_40_we0">9, 2, 1, 2</column>
+<column name="im_sample_41_address0">14, 3, 4, 12</column>
+<column name="im_sample_41_ce0">14, 3, 1, 3</column>
+<column name="im_sample_41_we0">9, 2, 1, 2</column>
+<column name="im_sample_42_address0">14, 3, 4, 12</column>
+<column name="im_sample_42_ce0">14, 3, 1, 3</column>
+<column name="im_sample_42_we0">9, 2, 1, 2</column>
+<column name="im_sample_43_address0">14, 3, 4, 12</column>
+<column name="im_sample_43_ce0">14, 3, 1, 3</column>
+<column name="im_sample_43_we0">9, 2, 1, 2</column>
+<column name="im_sample_44_address0">14, 3, 4, 12</column>
+<column name="im_sample_44_ce0">14, 3, 1, 3</column>
+<column name="im_sample_44_we0">9, 2, 1, 2</column>
+<column name="im_sample_45_address0">14, 3, 4, 12</column>
+<column name="im_sample_45_ce0">14, 3, 1, 3</column>
+<column name="im_sample_45_we0">9, 2, 1, 2</column>
+<column name="im_sample_46_address0">14, 3, 4, 12</column>
+<column name="im_sample_46_ce0">14, 3, 1, 3</column>
+<column name="im_sample_46_we0">9, 2, 1, 2</column>
+<column name="im_sample_47_address0">14, 3, 4, 12</column>
+<column name="im_sample_47_ce0">14, 3, 1, 3</column>
+<column name="im_sample_47_we0">9, 2, 1, 2</column>
+<column name="im_sample_48_address0">14, 3, 4, 12</column>
+<column name="im_sample_48_ce0">14, 3, 1, 3</column>
+<column name="im_sample_48_we0">9, 2, 1, 2</column>
+<column name="im_sample_49_address0">14, 3, 4, 12</column>
+<column name="im_sample_49_ce0">14, 3, 1, 3</column>
+<column name="im_sample_49_we0">9, 2, 1, 2</column>
+<column name="im_sample_4_address0">14, 3, 4, 12</column>
+<column name="im_sample_4_ce0">14, 3, 1, 3</column>
+<column name="im_sample_4_we0">9, 2, 1, 2</column>
+<column name="im_sample_50_address0">14, 3, 4, 12</column>
+<column name="im_sample_50_ce0">14, 3, 1, 3</column>
+<column name="im_sample_50_we0">9, 2, 1, 2</column>
+<column name="im_sample_51_address0">14, 3, 4, 12</column>
+<column name="im_sample_51_ce0">14, 3, 1, 3</column>
+<column name="im_sample_51_we0">9, 2, 1, 2</column>
+<column name="im_sample_52_address0">14, 3, 4, 12</column>
+<column name="im_sample_52_ce0">14, 3, 1, 3</column>
+<column name="im_sample_52_we0">9, 2, 1, 2</column>
+<column name="im_sample_53_address0">14, 3, 4, 12</column>
+<column name="im_sample_53_ce0">14, 3, 1, 3</column>
+<column name="im_sample_53_we0">9, 2, 1, 2</column>
+<column name="im_sample_54_address0">14, 3, 4, 12</column>
+<column name="im_sample_54_ce0">14, 3, 1, 3</column>
+<column name="im_sample_54_we0">9, 2, 1, 2</column>
+<column name="im_sample_55_address0">14, 3, 4, 12</column>
+<column name="im_sample_55_ce0">14, 3, 1, 3</column>
+<column name="im_sample_55_we0">9, 2, 1, 2</column>
+<column name="im_sample_56_address0">14, 3, 4, 12</column>
+<column name="im_sample_56_ce0">14, 3, 1, 3</column>
+<column name="im_sample_56_we0">9, 2, 1, 2</column>
+<column name="im_sample_57_address0">14, 3, 4, 12</column>
+<column name="im_sample_57_ce0">14, 3, 1, 3</column>
+<column name="im_sample_57_we0">9, 2, 1, 2</column>
+<column name="im_sample_58_address0">14, 3, 4, 12</column>
+<column name="im_sample_58_ce0">14, 3, 1, 3</column>
+<column name="im_sample_58_we0">9, 2, 1, 2</column>
+<column name="im_sample_59_address0">14, 3, 4, 12</column>
+<column name="im_sample_59_ce0">14, 3, 1, 3</column>
+<column name="im_sample_59_we0">9, 2, 1, 2</column>
+<column name="im_sample_5_address0">14, 3, 4, 12</column>
+<column name="im_sample_5_ce0">14, 3, 1, 3</column>
+<column name="im_sample_5_we0">9, 2, 1, 2</column>
+<column name="im_sample_60_address0">14, 3, 4, 12</column>
+<column name="im_sample_60_ce0">14, 3, 1, 3</column>
+<column name="im_sample_60_we0">9, 2, 1, 2</column>
+<column name="im_sample_61_address0">14, 3, 4, 12</column>
+<column name="im_sample_61_ce0">14, 3, 1, 3</column>
+<column name="im_sample_61_we0">9, 2, 1, 2</column>
+<column name="im_sample_62_address0">14, 3, 4, 12</column>
+<column name="im_sample_62_ce0">14, 3, 1, 3</column>
+<column name="im_sample_62_we0">9, 2, 1, 2</column>
+<column name="im_sample_63_address0">14, 3, 4, 12</column>
+<column name="im_sample_63_ce0">14, 3, 1, 3</column>
+<column name="im_sample_63_we0">9, 2, 1, 2</column>
+<column name="im_sample_6_address0">14, 3, 4, 12</column>
+<column name="im_sample_6_ce0">14, 3, 1, 3</column>
+<column name="im_sample_6_we0">9, 2, 1, 2</column>
+<column name="im_sample_7_address0">14, 3, 4, 12</column>
+<column name="im_sample_7_ce0">14, 3, 1, 3</column>
+<column name="im_sample_7_we0">9, 2, 1, 2</column>
+<column name="im_sample_8_address0">14, 3, 4, 12</column>
+<column name="im_sample_8_ce0">14, 3, 1, 3</column>
+<column name="im_sample_8_we0">9, 2, 1, 2</column>
+<column name="im_sample_9_address0">14, 3, 4, 12</column>
+<column name="im_sample_9_ce0">14, 3, 1, 3</column>
+<column name="im_sample_9_we0">9, 2, 1, 2</column>
+<column name="imag_sample_TREADY_int_regslice">9, 2, 1, 2</column>
+<column name="re_sample_0_address0">14, 3, 4, 12</column>
+<column name="re_sample_0_ce0">14, 3, 1, 3</column>
+<column name="re_sample_0_we0">9, 2, 1, 2</column>
+<column name="re_sample_10_address0">14, 3, 4, 12</column>
+<column name="re_sample_10_ce0">14, 3, 1, 3</column>
+<column name="re_sample_10_we0">9, 2, 1, 2</column>
+<column name="re_sample_11_address0">14, 3, 4, 12</column>
+<column name="re_sample_11_ce0">14, 3, 1, 3</column>
+<column name="re_sample_11_we0">9, 2, 1, 2</column>
+<column name="re_sample_12_address0">14, 3, 4, 12</column>
+<column name="re_sample_12_ce0">14, 3, 1, 3</column>
+<column name="re_sample_12_we0">9, 2, 1, 2</column>
+<column name="re_sample_13_address0">14, 3, 4, 12</column>
+<column name="re_sample_13_ce0">14, 3, 1, 3</column>
+<column name="re_sample_13_we0">9, 2, 1, 2</column>
+<column name="re_sample_14_address0">14, 3, 4, 12</column>
+<column name="re_sample_14_ce0">14, 3, 1, 3</column>
+<column name="re_sample_14_we0">9, 2, 1, 2</column>
+<column name="re_sample_15_address0">14, 3, 4, 12</column>
+<column name="re_sample_15_ce0">14, 3, 1, 3</column>
+<column name="re_sample_15_we0">9, 2, 1, 2</column>
+<column name="re_sample_16_address0">14, 3, 4, 12</column>
+<column name="re_sample_16_ce0">14, 3, 1, 3</column>
+<column name="re_sample_16_we0">9, 2, 1, 2</column>
+<column name="re_sample_17_address0">14, 3, 4, 12</column>
+<column name="re_sample_17_ce0">14, 3, 1, 3</column>
+<column name="re_sample_17_we0">9, 2, 1, 2</column>
+<column name="re_sample_18_address0">14, 3, 4, 12</column>
+<column name="re_sample_18_ce0">14, 3, 1, 3</column>
+<column name="re_sample_18_we0">9, 2, 1, 2</column>
+<column name="re_sample_19_address0">14, 3, 4, 12</column>
+<column name="re_sample_19_ce0">14, 3, 1, 3</column>
+<column name="re_sample_19_we0">9, 2, 1, 2</column>
+<column name="re_sample_1_address0">14, 3, 4, 12</column>
+<column name="re_sample_1_ce0">14, 3, 1, 3</column>
+<column name="re_sample_1_we0">9, 2, 1, 2</column>
+<column name="re_sample_20_address0">14, 3, 4, 12</column>
+<column name="re_sample_20_ce0">14, 3, 1, 3</column>
+<column name="re_sample_20_we0">9, 2, 1, 2</column>
+<column name="re_sample_21_address0">14, 3, 4, 12</column>
+<column name="re_sample_21_ce0">14, 3, 1, 3</column>
+<column name="re_sample_21_we0">9, 2, 1, 2</column>
+<column name="re_sample_22_address0">14, 3, 4, 12</column>
+<column name="re_sample_22_ce0">14, 3, 1, 3</column>
+<column name="re_sample_22_we0">9, 2, 1, 2</column>
+<column name="re_sample_23_address0">14, 3, 4, 12</column>
+<column name="re_sample_23_ce0">14, 3, 1, 3</column>
+<column name="re_sample_23_we0">9, 2, 1, 2</column>
+<column name="re_sample_24_address0">14, 3, 4, 12</column>
+<column name="re_sample_24_ce0">14, 3, 1, 3</column>
+<column name="re_sample_24_we0">9, 2, 1, 2</column>
+<column name="re_sample_25_address0">14, 3, 4, 12</column>
+<column name="re_sample_25_ce0">14, 3, 1, 3</column>
+<column name="re_sample_25_we0">9, 2, 1, 2</column>
+<column name="re_sample_26_address0">14, 3, 4, 12</column>
+<column name="re_sample_26_ce0">14, 3, 1, 3</column>
+<column name="re_sample_26_we0">9, 2, 1, 2</column>
+<column name="re_sample_27_address0">14, 3, 4, 12</column>
+<column name="re_sample_27_ce0">14, 3, 1, 3</column>
+<column name="re_sample_27_we0">9, 2, 1, 2</column>
+<column name="re_sample_28_address0">14, 3, 4, 12</column>
+<column name="re_sample_28_ce0">14, 3, 1, 3</column>
+<column name="re_sample_28_we0">9, 2, 1, 2</column>
+<column name="re_sample_29_address0">14, 3, 4, 12</column>
+<column name="re_sample_29_ce0">14, 3, 1, 3</column>
+<column name="re_sample_29_we0">9, 2, 1, 2</column>
+<column name="re_sample_2_address0">14, 3, 4, 12</column>
+<column name="re_sample_2_ce0">14, 3, 1, 3</column>
+<column name="re_sample_2_we0">9, 2, 1, 2</column>
+<column name="re_sample_30_address0">14, 3, 4, 12</column>
+<column name="re_sample_30_ce0">14, 3, 1, 3</column>
+<column name="re_sample_30_we0">9, 2, 1, 2</column>
+<column name="re_sample_31_address0">14, 3, 4, 12</column>
+<column name="re_sample_31_ce0">14, 3, 1, 3</column>
+<column name="re_sample_31_we0">9, 2, 1, 2</column>
+<column name="re_sample_32_address0">14, 3, 4, 12</column>
+<column name="re_sample_32_ce0">14, 3, 1, 3</column>
+<column name="re_sample_32_we0">9, 2, 1, 2</column>
+<column name="re_sample_33_address0">14, 3, 4, 12</column>
+<column name="re_sample_33_ce0">14, 3, 1, 3</column>
+<column name="re_sample_33_we0">9, 2, 1, 2</column>
+<column name="re_sample_34_address0">14, 3, 4, 12</column>
+<column name="re_sample_34_ce0">14, 3, 1, 3</column>
+<column name="re_sample_34_we0">9, 2, 1, 2</column>
+<column name="re_sample_35_address0">14, 3, 4, 12</column>
+<column name="re_sample_35_ce0">14, 3, 1, 3</column>
+<column name="re_sample_35_we0">9, 2, 1, 2</column>
+<column name="re_sample_36_address0">14, 3, 4, 12</column>
+<column name="re_sample_36_ce0">14, 3, 1, 3</column>
+<column name="re_sample_36_we0">9, 2, 1, 2</column>
+<column name="re_sample_37_address0">14, 3, 4, 12</column>
+<column name="re_sample_37_ce0">14, 3, 1, 3</column>
+<column name="re_sample_37_we0">9, 2, 1, 2</column>
+<column name="re_sample_38_address0">14, 3, 4, 12</column>
+<column name="re_sample_38_ce0">14, 3, 1, 3</column>
+<column name="re_sample_38_we0">9, 2, 1, 2</column>
+<column name="re_sample_39_address0">14, 3, 4, 12</column>
+<column name="re_sample_39_ce0">14, 3, 1, 3</column>
+<column name="re_sample_39_we0">9, 2, 1, 2</column>
+<column name="re_sample_3_address0">14, 3, 4, 12</column>
+<column name="re_sample_3_ce0">14, 3, 1, 3</column>
+<column name="re_sample_3_we0">9, 2, 1, 2</column>
+<column name="re_sample_40_address0">14, 3, 4, 12</column>
+<column name="re_sample_40_ce0">14, 3, 1, 3</column>
+<column name="re_sample_40_we0">9, 2, 1, 2</column>
+<column name="re_sample_41_address0">14, 3, 4, 12</column>
+<column name="re_sample_41_ce0">14, 3, 1, 3</column>
+<column name="re_sample_41_we0">9, 2, 1, 2</column>
+<column name="re_sample_42_address0">14, 3, 4, 12</column>
+<column name="re_sample_42_ce0">14, 3, 1, 3</column>
+<column name="re_sample_42_we0">9, 2, 1, 2</column>
+<column name="re_sample_43_address0">14, 3, 4, 12</column>
+<column name="re_sample_43_ce0">14, 3, 1, 3</column>
+<column name="re_sample_43_we0">9, 2, 1, 2</column>
+<column name="re_sample_44_address0">14, 3, 4, 12</column>
+<column name="re_sample_44_ce0">14, 3, 1, 3</column>
+<column name="re_sample_44_we0">9, 2, 1, 2</column>
+<column name="re_sample_45_address0">14, 3, 4, 12</column>
+<column name="re_sample_45_ce0">14, 3, 1, 3</column>
+<column name="re_sample_45_we0">9, 2, 1, 2</column>
+<column name="re_sample_46_address0">14, 3, 4, 12</column>
+<column name="re_sample_46_ce0">14, 3, 1, 3</column>
+<column name="re_sample_46_we0">9, 2, 1, 2</column>
+<column name="re_sample_47_address0">14, 3, 4, 12</column>
+<column name="re_sample_47_ce0">14, 3, 1, 3</column>
+<column name="re_sample_47_we0">9, 2, 1, 2</column>
+<column name="re_sample_48_address0">14, 3, 4, 12</column>
+<column name="re_sample_48_ce0">14, 3, 1, 3</column>
+<column name="re_sample_48_we0">9, 2, 1, 2</column>
+<column name="re_sample_49_address0">14, 3, 4, 12</column>
+<column name="re_sample_49_ce0">14, 3, 1, 3</column>
+<column name="re_sample_49_we0">9, 2, 1, 2</column>
+<column name="re_sample_4_address0">14, 3, 4, 12</column>
+<column name="re_sample_4_ce0">14, 3, 1, 3</column>
+<column name="re_sample_4_we0">9, 2, 1, 2</column>
+<column name="re_sample_50_address0">14, 3, 4, 12</column>
+<column name="re_sample_50_ce0">14, 3, 1, 3</column>
+<column name="re_sample_50_we0">9, 2, 1, 2</column>
+<column name="re_sample_51_address0">14, 3, 4, 12</column>
+<column name="re_sample_51_ce0">14, 3, 1, 3</column>
+<column name="re_sample_51_we0">9, 2, 1, 2</column>
+<column name="re_sample_52_address0">14, 3, 4, 12</column>
+<column name="re_sample_52_ce0">14, 3, 1, 3</column>
+<column name="re_sample_52_we0">9, 2, 1, 2</column>
+<column name="re_sample_53_address0">14, 3, 4, 12</column>
+<column name="re_sample_53_ce0">14, 3, 1, 3</column>
+<column name="re_sample_53_we0">9, 2, 1, 2</column>
+<column name="re_sample_54_address0">14, 3, 4, 12</column>
+<column name="re_sample_54_ce0">14, 3, 1, 3</column>
+<column name="re_sample_54_we0">9, 2, 1, 2</column>
+<column name="re_sample_55_address0">14, 3, 4, 12</column>
+<column name="re_sample_55_ce0">14, 3, 1, 3</column>
+<column name="re_sample_55_we0">9, 2, 1, 2</column>
+<column name="re_sample_56_address0">14, 3, 4, 12</column>
+<column name="re_sample_56_ce0">14, 3, 1, 3</column>
+<column name="re_sample_56_we0">9, 2, 1, 2</column>
+<column name="re_sample_57_address0">14, 3, 4, 12</column>
+<column name="re_sample_57_ce0">14, 3, 1, 3</column>
+<column name="re_sample_57_we0">9, 2, 1, 2</column>
+<column name="re_sample_58_address0">14, 3, 4, 12</column>
+<column name="re_sample_58_ce0">14, 3, 1, 3</column>
+<column name="re_sample_58_we0">9, 2, 1, 2</column>
+<column name="re_sample_59_address0">14, 3, 4, 12</column>
+<column name="re_sample_59_ce0">14, 3, 1, 3</column>
+<column name="re_sample_59_we0">9, 2, 1, 2</column>
+<column name="re_sample_5_address0">14, 3, 4, 12</column>
+<column name="re_sample_5_ce0">14, 3, 1, 3</column>
+<column name="re_sample_5_we0">9, 2, 1, 2</column>
+<column name="re_sample_60_address0">14, 3, 4, 12</column>
+<column name="re_sample_60_ce0">14, 3, 1, 3</column>
+<column name="re_sample_60_we0">9, 2, 1, 2</column>
+<column name="re_sample_61_address0">14, 3, 4, 12</column>
+<column name="re_sample_61_ce0">14, 3, 1, 3</column>
+<column name="re_sample_61_we0">9, 2, 1, 2</column>
+<column name="re_sample_62_address0">14, 3, 4, 12</column>
+<column name="re_sample_62_ce0">14, 3, 1, 3</column>
+<column name="re_sample_62_we0">9, 2, 1, 2</column>
+<column name="re_sample_63_address0">14, 3, 4, 12</column>
+<column name="re_sample_63_ce0">14, 3, 1, 3</column>
+<column name="re_sample_63_we0">9, 2, 1, 2</column>
+<column name="re_sample_6_address0">14, 3, 4, 12</column>
+<column name="re_sample_6_ce0">14, 3, 1, 3</column>
+<column name="re_sample_6_we0">9, 2, 1, 2</column>
+<column name="re_sample_7_address0">14, 3, 4, 12</column>
+<column name="re_sample_7_ce0">14, 3, 1, 3</column>
+<column name="re_sample_7_we0">9, 2, 1, 2</column>
+<column name="re_sample_8_address0">14, 3, 4, 12</column>
+<column name="re_sample_8_ce0">14, 3, 1, 3</column>
+<column name="re_sample_8_we0">9, 2, 1, 2</column>
+<column name="re_sample_9_address0">14, 3, 4, 12</column>
+<column name="re_sample_9_ce0">14, 3, 1, 3</column>
+<column name="re_sample_9_we0">9, 2, 1, 2</column>
+<column name="real_sample_TREADY_int_regslice">9, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">7, 0, 7, 0</column>
+<column name="grp_dft_Pipeline_loop_k_loop_n_fu_728_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_dft_Pipeline_loop_sample_fu_580_ap_start_reg">1, 0, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="s_axi_CTRL_AWVALID">in, 1, s_axi, CTRL, return void</column>
+<column name="s_axi_CTRL_AWREADY">out, 1, s_axi, CTRL, return void</column>
+<column name="s_axi_CTRL_AWADDR">in, 4, s_axi, CTRL, return void</column>
+<column name="s_axi_CTRL_WVALID">in, 1, s_axi, CTRL, return void</column>
+<column name="s_axi_CTRL_WREADY">out, 1, s_axi, CTRL, return void</column>
+<column name="s_axi_CTRL_WDATA">in, 32, s_axi, CTRL, return void</column>
+<column name="s_axi_CTRL_WSTRB">in, 4, s_axi, CTRL, return void</column>
+<column name="s_axi_CTRL_ARVALID">in, 1, s_axi, CTRL, return void</column>
+<column name="s_axi_CTRL_ARREADY">out, 1, s_axi, CTRL, return void</column>
+<column name="s_axi_CTRL_ARADDR">in, 4, s_axi, CTRL, return void</column>
+<column name="s_axi_CTRL_RVALID">out, 1, s_axi, CTRL, return void</column>
+<column name="s_axi_CTRL_RREADY">in, 1, s_axi, CTRL, return void</column>
+<column name="s_axi_CTRL_RDATA">out, 32, s_axi, CTRL, return void</column>
+<column name="s_axi_CTRL_RRESP">out, 2, s_axi, CTRL, return void</column>
+<column name="s_axi_CTRL_BVALID">out, 1, s_axi, CTRL, return void</column>
+<column name="s_axi_CTRL_BREADY">in, 1, s_axi, CTRL, return void</column>
+<column name="s_axi_CTRL_BRESP">out, 2, s_axi, CTRL, return void</column>
+<column name="ap_clk">in, 1, ap_ctrl_hs, dft, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_hs, dft, return value</column>
+<column name="interrupt">out, 1, ap_ctrl_hs, dft, return value</column>
+<column name="real_sample_TDATA">in, 32, axis, real_sample_V_data_V, pointer</column>
+<column name="real_sample_TVALID">in, 1, axis, real_sample_V_last_V, pointer</column>
+<column name="real_sample_TREADY">out, 1, axis, real_sample_V_last_V, pointer</column>
+<column name="real_sample_TLAST">in, 1, axis, real_sample_V_last_V, pointer</column>
+<column name="real_sample_TKEEP">in, 4, axis, real_sample_V_keep_V, pointer</column>
+<column name="real_sample_TSTRB">in, 4, axis, real_sample_V_strb_V, pointer</column>
+<column name="imag_sample_TDATA">in, 32, axis, imag_sample_V_data_V, pointer</column>
+<column name="imag_sample_TVALID">in, 1, axis, imag_sample_V_last_V, pointer</column>
+<column name="imag_sample_TREADY">out, 1, axis, imag_sample_V_last_V, pointer</column>
+<column name="imag_sample_TLAST">in, 1, axis, imag_sample_V_last_V, pointer</column>
+<column name="imag_sample_TKEEP">in, 4, axis, imag_sample_V_keep_V, pointer</column>
+<column name="imag_sample_TSTRB">in, 4, axis, imag_sample_V_strb_V, pointer</column>
+<column name="real_op_TDATA">out, 32, axis, real_op_V_data_V, pointer</column>
+<column name="real_op_TVALID">out, 1, axis, real_op_V_last_V, pointer</column>
+<column name="real_op_TREADY">in, 1, axis, real_op_V_last_V, pointer</column>
+<column name="real_op_TLAST">out, 1, axis, real_op_V_last_V, pointer</column>
+<column name="real_op_TKEEP">out, 4, axis, real_op_V_keep_V, pointer</column>
+<column name="real_op_TSTRB">out, 4, axis, real_op_V_strb_V, pointer</column>
+<column name="imag_op_TDATA">out, 32, axis, imag_op_V_data_V, pointer</column>
+<column name="imag_op_TVALID">out, 1, axis, imag_op_V_last_V, pointer</column>
+<column name="imag_op_TREADY">in, 1, axis, imag_op_V_last_V, pointer</column>
+<column name="imag_op_TLAST">out, 1, axis, imag_op_V_last_V, pointer</column>
+<column name="imag_op_TKEEP">out, 4, axis, imag_op_V_keep_V, pointer</column>
+<column name="imag_op_TSTRB">out, 4, axis, imag_op_V_strb_V, pointer</column>
+</table>
+</item>
+</section>
+</profile>

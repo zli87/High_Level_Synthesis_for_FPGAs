@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="sadd" xd:componentRef="sadd" xd:initiationInterval="x" xd:clockPeriod="10.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="ap_ctrl" xd:busTypeRef="acc_handshake" xd:type="acc_handshake"/>
+  <xd:arg xd:name="INPUT1.data" xd:originalName="INPUT1" xd:direction="in" xd:interfaceRef="INPUT1" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="INPUT1.keep" xd:originalName="INPUT1" xd:direction="in" xd:interfaceRef="INPUT1" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="INPUT1.strb" xd:originalName="INPUT1" xd:direction="in" xd:interfaceRef="INPUT1" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="INPUT1.last" xd:originalName="INPUT1" xd:direction="in" xd:interfaceRef="INPUT1" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="INPUT2.data" xd:originalName="INPUT2" xd:direction="in" xd:interfaceRef="INPUT2" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="INPUT2.keep" xd:originalName="INPUT2" xd:direction="in" xd:interfaceRef="INPUT2" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="INPUT2.strb" xd:originalName="INPUT2" xd:direction="in" xd:interfaceRef="INPUT2" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="INPUT2.last" xd:originalName="INPUT2" xd:direction="in" xd:interfaceRef="INPUT2" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="OUTPUT.data" xd:originalName="OUTPUT" xd:direction="out" xd:interfaceRef="OUTPUT_r" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="OUTPUT.keep" xd:originalName="OUTPUT" xd:direction="out" xd:interfaceRef="OUTPUT_r" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="OUTPUT.strb" xd:originalName="OUTPUT" xd:direction="out" xd:interfaceRef="OUTPUT_r" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="OUTPUT.last" xd:originalName="OUTPUT" xd:direction="out" xd:interfaceRef="OUTPUT_r" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="length" xd:originalName="length" xd:direction="in" xd:interfaceRef="s_axi_CTRL" xd:busTypeRef="axilite" xd:offset="0x10" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:latencyEstimates xd:best-case="undef" xd:worst-case="undef" xd:average-case="undef"/>
+  <xd:resourceEstimates xd:LUT="288" xd:FF="181" xd:BRAM="0" xd:DSP="0"/>
+</xd:acceleratorMap>

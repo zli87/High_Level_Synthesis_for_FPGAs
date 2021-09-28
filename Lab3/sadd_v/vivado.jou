@@ -1,0 +1,72 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Sep 18 14:32:07 2021
+# Process ID: 28268
+# Current directory: C:/Xilinx/project_1
+# Command line: vivado.exe
+# Log file: C:/Xilinx/project_1/vivado.log
+# Journal file: C:/Xilinx/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Xilinx/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Xilinx/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:sadd:1.0 sadd_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dma:7.1 axi_dma_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dma:7.1 axi_dma_1
+endgroup
+set_property name sadd_dma1 [get_bd_cells axi_dma_1]
+set_property name sadd_dma2 [get_bd_cells axi_dma_0]
+set_property -dict [list CONFIG.c_include_sg {0} CONFIG.c_sg_length_width {23} CONFIG.c_sg_include_stscntrl_strm {0}] [get_bd_cells sadd_dma1]
+set_property -dict [list CONFIG.c_include_sg {0} CONFIG.c_sg_length_width {23} CONFIG.c_sg_include_stscntrl_strm {0}] [get_bd_cells sadd_dma2]
+set_property -dict [list CONFIG.c_include_s2mm {0}] [get_bd_cells sadd_dma2]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0
+endgroup
+set_property location {3 715 -51} [get_bd_cells xlconstant_0]
+connect_bd_net [get_bd_pins xlconstant_0/dout] [get_bd_pins sadd_0/ap_start]
+connect_bd_intf_net [get_bd_intf_pins sadd_dma2/M_AXIS_MM2S] [get_bd_intf_pins sadd_0/INPUT1]
+connect_bd_intf_net [get_bd_intf_pins sadd_0/OUTPUT_r] [get_bd_intf_pins sadd_0/INPUT2]
+delete_bd_objs [get_bd_intf_nets sadd_0_OUTPUT_r]
+connect_bd_intf_net [get_bd_intf_pins sadd_0/OUTPUT_r] [get_bd_intf_pins sadd_dma1/S_AXIS_S2MM]
+delete_bd_objs [get_bd_intf_nets sadd_dma2_M_AXIS_MM2S]
+connect_bd_intf_net [get_bd_intf_pins sadd_dma2/M_AXIS_MM2S] [get_bd_intf_pins sadd_0/INPUT2]
+connect_bd_intf_net [get_bd_intf_pins sadd_0/INPUT1] [get_bd_intf_pins sadd_dma1/M_AXIS_MM2S]
+set_property -dict [list CONFIG.PCW_USE_S_AXI_HP0 {1} CONFIG.PCW_USE_S_AXI_HP1 {1}] [get_bd_cells processing_system7_0]
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+startgroup
+set_property -dict [list CONFIG.PCW_USE_S_AXI_HP0 {1} CONFIG.PCW_USE_S_AXI_HP1 {1}] [get_bd_cells processing_system7_0]
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/sadd_dma1/M_AXI_MM2S} Slave {/processing_system7_0/S_AXI_HP0} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins processing_system7_0/S_AXI_HP0]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/sadd_dma2/M_AXI_MM2S} Slave {/processing_system7_0/S_AXI_HP1} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins processing_system7_0/S_AXI_HP1]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/sadd_0/s_axi_CTRL} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins sadd_0/s_axi_CTRL]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/sadd_dma1/S_AXI_LITE} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins sadd_dma1/S_AXI_LITE]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/sadd_dma2/S_AXI_LITE} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins sadd_dma2/S_AXI_LITE]
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/sadd_dma1/M_AXI_S2MM} Slave {/processing_system7_0/S_AXI_HP0} ddr_seg {Auto} intc_ip {/axi_mem_intercon} master_apm {0}}  [get_bd_intf_pins sadd_dma1/M_AXI_S2MM]
+validate_bd_design
+group_bd_cells streamAdd [get_bd_cells sadd_dma2] [get_bd_cells sadd_0] [get_bd_cells sadd_dma1]
+set_property location {4 449 -187} [get_bd_cells xlconstant_0]
+regenerate_bd_layout
+undo
+save_bd_design
+validate_bd_design
+make_wrapper -files [get_files C:/Xilinx/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -top
+add_files -norecurse c:/Xilinx/project_1/project_1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+open_bd_design {C:/Xilinx/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {C:/Xilinx/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+open_run impl_1
+close_design

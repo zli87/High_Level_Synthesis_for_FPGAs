@@ -1,0 +1,20 @@
+verilog xil_defaultlib --include "C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" --include "../../../../project_3.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../project_3.gen/sources_1/bd/design_1/ipshared/34f8/hdl" \
+"../../../../project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_buff.v" \
+"../../../../project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_control_s_axi.v" \
+"../../../../project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_fsqrt_32ns_32ns_32_16_no_dsp_1.v" \
+"../../../../project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_input_r_m_axi.v" \
+"../../../../project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt_output_r_m_axi.v" \
+"../../../../project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/verilog/axi4_sqrt.v" \
+"../../../../project_3.gen/sources_1/bd/design_1/ipshared/e054/hdl/ip/axi4_sqrt_ap_fsqrt_14_no_dsp_32.v" \
+"../../../bd/design_1/ip/design_1_axi4_sqrt_0_0/sim/design_1_axi4_sqrt_0_0.v" \
+"../../../bd/design_1/ip/design_1_processing_system7_0_0/sim/design_1_processing_system7_0_0.v" \
+"../../../bd/design_1/ip/design_1_xbar_0/sim/design_1_xbar_0.v" \
+"../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
+"../../../bd/design_1/ip/design_1_auto_us_0/sim/design_1_auto_us_0.v" \
+"../../../bd/design_1/ip/design_1_auto_us_1/sim/design_1_auto_us_1.v" \
+"../../../bd/design_1/ip/design_1_auto_pc_1/sim/design_1_auto_pc_1.v" \
+"../../../bd/design_1/sim/design_1.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

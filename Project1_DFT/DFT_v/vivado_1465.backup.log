@@ -1,0 +1,350 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue Sep 28 07:06:21 2021
+# Process ID: 1465
+# Current directory: /mnt/c/Xilinx/Projects/DFT_v
+# Command line: vivado
+# Log file: /mnt/c/Xilinx/Projects/DFT_v/vivado.log
+# Journal file: /mnt/c/Xilinx/Projects/DFT_v/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /mnt/c/Xilinx/Projects/DFT_v/DFT_v.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/mnt/c/Xilinx/Projects/DFT/dft_1024_precomputed'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2021.1/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'design_1.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+design_1_dft_0_1
+
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:19 . Memory (MB): peak = 7580.777 ; gain = 180.836 ; free physical = 9490 ; free virtual = 15034
+update_compile_order -fileset sources_1
+open_bd_design {/mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file </mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- xilinx.com:hls:dft:1.0 - dft_0
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - dma_re
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - dma_im
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_mem_intercon
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_mem_intercon_1
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <design_1> from block design file </mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/design_1.bd>
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:hls:dft:1.0 [get_ips  design_1_dft_0_1] -log ip_upgrade.log
+Upgrading '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3422] Upgraded design_1_dft_0_1 (Dft 1.0) from revision 2109262031 to revision 2109280705
+WARNING: [IP_Flow 19-4699] Upgrade has removed interface 'imag_op'
+WARNING: [IP_Flow 19-4699] Upgrade has removed interface 'imag_sample'
+WARNING: [IP_Flow 19-4699] Upgrade has removed interface 'real_op'
+WARNING: [IP_Flow 19-4699] Upgrade has removed interface 'real_sample'
+WARNING: [IP_Flow 19-4699] Upgrade has removed interface 's_axi_CTRL'
+WARNING: [IP_Flow 19-4697] Upgrade has added interface 'm_axi_input_r' (xilinx.com:interface:aximm:1.0)
+WARNING: [IP_Flow 19-4697] Upgrade has added interface 'm_axi_output_r' (xilinx.com:interface:aximm:1.0)
+WARNING: [IP_Flow 19-4697] Upgrade has added interface 's_axi_control' (xilinx.com:interface:aximm:1.0)
+WARNING: [IP_Flow 19-3670] Detected external interface differences while upgrading 'design_1_dft_0_1'.
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'imag_op_TDATA'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'imag_op_TKEEP'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'imag_op_TLAST'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'imag_op_TREADY'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'imag_op_TSTRB'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'imag_op_TVALID'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'imag_sample_TDATA'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'imag_sample_TKEEP'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'imag_sample_TLAST'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'imag_sample_TREADY'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'imag_sample_TSTRB'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'imag_sample_TVALID'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'real_op_TDATA'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'real_op_TKEEP'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'real_op_TLAST'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'real_op_TREADY'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'real_op_TSTRB'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'real_op_TVALID'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'real_sample_TDATA'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'real_sample_TKEEP'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'real_sample_TLAST'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'real_sample_TREADY'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'real_sample_TSTRB'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'real_sample_TVALID'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 's_axi_CTRL_ARADDR'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 's_axi_CTRL_ARREADY'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 's_axi_CTRL_ARVALID'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 's_axi_CTRL_AWADDR'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 's_axi_CTRL_AWREADY'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 's_axi_CTRL_AWVALID'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 's_axi_CTRL_BREADY'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 's_axi_CTRL_BRESP'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 's_axi_CTRL_BVALID'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 's_axi_CTRL_RDATA'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 's_axi_CTRL_RREADY'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 's_axi_CTRL_RRESP'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 's_axi_CTRL_RVALID'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 's_axi_CTRL_WDATA'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 's_axi_CTRL_WREADY'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 's_axi_CTRL_WSTRB'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 's_axi_CTRL_WVALID'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_input_r_ARADDR'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_input_r_ARBURST'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_input_r_ARCACHE'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_input_r_ARLEN'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_input_r_ARLOCK'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_input_r_ARPROT'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_input_r_ARQOS'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_input_r_ARREADY'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_input_r_ARREGION'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_input_r_ARSIZE'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_input_r_ARVALID'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_input_r_AWADDR'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_input_r_AWBURST'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_input_r_AWCACHE'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_input_r_AWLEN'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_input_r_AWLOCK'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_input_r_AWPROT'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_input_r_AWQOS'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_input_r_AWREADY'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_input_r_AWREGION'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_input_r_AWSIZE'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_input_r_AWVALID'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_input_r_BREADY'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_input_r_BRESP'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_input_r_BVALID'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_input_r_RDATA'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_input_r_RLAST'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_input_r_RREADY'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_input_r_RRESP'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_input_r_RVALID'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_input_r_WDATA'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_input_r_WLAST'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_input_r_WREADY'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_input_r_WSTRB'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_input_r_WVALID'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_output_r_ARADDR'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_output_r_ARBURST'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_output_r_ARCACHE'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_output_r_ARLEN'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_output_r_ARLOCK'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_output_r_ARPROT'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_output_r_ARQOS'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_output_r_ARREADY'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_output_r_ARREGION'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_output_r_ARSIZE'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_output_r_ARVALID'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_output_r_AWADDR'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_output_r_AWBURST'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_output_r_AWCACHE'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_output_r_AWLEN'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_output_r_AWLOCK'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_output_r_AWPROT'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_output_r_AWQOS'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_output_r_AWREADY'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_output_r_AWREGION'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_output_r_AWSIZE'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_output_r_AWVALID'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_output_r_BREADY'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_output_r_BRESP'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_output_r_BVALID'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_output_r_RDATA'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_output_r_RLAST'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_output_r_RREADY'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_output_r_RRESP'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_output_r_RVALID'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_output_r_WDATA'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_output_r_WLAST'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_output_r_WREADY'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_output_r_WSTRB'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'm_axi_output_r_WVALID'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 's_axi_control_ARADDR'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 's_axi_control_ARREADY'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 's_axi_control_ARVALID'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 's_axi_control_AWADDR'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 's_axi_control_AWREADY'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 's_axi_control_AWVALID'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 's_axi_control_BREADY'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 's_axi_control_BRESP'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 's_axi_control_BVALID'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 's_axi_control_RDATA'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 's_axi_control_RREADY'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 's_axi_control_RRESP'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 's_axi_control_RVALID'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 's_axi_control_WDATA'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 's_axi_control_WREADY'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 's_axi_control_WSTRB'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 's_axi_control_WVALID'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_1_dft_0_1'. These changes may impact your design.
+WARNING: [IP_Flow 19-5893] Upgrade has removed address block 's_axi_CTRL/Reg'
+WARNING: [IP_Flow 19-5892] Upgrade has added address block 's_axi_control/Reg'
+WARNING: [IP_Flow 19-5891] Detected addressing differences while upgrading 'design_1_dft_0_1'. These changes may impact your design.
+CRITICAL WARNING: [BD 41-1165] The interface pin 's_axi_CTRL' with bus definition 'xilinx.com:interface:aximm:1.0' is not found on the upgraded version of the cell '/dft_0'. Its connection to the interface net 'ps7_0_axi_periph_M00_AXI' has been removed. 
+CRITICAL WARNING: [BD 41-1165] The interface pin 'real_sample' with bus definition 'xilinx.com:interface:axis:1.0' is not found on the upgraded version of the cell '/dft_0'. Its connection to the interface net 'dma_re_M_AXIS_MM2S' has been removed. 
+CRITICAL WARNING: [BD 41-1165] The interface pin 'imag_sample' with bus definition 'xilinx.com:interface:axis:1.0' is not found on the upgraded version of the cell '/dft_0'. Its connection to the interface net 'dma_im_M_AXIS_MM2S' has been removed. 
+CRITICAL WARNING: [BD 41-1165] The interface pin 'real_op' with bus definition 'xilinx.com:interface:axis:1.0' is not found on the upgraded version of the cell '/dft_0'. Its connection to the interface net 'dft_0_real_op' has been removed. 
+CRITICAL WARNING: [BD 41-1165] The interface pin 'imag_op' with bus definition 'xilinx.com:interface:axis:1.0' is not found on the upgraded version of the cell '/dft_0'. Its connection to the interface net 'dft_0_imag_op' has been removed. 
+CRITICAL WARNING: [BD 41-1173] Cannot restore assignment <0x4000_0000 [ 64K ]> from slave segment '/dft_0/s_axi_CTRL/Reg' to address space '/processing_system7_0/Data'. This slave segment no longer exists.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'design_1_dft_0_1' has identified issues that may require user intervention. Please review the upgrade log '/mnt/c/Xilinx/Projects/DFT_v/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+WARNING: [BD 41-2671] The dangling interface net <dft_0_imag_op> will not be written out to the BD file.
+WARNING: [BD 41-2671] The dangling interface net <dft_0_real_op> will not be written out to the BD file.
+WARNING: [BD 41-2671] The dangling interface net <dma_im_M_AXIS_MM2S> will not be written out to the BD file.
+WARNING: [BD 41-2671] The dangling interface net <dma_re_M_AXIS_MM2S> will not be written out to the BD file.
+WARNING: [BD 41-2671] The dangling interface net <ps7_0_axi_periph_M00_AXI> will not be written out to the BD file.
+Wrote  : </mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/mnt/c/Xilinx/Projects/DFT_v/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips design_1_dft_0_1] -no_script -sync -force -quiet
+generate_target all [get_files  /mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/design_1.bd]
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/dft_0/Data_m_axi_input_r' to master interface '/dft_0/m_axi_input_r'. Please either complete or remove this path to resolve.
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/dft_0/Data_m_axi_output_r' to master interface '/dft_0/m_axi_output_r'. Please either complete or remove this path to resolve.
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/processing_system7_0/Data' to master interface '/ps7_0_axi_periph/M00_AXI'. Please either complete or remove this path to resolve.
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressables -of_objects /ps7_0_axi_periph/xbar/M00_AXI'
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_S_AXI_HP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_S_AXI_HP1_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+CRITICAL WARNING: [xilinx.com:ip:axi_dma:7.1-11] /dma_re
+                   #################################### 
+                   S_AXIS_S2MM interface is unconnected
+                   ####################################
+CRITICAL WARNING: [xilinx.com:ip:axi_dma:7.1-11] /dma_im
+                   #################################### 
+                   S_AXIS_S2MM interface is unconnected
+                   ####################################
+WARNING: [BD 41-2671] The dangling interface net <dft_0_imag_op> will not be written out to the BD file.
+WARNING: [BD 41-2671] The dangling interface net <dft_0_real_op> will not be written out to the BD file.
+WARNING: [BD 41-2671] The dangling interface net <dma_im_M_AXIS_MM2S> will not be written out to the BD file.
+WARNING: [BD 41-2671] The dangling interface net <dma_re_M_AXIS_MM2S> will not be written out to the BD file.
+WARNING: [BD 41-2671] The dangling interface net <ps7_0_axi_periph_M00_AXI> will not be written out to the BD file.
+Wrote  : </mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(1) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(1) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/m00_couplers/auto_pc/m_axi_bid'(1) to pin: '/axi_mem_intercon_1/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/m00_couplers/auto_pc/m_axi_rid'(1) to pin: '/axi_mem_intercon_1/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_AWID'(6) to pin: '/axi_mem_intercon_1/M00_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_WID'(6) to pin: '/axi_mem_intercon_1/M00_AXI_wid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_ARID'(6) to pin: '/axi_mem_intercon_1/M00_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/axi_mem_intercon/M00_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to pin: '/axi_mem_intercon/M00_AXI_wid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/axi_mem_intercon/M00_AXI_arid'(1) - Only lower order bits will be connected.
+VHDL Output written to : /mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(1) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(1) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/m00_couplers/auto_pc/m_axi_bid'(1) to pin: '/axi_mem_intercon_1/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon_1/m00_couplers/auto_pc/m_axi_rid'(1) to pin: '/axi_mem_intercon_1/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_AWID'(6) to pin: '/axi_mem_intercon_1/M00_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_WID'(6) to pin: '/axi_mem_intercon_1/M00_AXI_wid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_ARID'(6) to pin: '/axi_mem_intercon_1/M00_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/axi_mem_intercon/M00_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to pin: '/axi_mem_intercon/M00_AXI_wid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/axi_mem_intercon/M00_AXI_arid'(1) - Only lower order bits will be connected.
+VHDL Output written to : /mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dft_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0_1/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ip/design_1_auto_us_0_1/design_1_auto_us_0_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ip/design_1_auto_us_1_1/design_1_auto_us_1_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s01_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ip/design_1_auto_us_2_1/design_1_auto_us_2_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon_1/s00_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ip/design_1_auto_us_3_1/design_1_auto_us_3_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon_1/s01_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ip/design_1_auto_pc_2_1/design_1_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon_1/m00_couplers/auto_pc .
+Exporting to file /mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file /mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File /mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/synth/design_1.hwdef
+generate_target: Time (s): cpu = 00:00:49 ; elapsed = 00:02:40 . Memory (MB): peak = 8981.301 ; gain = 910.969 ; free physical = 5735 ; free virtual = 11485
+catch { config_ip_cache -export [get_ips -all design_1_dft_0_1] }
+catch { config_ip_cache -export [get_ips -all design_1_xbar_3] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 389fdd81c3da7e4a; cache size = 28.527 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_us_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_us_0, cache-ID = 6151185fa5279a34; cache size = 28.527 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_us_1] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_us_1, cache-ID = a521e047559cd042; cache size = 28.527 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_1] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = 416ebc0bf6218438; cache size = 28.527 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_us_2] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_us_2, cache-ID = 6151185fa5279a34; cache size = 28.527 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_us_3] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_us_3, cache-ID = a521e047559cd042; cache size = 28.527 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_2] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_2, cache-ID = 416ebc0bf6218438; cache size = 28.527 MB.
+export_ip_user_files -of_objects [get_files /mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs design_1_xbar_3_synth_1 design_1_dft_0_1_synth_1 -jobs 6
+[Tue Sep 28 07:11:37 2021] Launched design_1_xbar_3_synth_1, design_1_dft_0_1_synth_1...
+Run output will be captured here:
+design_1_xbar_3_synth_1: /mnt/c/Xilinx/Projects/DFT_v/DFT_v.runs/design_1_xbar_3_synth_1/runme.log
+design_1_dft_0_1_synth_1: /mnt/c/Xilinx/Projects/DFT_v/DFT_v.runs/design_1_dft_0_1_synth_1/runme.log
+export_simulation -of_objects [get_files /mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/design_1.bd] -directory /mnt/c/Xilinx/Projects/DFT_v/DFT_v.ip_user_files/sim_scripts -ip_user_files_dir /mnt/c/Xilinx/Projects/DFT_v/DFT_v.ip_user_files -ipstatic_source_dir /mnt/c/Xilinx/Projects/DFT_v/DFT_v.ip_user_files/ipstatic -lib_map_path [list {modelsim=/mnt/c/Xilinx/Projects/DFT_v/DFT_v.cache/compile_simlib/modelsim} {questa=/mnt/c/Xilinx/Projects/DFT_v/DFT_v.cache/compile_simlib/questa} {ies=/mnt/c/Xilinx/Projects/DFT_v/DFT_v.cache/compile_simlib/ies} {xcelium=/mnt/c/Xilinx/Projects/DFT_v/DFT_v.cache/compile_simlib/xcelium} {vcs=/mnt/c/Xilinx/Projects/DFT_v/DFT_v.cache/compile_simlib/vcs} {riviera=/mnt/c/Xilinx/Projects/DFT_v/DFT_v.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+delete_bd_objs [get_bd_intf_nets dma_im_M_AXI_MM2S] [get_bd_intf_nets axi_mem_intercon_1_M00_AXI] [get_bd_intf_nets dma_im_M_AXI_S2MM] [get_bd_cells axi_mem_intercon_1]
+startgroup
+delete_bd_objs [get_bd_intf_nets dma_re_M_AXI_S2MM] [get_bd_intf_nets dma_im_M_AXIS_MM2S] [get_bd_intf_nets axi_mem_intercon_M00_AXI] [get_bd_intf_nets processing_system7_0_M_AXI_GP0] [get_bd_intf_nets ps7_0_axi_periph_M01_AXI] [get_bd_intf_nets dft_0_imag_op] [get_bd_intf_nets processing_system7_0_FIXED_IO] [get_bd_intf_nets dma_re_M_AXI_MM2S] [get_bd_intf_nets ps7_0_axi_periph_M00_AXI] [get_bd_intf_nets dma_re_M_AXIS_MM2S] [get_bd_intf_nets dft_0_real_op] [get_bd_intf_nets processing_system7_0_DDR] [get_bd_intf_nets ps7_0_axi_periph_M02_AXI]
+delete_bd_objs [get_bd_nets processing_system7_0_FCLK_RESET0_N] [get_bd_nets rst_ps7_0_100M_peripheral_aresetn] [get_bd_nets processing_system7_0_FCLK_CLK0]
+delete_bd_objs [get_bd_cells axi_mem_intercon] [get_bd_cells ps7_0_axi_periph]
+delete_bd_objs [get_bd_cells dft_0] [get_bd_cells processing_system7_0] [get_bd_cells dma_re] [get_bd_cells dma_im] [get_bd_cells rst_ps7_0_100M]
+delete_bd_objs [get_bd_intf_ports DDR] [get_bd_intf_ports FIXED_IO_0] [get_bd_intf_ports FIXED_IO] [get_bd_intf_ports DDR_0]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:dft:1.0 dft_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.051 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.006 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.051 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.006 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.051 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.006 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+startgroup
+set_property -dict [list CONFIG.PCW_USE_S_AXI_HP0 {1} CONFIG.PCW_USE_S_AXI_HP1 {1}] [get_bd_cells processing_system7_0]
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.051 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.006 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+endgroup
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.051 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.006 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+save_bd_design
+Wrote  : </mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+save_bd_design: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 9510.449 ; gain = 0.000 ; free physical = 4965 ; free virtual = 10866
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 28 07:42:02 2021...

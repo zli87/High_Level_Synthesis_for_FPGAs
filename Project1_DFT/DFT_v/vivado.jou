@@ -1,0 +1,106 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue Sep 28 07:47:15 2021
+# Process ID: 5764
+# Current directory: /mnt/c/Xilinx/Projects/DFT_v
+# Command line: vivado
+# Log file: /mnt/c/Xilinx/Projects/DFT_v/vivado.log
+# Journal file: /mnt/c/Xilinx/Projects/DFT_v/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /mnt/c/Xilinx/Projects/DFT_v/DFT_v.xpr
+open_bd_design {/mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/design_1.bd}
+update_compile_order -fileset sources_1
+delete_bd_objs [get_bd_intf_nets processing_system7_0_FIXED_IO] [get_bd_intf_nets processing_system7_0_DDR] [get_bd_cells processing_system7_0]
+delete_bd_objs [get_bd_cells dft_0]
+save_bd_design
+update_ip_catalog -rebuild -repo_path /mnt/c/Xilinx/Projects/DFT/dft_1024_precomputed
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:dft:1.0 dft_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+startgroup
+set_property -dict [list CONFIG.PCW_USE_S_AXI_HP0 {1} CONFIG.PCW_USE_S_AXI_HP1 {1}] [get_bd_cells processing_system7_0]
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/dft_0/s_axi_control} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins dft_0/s_axi_control]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/dft_0/m_axi_gmem} Slave {/processing_system7_0/S_AXI_HP0} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins processing_system7_0/S_AXI_HP0]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/dft_0/m_axi_gmem} Slave {/processing_system7_0/S_AXI_HP1} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins processing_system7_0/S_AXI_HP1]
+endgroup
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+delete_bd_objs [get_bd_intf_nets dft_0_m_axi_gmem] [get_bd_intf_nets ps7_0_axi_periph_M00_AXI] [get_bd_cells dft_0]
+delete_bd_objs [get_bd_nets processing_system7_0_FCLK_RESET0_N] [get_bd_cells rst_ps7_0_100M]
+delete_bd_objs [get_bd_intf_nets axi_mem_intercon_M01_AXI] [get_bd_intf_nets axi_mem_intercon_M00_AXI] [get_bd_cells axi_mem_intercon]
+delete_bd_objs [get_bd_nets rst_ps7_0_100M_peripheral_aresetn] [get_bd_intf_nets processing_system7_0_M_AXI_GP0] [get_bd_cells ps7_0_axi_periph]
+delete_bd_objs [get_bd_nets processing_system7_0_FCLK_CLK0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:dft:1.0 dft_0
+endgroup
+report_ip_status -name ip_status 
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/dft_0/s_axi_control} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins dft_0/s_axi_control]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/dft_0/m_axi_input_re_r} Slave {/processing_system7_0/S_AXI_HP0} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins processing_system7_0/S_AXI_HP0]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/dft_0/m_axi_input_im_r} Slave {/processing_system7_0/S_AXI_HP1} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins processing_system7_0/S_AXI_HP1]
+endgroup
+report_ip_status -name ip_status 
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_slave {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/dft_0/m_axi_output_im_r} Slave {/processing_system7_0/S_AXI_HP1} ddr_seg {Auto} intc_ip {/axi_mem_intercon_1} master_apm {0}}  [get_bd_intf_pins dft_0/m_axi_output_im_r]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_slave {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/dft_0/m_axi_output_re_r} Slave {/processing_system7_0/S_AXI_HP0} ddr_seg {Auto} intc_ip {/axi_mem_intercon} master_apm {0}}  [get_bd_intf_pins dft_0/m_axi_output_re_r]
+endgroup
+validate_bd_design
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:hls:dft:1.0 [get_ips  design_1_dft_0_4] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_1_dft_0_4] -no_script -sync -force -quiet
+generate_target all [get_files  /mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/design_1.bd]
+catch { config_ip_cache -export [get_ips -all design_1_dft_0_4] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_0] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_us_0] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_us_1] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_1] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_us_2] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_us_3] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_2] }
+export_ip_user_files -of_objects [get_files /mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs design_1_dft_0_4_synth_1 -jobs 6
+wait_on_run design_1_dft_0_4_synth_1
+export_simulation -of_objects [get_files /mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/design_1.bd] -directory /mnt/c/Xilinx/Projects/DFT_v/DFT_v.ip_user_files/sim_scripts -ip_user_files_dir /mnt/c/Xilinx/Projects/DFT_v/DFT_v.ip_user_files -ipstatic_source_dir /mnt/c/Xilinx/Projects/DFT_v/DFT_v.ip_user_files/ipstatic -lib_map_path [list {modelsim=/mnt/c/Xilinx/Projects/DFT_v/DFT_v.cache/compile_simlib/modelsim} {questa=/mnt/c/Xilinx/Projects/DFT_v/DFT_v.cache/compile_simlib/questa} {ies=/mnt/c/Xilinx/Projects/DFT_v/DFT_v.cache/compile_simlib/ies} {xcelium=/mnt/c/Xilinx/Projects/DFT_v/DFT_v.cache/compile_simlib/xcelium} {vcs=/mnt/c/Xilinx/Projects/DFT_v/DFT_v.cache/compile_simlib/vcs} {riviera=/mnt/c/Xilinx/Projects/DFT_v/DFT_v.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:hls:dft:1.0 [get_ips  design_1_dft_0_4] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_1_dft_0_4] -no_script -sync -force -quiet
+generate_target all [get_files  /mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/design_1.bd]
+catch { config_ip_cache -export [get_ips -all design_1_dft_0_4] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_0] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_us_0] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_us_1] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_1] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_us_2] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_us_3] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_2] }
+export_ip_user_files -of_objects [get_files /mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs design_1_dft_0_4_synth_1 -jobs 6
+wait_on_run design_1_dft_0_4_synth_1
+export_simulation -of_objects [get_files /mnt/c/Xilinx/Projects/DFT_v/DFT_v.srcs/sources_1/bd/design_1/design_1.bd] -directory /mnt/c/Xilinx/Projects/DFT_v/DFT_v.ip_user_files/sim_scripts -ip_user_files_dir /mnt/c/Xilinx/Projects/DFT_v/DFT_v.ip_user_files -ipstatic_source_dir /mnt/c/Xilinx/Projects/DFT_v/DFT_v.ip_user_files/ipstatic -lib_map_path [list {modelsim=/mnt/c/Xilinx/Projects/DFT_v/DFT_v.cache/compile_simlib/modelsim} {questa=/mnt/c/Xilinx/Projects/DFT_v/DFT_v.cache/compile_simlib/questa} {ies=/mnt/c/Xilinx/Projects/DFT_v/DFT_v.cache/compile_simlib/ies} {xcelium=/mnt/c/Xilinx/Projects/DFT_v/DFT_v.cache/compile_simlib/xcelium} {vcs=/mnt/c/Xilinx/Projects/DFT_v/DFT_v.cache/compile_simlib/vcs} {riviera=/mnt/c/Xilinx/Projects/DFT_v/DFT_v.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run impl_1 -prev_step 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_run impl_1

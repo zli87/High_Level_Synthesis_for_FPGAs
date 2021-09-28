@@ -1,0 +1,481 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue Sep 28 12:39:41 2021
+# Process ID: 1746
+# Current directory: /mnt/c/Xilinx/Projects/DFT_v/DFT_v.runs/design_1_dft_0_4_synth_1
+# Command line: vivado -log design_1_dft_0_4.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_dft_0_4.tcl
+# Log file: /mnt/c/Xilinx/Projects/DFT_v/DFT_v.runs/design_1_dft_0_4_synth_1/design_1_dft_0_4.vds
+# Journal file: /mnt/c/Xilinx/Projects/DFT_v/DFT_v.runs/design_1_dft_0_4_synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_dft_0_4.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/mnt/c/Xilinx/Projects/DFT/dft_1024_precomputed'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2021.1/data/ip'.
+Command: synth_design -top design_1_dft_0_4 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1804
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2454.336 ; gain = 0.000 ; free physical = 3358 ; free virtual = 9495
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_dft_0_4' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ip/design_1_dft_0_4/synth/design_1_dft_0_4.v:61]
+INFO: [Synth 8-6157] synthesizing module 'dft' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft.v:12]
+INFO: [Synth 8-6157] synthesizing module 'dft_re_sample' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_re_sample.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dft_re_sample' (1#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_re_sample.v:6]
+INFO: [Synth 8-6157] synthesizing module 'dft_re_buff' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_re_buff.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dft_re_buff' (2#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_re_buff.v:6]
+INFO: [Synth 8-6157] synthesizing module 'dft_dft_Pipeline_1' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_dft_Pipeline_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'dft_flow_control_loop_pipe_sequential_init' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_flow_control_loop_pipe_sequential_init.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'dft_flow_control_loop_pipe_sequential_init' (3#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_flow_control_loop_pipe_sequential_init.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'dft_dft_Pipeline_1' (4#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_dft_Pipeline_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'dft_dft_Pipeline_2' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_dft_Pipeline_2.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'dft_dft_Pipeline_2' (5#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_dft_Pipeline_2.v:10]
+INFO: [Synth 8-6157] synthesizing module 'dft_dft_Pipeline_loop_k_loop_n' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_dft_Pipeline_loop_k_loop_n.v:10]
+INFO: [Synth 8-6157] synthesizing module 'dft_dft_Pipeline_loop_k_loop_n_cos_coefficients_table' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_dft_Pipeline_loop_k_loop_n_cos_coefficients_table.v:6]
+INFO: [Synth 8-3876] $readmem data file './dft_dft_Pipeline_loop_k_loop_n_cos_coefficients_table.dat' is read successfully [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_dft_Pipeline_loop_k_loop_n_cos_coefficients_table.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'dft_dft_Pipeline_loop_k_loop_n_cos_coefficients_table' (6#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_dft_Pipeline_loop_k_loop_n_cos_coefficients_table.v:6]
+INFO: [Synth 8-6157] synthesizing module 'dft_dft_Pipeline_loop_k_loop_n_sin_coefficients_table' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_dft_Pipeline_loop_k_loop_n_sin_coefficients_table.v:6]
+INFO: [Synth 8-3876] $readmem data file './dft_dft_Pipeline_loop_k_loop_n_sin_coefficients_table.dat' is read successfully [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_dft_Pipeline_loop_k_loop_n_sin_coefficients_table.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'dft_dft_Pipeline_loop_k_loop_n_sin_coefficients_table' (7#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_dft_Pipeline_loop_k_loop_n_sin_coefficients_table.v:6]
+INFO: [Synth 8-6157] synthesizing module 'dft_faddfsub_32ns_32ns_32_5_full_dsp_1' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_faddfsub_32ns_32ns_32_5_full_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'dft_faddfsub_32ns_32ns_32_5_full_dsp_1_ip' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/ip/dft_faddfsub_32ns_32ns_32_5_full_dsp_1_ip.v:60]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [/opt/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59102]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (8#1) [/opt/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59102]
+INFO: [Synth 8-6155] done synthesizing module 'dft_faddfsub_32ns_32ns_32_5_full_dsp_1_ip' (27#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/ip/dft_faddfsub_32ns_32ns_32_5_full_dsp_1_ip.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'dft_faddfsub_32ns_32ns_32_5_full_dsp_1' (28#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_faddfsub_32ns_32ns_32_5_full_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'dft_fmul_32ns_32ns_32_4_max_dsp_1' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_fmul_32ns_32ns_32_4_max_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'dft_fmul_32ns_32ns_32_4_max_dsp_1_ip' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/ip/dft_fmul_32ns_32ns_32_4_max_dsp_1_ip.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'dft_fmul_32ns_32ns_32_4_max_dsp_1_ip' (36#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/ip/dft_fmul_32ns_32ns_32_4_max_dsp_1_ip.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'dft_fmul_32ns_32ns_32_4_max_dsp_1' (37#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_fmul_32ns_32ns_32_4_max_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'dft_mul_10s_10s_10_1_1' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_mul_10s_10s_10_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'dft_mul_10s_10s_10_1_1' (38#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_mul_10s_10s_10_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'dft_mul_mul_10ns_10s_10_4_1' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_mul_mul_10ns_10s_10_4_1.v:32]
+INFO: [Synth 8-6157] synthesizing module 'dft_mul_mul_10ns_10s_10_4_1_DSP48_0' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_mul_mul_10ns_10s_10_4_1.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'dft_mul_mul_10ns_10s_10_4_1_DSP48_0' (39#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_mul_mul_10ns_10s_10_4_1.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'dft_mul_mul_10ns_10s_10_4_1' (40#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_mul_mul_10ns_10s_10_4_1.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'dft_dft_Pipeline_loop_k_loop_n' (41#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_dft_Pipeline_loop_k_loop_n.v:10]
+INFO: [Synth 8-6157] synthesizing module 'dft_dft_Pipeline_4' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_dft_Pipeline_4.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'dft_dft_Pipeline_4' (42#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_dft_Pipeline_4.v:10]
+INFO: [Synth 8-6157] synthesizing module 'dft_dft_Pipeline_5' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_dft_Pipeline_5.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'dft_dft_Pipeline_5' (43#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_dft_Pipeline_5.v:10]
+INFO: [Synth 8-6157] synthesizing module 'dft_control_s_axi' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_control_s_axi.v:6]
+INFO: [Synth 8-155] case statement is not full and has no default [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_control_s_axi.v:230]
+INFO: [Synth 8-6155] done synthesizing module 'dft_control_s_axi' (44#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_control_s_axi.v:6]
+INFO: [Synth 8-6157] synthesizing module 'dft_input_re_r_m_axi' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_input_re_r_m_axi.v:8]
+INFO: [Synth 8-6157] synthesizing module 'dft_input_re_r_m_axi_write' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_input_re_r_m_axi.v:1653]
+INFO: [Synth 8-6157] synthesizing module 'dft_input_re_r_m_axi_fifo' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_input_re_r_m_axi.v:418]
+INFO: [Synth 8-6155] done synthesizing module 'dft_input_re_r_m_axi_fifo' (45#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_input_re_r_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'dft_input_re_r_m_axi_reg_slice' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_input_re_r_m_axi.v:314]
+INFO: [Synth 8-6155] done synthesizing module 'dft_input_re_r_m_axi_reg_slice' (46#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_input_re_r_m_axi.v:314]
+INFO: [Synth 8-6157] synthesizing module 'dft_input_re_r_m_axi_fifo__parameterized0' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_input_re_r_m_axi.v:418]
+INFO: [Synth 8-6155] done synthesizing module 'dft_input_re_r_m_axi_fifo__parameterized0' (46#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_input_re_r_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'dft_input_re_r_m_axi_buffer' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_input_re_r_m_axi.v:529]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_input_re_r_m_axi.v:581]
+INFO: [Synth 8-6155] done synthesizing module 'dft_input_re_r_m_axi_buffer' (47#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_input_re_r_m_axi.v:529]
+INFO: [Synth 8-6157] synthesizing module 'dft_input_re_r_m_axi_fifo__parameterized1' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_input_re_r_m_axi.v:418]
+INFO: [Synth 8-6155] done synthesizing module 'dft_input_re_r_m_axi_fifo__parameterized1' (47#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_input_re_r_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'dft_input_re_r_m_axi_fifo__parameterized2' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_input_re_r_m_axi.v:418]
+INFO: [Synth 8-6155] done synthesizing module 'dft_input_re_r_m_axi_fifo__parameterized2' (47#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_input_re_r_m_axi.v:418]
+INFO: [Synth 8-6155] done synthesizing module 'dft_input_re_r_m_axi_write' (48#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_input_re_r_m_axi.v:1653]
+INFO: [Synth 8-6157] synthesizing module 'dft_input_re_r_m_axi_read' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_input_re_r_m_axi.v:931]
+INFO: [Synth 8-6157] synthesizing module 'dft_input_re_r_m_axi_buffer__parameterized0' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_input_re_r_m_axi.v:529]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_input_re_r_m_axi.v:581]
+INFO: [Synth 8-6155] done synthesizing module 'dft_input_re_r_m_axi_buffer__parameterized0' (48#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_input_re_r_m_axi.v:529]
+INFO: [Synth 8-6157] synthesizing module 'dft_input_re_r_m_axi_reg_slice__parameterized0' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_input_re_r_m_axi.v:314]
+INFO: [Synth 8-6155] done synthesizing module 'dft_input_re_r_m_axi_reg_slice__parameterized0' (48#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_input_re_r_m_axi.v:314]
+INFO: [Synth 8-6155] done synthesizing module 'dft_input_re_r_m_axi_read' (49#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_input_re_r_m_axi.v:931]
+INFO: [Synth 8-6157] synthesizing module 'dft_input_re_r_m_axi_throttle' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_input_re_r_m_axi.v:709]
+INFO: [Synth 8-6155] done synthesizing module 'dft_input_re_r_m_axi_throttle' (50#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_input_re_r_m_axi.v:709]
+INFO: [Synth 8-6155] done synthesizing module 'dft_input_re_r_m_axi' (51#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_input_re_r_m_axi.v:8]
+INFO: [Synth 8-6157] synthesizing module 'dft_input_im_r_m_axi' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_input_im_r_m_axi.v:8]
+INFO: [Synth 8-6157] synthesizing module 'dft_input_im_r_m_axi_write' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_input_im_r_m_axi.v:1653]
+INFO: [Synth 8-6157] synthesizing module 'dft_input_im_r_m_axi_fifo' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_input_im_r_m_axi.v:418]
+INFO: [Synth 8-6155] done synthesizing module 'dft_input_im_r_m_axi_fifo' (52#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_input_im_r_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'dft_input_im_r_m_axi_reg_slice' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_input_im_r_m_axi.v:314]
+INFO: [Synth 8-6155] done synthesizing module 'dft_input_im_r_m_axi_reg_slice' (53#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_input_im_r_m_axi.v:314]
+INFO: [Synth 8-6157] synthesizing module 'dft_input_im_r_m_axi_fifo__parameterized0' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_input_im_r_m_axi.v:418]
+INFO: [Synth 8-6155] done synthesizing module 'dft_input_im_r_m_axi_fifo__parameterized0' (53#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_input_im_r_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'dft_input_im_r_m_axi_buffer' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_input_im_r_m_axi.v:529]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_input_im_r_m_axi.v:581]
+INFO: [Synth 8-6155] done synthesizing module 'dft_input_im_r_m_axi_buffer' (54#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_input_im_r_m_axi.v:529]
+INFO: [Synth 8-6157] synthesizing module 'dft_input_im_r_m_axi_fifo__parameterized1' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_input_im_r_m_axi.v:418]
+INFO: [Synth 8-6155] done synthesizing module 'dft_input_im_r_m_axi_fifo__parameterized1' (54#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_input_im_r_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'dft_input_im_r_m_axi_fifo__parameterized2' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_input_im_r_m_axi.v:418]
+INFO: [Synth 8-6155] done synthesizing module 'dft_input_im_r_m_axi_fifo__parameterized2' (54#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_input_im_r_m_axi.v:418]
+INFO: [Synth 8-6155] done synthesizing module 'dft_input_im_r_m_axi_write' (55#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_input_im_r_m_axi.v:1653]
+INFO: [Synth 8-6157] synthesizing module 'dft_input_im_r_m_axi_read' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_input_im_r_m_axi.v:931]
+INFO: [Synth 8-6157] synthesizing module 'dft_input_im_r_m_axi_buffer__parameterized0' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_input_im_r_m_axi.v:529]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_input_im_r_m_axi.v:581]
+INFO: [Synth 8-6155] done synthesizing module 'dft_input_im_r_m_axi_buffer__parameterized0' (55#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_input_im_r_m_axi.v:529]
+INFO: [Synth 8-6157] synthesizing module 'dft_input_im_r_m_axi_reg_slice__parameterized0' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_input_im_r_m_axi.v:314]
+INFO: [Synth 8-6155] done synthesizing module 'dft_input_im_r_m_axi_reg_slice__parameterized0' (55#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_input_im_r_m_axi.v:314]
+INFO: [Synth 8-6155] done synthesizing module 'dft_input_im_r_m_axi_read' (56#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_input_im_r_m_axi.v:931]
+INFO: [Synth 8-6157] synthesizing module 'dft_input_im_r_m_axi_throttle' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_input_im_r_m_axi.v:709]
+INFO: [Synth 8-6155] done synthesizing module 'dft_input_im_r_m_axi_throttle' (57#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_input_im_r_m_axi.v:709]
+INFO: [Synth 8-6155] done synthesizing module 'dft_input_im_r_m_axi' (58#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_input_im_r_m_axi.v:8]
+INFO: [Synth 8-6157] synthesizing module 'dft_output_re_r_m_axi' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_output_re_r_m_axi.v:8]
+INFO: [Synth 8-6157] synthesizing module 'dft_output_re_r_m_axi_write' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_output_re_r_m_axi.v:1653]
+INFO: [Synth 8-6157] synthesizing module 'dft_output_re_r_m_axi_fifo' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_output_re_r_m_axi.v:418]
+INFO: [Synth 8-6155] done synthesizing module 'dft_output_re_r_m_axi_fifo' (59#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_output_re_r_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'dft_output_re_r_m_axi_reg_slice' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_output_re_r_m_axi.v:314]
+INFO: [Synth 8-6155] done synthesizing module 'dft_output_re_r_m_axi_reg_slice' (60#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_output_re_r_m_axi.v:314]
+INFO: [Synth 8-6157] synthesizing module 'dft_output_re_r_m_axi_fifo__parameterized0' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_output_re_r_m_axi.v:418]
+INFO: [Synth 8-6155] done synthesizing module 'dft_output_re_r_m_axi_fifo__parameterized0' (60#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_output_re_r_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'dft_output_re_r_m_axi_buffer' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_output_re_r_m_axi.v:529]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_output_re_r_m_axi.v:581]
+INFO: [Synth 8-6155] done synthesizing module 'dft_output_re_r_m_axi_buffer' (61#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_output_re_r_m_axi.v:529]
+INFO: [Synth 8-6157] synthesizing module 'dft_output_re_r_m_axi_fifo__parameterized1' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_output_re_r_m_axi.v:418]
+INFO: [Synth 8-6155] done synthesizing module 'dft_output_re_r_m_axi_fifo__parameterized1' (61#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_output_re_r_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'dft_output_re_r_m_axi_fifo__parameterized2' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_output_re_r_m_axi.v:418]
+INFO: [Synth 8-6155] done synthesizing module 'dft_output_re_r_m_axi_fifo__parameterized2' (61#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_output_re_r_m_axi.v:418]
+INFO: [Synth 8-6155] done synthesizing module 'dft_output_re_r_m_axi_write' (62#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_output_re_r_m_axi.v:1653]
+INFO: [Synth 8-6157] synthesizing module 'dft_output_re_r_m_axi_read' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_output_re_r_m_axi.v:931]
+INFO: [Synth 8-6157] synthesizing module 'dft_output_re_r_m_axi_buffer__parameterized0' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_output_re_r_m_axi.v:529]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_output_re_r_m_axi.v:581]
+INFO: [Synth 8-6155] done synthesizing module 'dft_output_re_r_m_axi_buffer__parameterized0' (62#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_output_re_r_m_axi.v:529]
+INFO: [Synth 8-6157] synthesizing module 'dft_output_re_r_m_axi_reg_slice__parameterized0' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_output_re_r_m_axi.v:314]
+INFO: [Synth 8-6155] done synthesizing module 'dft_output_re_r_m_axi_reg_slice__parameterized0' (62#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_output_re_r_m_axi.v:314]
+INFO: [Synth 8-6155] done synthesizing module 'dft_output_re_r_m_axi_read' (63#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_output_re_r_m_axi.v:931]
+INFO: [Synth 8-6157] synthesizing module 'dft_output_re_r_m_axi_throttle' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_output_re_r_m_axi.v:709]
+INFO: [Synth 8-6155] done synthesizing module 'dft_output_re_r_m_axi_throttle' (64#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_output_re_r_m_axi.v:709]
+INFO: [Synth 8-6155] done synthesizing module 'dft_output_re_r_m_axi' (65#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_output_re_r_m_axi.v:8]
+INFO: [Synth 8-6157] synthesizing module 'dft_output_im_r_m_axi' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_output_im_r_m_axi.v:8]
+INFO: [Synth 8-6157] synthesizing module 'dft_output_im_r_m_axi_write' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_output_im_r_m_axi.v:1653]
+INFO: [Synth 8-6157] synthesizing module 'dft_output_im_r_m_axi_fifo' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_output_im_r_m_axi.v:418]
+INFO: [Synth 8-6155] done synthesizing module 'dft_output_im_r_m_axi_fifo' (66#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_output_im_r_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'dft_output_im_r_m_axi_reg_slice' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_output_im_r_m_axi.v:314]
+INFO: [Synth 8-6155] done synthesizing module 'dft_output_im_r_m_axi_reg_slice' (67#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_output_im_r_m_axi.v:314]
+INFO: [Synth 8-6157] synthesizing module 'dft_output_im_r_m_axi_fifo__parameterized0' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_output_im_r_m_axi.v:418]
+INFO: [Synth 8-6155] done synthesizing module 'dft_output_im_r_m_axi_fifo__parameterized0' (67#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_output_im_r_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'dft_output_im_r_m_axi_buffer' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_output_im_r_m_axi.v:529]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_output_im_r_m_axi.v:581]
+INFO: [Synth 8-6155] done synthesizing module 'dft_output_im_r_m_axi_buffer' (68#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_output_im_r_m_axi.v:529]
+INFO: [Synth 8-6157] synthesizing module 'dft_output_im_r_m_axi_fifo__parameterized1' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_output_im_r_m_axi.v:418]
+INFO: [Synth 8-6155] done synthesizing module 'dft_output_im_r_m_axi_fifo__parameterized1' (68#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_output_im_r_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'dft_output_im_r_m_axi_fifo__parameterized2' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_output_im_r_m_axi.v:418]
+INFO: [Synth 8-6155] done synthesizing module 'dft_output_im_r_m_axi_fifo__parameterized2' (68#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_output_im_r_m_axi.v:418]
+INFO: [Synth 8-6155] done synthesizing module 'dft_output_im_r_m_axi_write' (69#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_output_im_r_m_axi.v:1653]
+INFO: [Synth 8-6157] synthesizing module 'dft_output_im_r_m_axi_read' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_output_im_r_m_axi.v:931]
+INFO: [Synth 8-6157] synthesizing module 'dft_output_im_r_m_axi_buffer__parameterized0' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_output_im_r_m_axi.v:529]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_output_im_r_m_axi.v:581]
+INFO: [Synth 8-6155] done synthesizing module 'dft_output_im_r_m_axi_buffer__parameterized0' (69#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_output_im_r_m_axi.v:529]
+INFO: [Synth 8-6157] synthesizing module 'dft_output_im_r_m_axi_reg_slice__parameterized0' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_output_im_r_m_axi.v:314]
+INFO: [Synth 8-6155] done synthesizing module 'dft_output_im_r_m_axi_reg_slice__parameterized0' (69#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_output_im_r_m_axi.v:314]
+INFO: [Synth 8-6155] done synthesizing module 'dft_output_im_r_m_axi_read' (70#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_output_im_r_m_axi.v:931]
+INFO: [Synth 8-6157] synthesizing module 'dft_output_im_r_m_axi_throttle' [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_output_im_r_m_axi.v:709]
+INFO: [Synth 8-6155] done synthesizing module 'dft_output_im_r_m_axi_throttle' (71#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_output_im_r_m_axi.v:709]
+INFO: [Synth 8-6155] done synthesizing module 'dft_output_im_r_m_axi' (72#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft_output_im_r_m_axi.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'dft' (73#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ipshared/9212/hdl/verilog/dft.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_dft_0_4' (74#1) [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ip/design_1_dft_0_4/synth/design_1_dft_0_4.v:61]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2454.336 ; gain = 0.000 ; free physical = 4036 ; free virtual = 10174
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2454.336 ; gain = 0.000 ; free physical = 4041 ; free virtual = 10179
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2454.336 ; gain = 0.000 ; free physical = 4041 ; free virtual = 10179
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.13 . Memory (MB): peak = 2454.336 ; gain = 0.000 ; free physical = 4028 ; free virtual = 10165
+INFO: [Netlist 29-17] Analyzing 110 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ip/design_1_dft_0_4/constraints/dft_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.gen/sources_1/bd/design_1/ip/design_1_dft_0_4/constraints/dft_ooc.xdc] for cell 'inst'
+Parsing XDC File [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.runs/design_1_dft_0_4_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/mnt/c/Xilinx/Projects/DFT_v/DFT_v.runs/design_1_dft_0_4_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2518.332 ; gain = 0.000 ; free physical = 3864 ; free virtual = 10002
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  FDE => FDRE: 3 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.36 ; elapsed = 00:00:00.13 . Memory (MB): peak = 2518.332 ; gain = 0.000 ; free physical = 3861 ; free virtual = 9998
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 2518.332 ; gain = 63.996 ; free physical = 4020 ; free virtual = 10158
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 2518.332 ; gain = 63.996 ; free physical = 4020 ; free virtual = 10158
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /mnt/c/Xilinx/Projects/DFT_v/DFT_v.runs/design_1_dft_0_4_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 2518.332 ; gain = 63.996 ; free physical = 4020 ; free virtual = 10158
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'dft_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'dft_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'dft_input_re_r_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'dft_input_re_r_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'dft_input_im_r_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'dft_input_im_r_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'dft_output_re_r_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'dft_output_re_r_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'dft_output_im_r_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'dft_output_im_r_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'dft_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'dft_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'dft_input_re_r_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'dft_input_re_r_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'dft_input_im_r_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'dft_input_im_r_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'dft_output_re_r_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'dft_output_re_r_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'dft_output_im_r_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'dft_output_im_r_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 2518.332 ; gain = 63.996 ; free physical = 4001 ; free virtual = 10139
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/grp_dft_Pipeline_loop_k_loop_n_fu_178/faddfsub_32ns_32ns_32_5_full_dsp_1_U7/dft_faddfsub_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SUB_DELAY' (delay__parameterized0) to 'inst/grp_dft_Pipeline_loop_k_loop_n_fu_178/faddfsub_32ns_32ns_32_5_full_dsp_1_U7/dft_faddfsub_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SUB_ADD_IP_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/grp_dft_Pipeline_loop_k_loop_n_fu_178/faddfsub_32ns_32ns_32_5_full_dsp_1_U7/dft_faddfsub_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/grp_dft_Pipeline_loop_k_loop_n_fu_178/faddfsub_32ns_32ns_32_5_full_dsp_1_U7/dft_faddfsub_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/grp_dft_Pipeline_loop_k_loop_n_fu_178/faddfsub_32ns_32ns_32_5_full_dsp_1_U7/dft_faddfsub_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/grp_dft_Pipeline_loop_k_loop_n_fu_178/faddfsub_32ns_32ns_32_5_full_dsp_1_U7/dft_faddfsub_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/grp_dft_Pipeline_loop_k_loop_n_fu_178/fmul_32ns_32ns_32_4_max_dsp_1_U8/dft_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/grp_dft_Pipeline_loop_k_loop_n_fu_178/fmul_32ns_32ns_32_4_max_dsp_1_U8/dft_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/grp_dft_Pipeline_loop_k_loop_n_fu_178/fmul_32ns_32ns_32_4_max_dsp_1_U8/dft_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/grp_dft_Pipeline_loop_k_loop_n_fu_178/fmul_32ns_32ns_32_4_max_dsp_1_U8/dft_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+warning: Removed RAM bus_write/buff_wdata/mem_reg due to inactive write enable
+warning: Removed RAM bus_write/buff_wdata/mem_reg due to inactive write enable
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 2518.332 ; gain = 63.996 ; free physical = 3980 ; free virtual = 10118
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 2518.332 ; gain = 63.996 ; free physical = 3826 ; free virtual = 9964
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 2518.332 ; gain = 63.996 ; free physical = 3808 ; free virtual = 9946
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/grp_dft_Pipeline_loop_k_loop_n_fu_178/cos_coefficients_table_U/q0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_dft_Pipeline_loop_k_loop_n_fu_178/sin_coefficients_table_U/q0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/input_re_r_m_axi_U/bus_read/buff_rdata/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/input_im_r_m_axi_U/bus_read/buff_rdata/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/output_re_r_m_axi_U/bus_write/buff_wdata/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/output_im_r_m_axi_U/bus_write/buff_wdata/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 2518.332 ; gain = 63.996 ; free physical = 3792 ; free virtual = 9930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 2518.332 ; gain = 63.996 ; free physical = 3793 ; free virtual = 9931
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 2518.332 ; gain = 63.996 ; free physical = 3793 ; free virtual = 9931
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 2518.332 ; gain = 63.996 ; free physical = 3793 ; free virtual = 9931
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 2518.332 ; gain = 63.996 ; free physical = 3793 ; free virtual = 9931
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 2518.332 ; gain = 63.996 ; free physical = 3793 ; free virtual = 9931
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 2518.332 ; gain = 63.996 ; free physical = 3793 ; free virtual = 9931
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   250|
+|2     |DSP48E1  |     7|
+|9     |LUT1     |    39|
+|10    |LUT2     |   365|
+|11    |LUT3     |  1336|
+|12    |LUT4     |   350|
+|13    |LUT5     |   585|
+|14    |LUT6     |   825|
+|15    |MUXCY    |    74|
+|16    |RAMB18E1 |     4|
+|17    |RAMB36E1 |     6|
+|21    |SRL16E   |   264|
+|22    |XORCY    |    25|
+|23    |FDE      |     3|
+|24    |FDRE     |  4896|
+|25    |FDSE     |     8|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 2518.332 ; gain = 63.996 ; free physical = 3793 ; free virtual = 9931
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 2518.332 ; gain = 0.000 ; free physical = 3856 ; free virtual = 9995
+Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 2518.332 ; gain = 63.996 ; free physical = 3857 ; free virtual = 9996
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2518.332 ; gain = 0.000 ; free physical = 3949 ; free virtual = 10088
+INFO: [Netlist 29-17] Analyzing 369 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2526.270 ; gain = 0.000 ; free physical = 3888 ; free virtual = 10026
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 23 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 20 instances
+  FDE => FDRE: 3 instances
+
+Synth Design complete, checksum: 9fe92417
+INFO: [Common 17-83] Releasing license: Synthesis
+193 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 2526.270 ; gain = 71.969 ; free physical = 3984 ; free virtual = 10122
+INFO: [Common 17-1381] The checkpoint '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.runs/design_1_dft_0_4_synth_1/design_1_dft_0_4.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_dft_0_4, cache-ID = 503ccd0961663da5
+INFO: [Coretcl 2-1174] Renamed 159 cell refs.
+INFO: [Common 17-1381] The checkpoint '/mnt/c/Xilinx/Projects/DFT_v/DFT_v.runs/design_1_dft_0_4_synth_1/design_1_dft_0_4.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_dft_0_4_utilization_synth.rpt -pb design_1_dft_0_4_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 28 12:40:47 2021...
