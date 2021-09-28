@@ -2,8 +2,7 @@
 #include "dft.h"
 #include"coefficients1024.h"
 #include "cstring"
-void dft(  DTYPE *real_sample,   DTYPE  *imag_sample,  DTYPE *real_op,  DTYPE *imag_op)
-//void dft(STYPE & real_sample, STYPE & imag_sample,STYPE & real_op,STYPE & imag_op)	//Use pointers while doing the demo for streaming//
+void dft(  DTYPE *real_sample,   DTYPE  *imag_sample,  DTYPE *real_op,  DTYPE *imag_op)	//Use pointers while doing the demo for streaming//
 {
 
 #pragma HLS INTERFACE s_axilite port=return
