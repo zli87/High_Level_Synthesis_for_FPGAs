@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/Xilinx/project_1/project_1.runs/impl_1/design_1_wrapper.tcl"
+  variable script "D:/WSLg/HLS/Lab3/sadd_v/project_1.runs/impl_1/design_1_wrapper.tcl"
   variable category "vivado_impl"
 }
 
@@ -123,34 +123,33 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param chipscope.maxJobs 3
+  set_param chipscope.maxJobs 2
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7z020clg400-1
-  set_property board_part tul.com.tw:pynq-z2:part0:1.0 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir C:/Xilinx/project_1/project_1.cache/wt [current_project]
-  set_property parent.project_path C:/Xilinx/project_1/project_1.xpr [current_project]
-  set_property ip_repo_paths C:/Xilinx/streamAdd [current_project]
+  set_property webtalk.parent_dir D:/WSLg/HLS/Lab3/sadd_v/project_1.cache/wt [current_project]
+  set_property parent.project_path D:/WSLg/HLS/Lab3/sadd_v/project_1.xpr [current_project]
+  set_property ip_repo_paths D:/WSLg/HLS/Lab3/streamAdd [current_project]
   update_ip_catalog
-  set_property ip_output_repo C:/Xilinx/project_1/project_1.cache/ip [current_project]
+  set_property ip_output_repo D:/WSLg/HLS/Lab3/sadd_v/project_1.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet C:/Xilinx/project_1/project_1.runs/synth_1/design_1_wrapper.dcp
+  add_files -quiet D:/WSLg/HLS/Lab3/sadd_v/project_1.runs/synth_1/design_1_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files C:/Xilinx/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd
+  add_files D:/WSLg/HLS/Lab3/sadd_v/project_1.srcs/sources_1/bd/design_1/design_1.bd
   set_param project.isImplRun false
 OPTRACE "read constraints: implementation" START { }
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }
   set_param project.isImplRun true
-  link_design -top design_1_wrapper -part xc7z020clg400-1
+  link_design -top design_1_wrapper -part xc7z020clg400-1 
 OPTRACE "link_design" END { }
   set_param project.isImplRun false
 OPTRACE "gray box cells" START { }
@@ -158,7 +157,6 @@ OPTRACE "gray box cells" END { }
 OPTRACE "init_design_reports" START { REPORT }
 OPTRACE "init_design_reports" END { }
 OPTRACE "init_design_write_hwdef" START { }
-  write_hwdef -force -file design_1_wrapper.hwdef
 OPTRACE "init_design_write_hwdef" END { }
   close_msg_db -file init_design.pb
 } RESULT]
@@ -291,10 +289,10 @@ OPTRACE "route_design reports" START { REPORT }
 OPTRACE "route_design reports" END { }
 OPTRACE "route_design misc" START { }
   close_msg_db -file route_design.pb
-OPTRACE "route_design write_checkpoint" START { CHECKPOINT }
-OPTRACE "route_design write_checkpoint" END { }
 } RESULT]
 if {$rc} {
+OPTRACE "route_design write_checkpoint" START { CHECKPOINT }
+OPTRACE "route_design write_checkpoint" END { }
   write_checkpoint -force design_1_wrapper_routed_error.dcp
   step_failed route_design
   return -code error $RESULT

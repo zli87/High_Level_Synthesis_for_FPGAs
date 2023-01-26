@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="streamAdd.cpp" path="C:\Xilinx\streamAdd\streamAdd.cpp"/>
-    <originFiles name="streamAdd.hpp" path="C:\Xilinx\streamAdd\streamAdd.hpp"/>
+    <originFiles name="streamAdd.cpp" path="D:\WSLg\HLS\Lab3\streamAdd\streamAdd.cpp"/>
+    <originFiles name="streamAdd.hpp" path="D:\WSLg\HLS\Lab3\streamAdd\streamAdd.hpp"/>
   </source>
   <testbench/>
 </autopilotfilemapping:AutoPilotFileMapping>

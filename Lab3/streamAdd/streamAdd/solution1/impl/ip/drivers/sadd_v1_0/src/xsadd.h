@@ -1,6 +1,7 @@
 // ==============================================================
-// Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
-// Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+// Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+// Tool Version Limit: 2019.12
+// Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
 #ifndef XSADD_H
 #define XSADD_H
@@ -38,7 +39,7 @@ typedef uint64_t u64;
 #else
 typedef struct {
     u16 DeviceId;
-    u32 Ctrl_BaseAddress;
+    u64 Ctrl_BaseAddress;
 } XSadd_Config;
 #endif
 
@@ -80,9 +81,23 @@ int XSadd_Initialize(XSadd *InstancePtr, const char* InstanceName);
 int XSadd_Release(XSadd *InstancePtr);
 #endif
 
+void XSadd_Start(XSadd *InstancePtr);
+u32 XSadd_IsDone(XSadd *InstancePtr);
+u32 XSadd_IsIdle(XSadd *InstancePtr);
+u32 XSadd_IsReady(XSadd *InstancePtr);
+void XSadd_EnableAutoRestart(XSadd *InstancePtr);
+void XSadd_DisableAutoRestart(XSadd *InstancePtr);
 
 void XSadd_Set_length_r(XSadd *InstancePtr, u32 Data);
 u32 XSadd_Get_length_r(XSadd *InstancePtr);
+
+void XSadd_InterruptGlobalEnable(XSadd *InstancePtr);
+void XSadd_InterruptGlobalDisable(XSadd *InstancePtr);
+void XSadd_InterruptEnable(XSadd *InstancePtr, u32 Mask);
+void XSadd_InterruptDisable(XSadd *InstancePtr, u32 Mask);
+void XSadd_InterruptClear(XSadd *InstancePtr, u32 Mask);
+u32 XSadd_InterruptGetEnabled(XSadd *InstancePtr);
+u32 XSadd_InterruptGetStatus(XSadd *InstancePtr);
 
 #ifdef __cplusplus
 }

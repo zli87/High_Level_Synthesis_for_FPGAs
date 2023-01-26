@@ -29,42 +29,42 @@
 		<link>
 			<name>source</name>
 			<type>2</type>
-			<location>C:/Xilinx/streamAdd/streamAdd/.apc/.src</location>
+			<location>D:/WSLg/HLS/Lab3/streamAdd/streamAdd/.apc/.src</location>
 		</link>
 		<link>
 			<name>testbench</name>
 			<type>2</type>
-			<location>C:/Xilinx/streamAdd/streamAdd/.apc/.tb</location>
+			<location>D:/WSLg/HLS/Lab3/streamAdd/streamAdd/.apc/.tb</location>
 		</link>
 		<link>
 			<name>solution1/constraints</name>
 			<type>2</type>
-			<location>C:/Xilinx/streamAdd/streamAdd/solution1/.tcls</location>
+			<location>D:/WSLg/HLS/Lab3/streamAdd/streamAdd/solution1/.tcls</location>
 		</link>
 		<link>
 			<name>source/streamAdd.cpp</name>
 			<type>1</type>
-			<location>C:/Xilinx/streamAdd/streamAdd.cpp</location>
+			<location>D:/WSLg/HLS/Lab3/streamAdd/streamAdd.cpp</location>
 		</link>
 		<link>
 			<name>source/streamAdd.hpp</name>
 			<type>1</type>
-			<location>C:/Xilinx/streamAdd/streamAdd.hpp</location>
+			<location>D:/WSLg/HLS/Lab3/streamAdd/streamAdd.hpp</location>
 		</link>
 		<link>
 			<name>solution1/constraints/.xml.directive</name>
 			<type>1</type>
-			<location>C:/Xilinx/streamAdd/streamAdd/solution1/solution1.directive</location>
+			<location>D:/WSLg/HLS/Lab3/streamAdd/streamAdd/solution1/solution1.directive</location>
 		</link>
 		<link>
 			<name>solution1/constraints/directives.tcl</name>
 			<type>1</type>
-			<location>C:/Xilinx/streamAdd/streamAdd/solution1/directives.tcl</location>
+			<location>D:/WSLg/HLS/Lab3/streamAdd/streamAdd/solution1/directives.tcl</location>
 		</link>
 		<link>
 			<name>solution1/constraints/script.tcl</name>
 			<type>1</type>
-			<location>C:/Xilinx/streamAdd/streamAdd/solution1/script.tcl</location>
+			<location>D:/WSLg/HLS/Lab3/streamAdd/streamAdd/solution1/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>

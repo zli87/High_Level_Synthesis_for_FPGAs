@@ -17,6 +17,12 @@ length_r {
 	offset 16
 	offset_end 23
 }
+ap_start { }
+ap_done { }
+ap_ready { }
+ap_idle { }
+interrupt {
+}
 }
 dict set axilite_register_dict CTRL $port_CTRL
 
@@ -30,8 +36,11 @@ if {${::AESL::PGuard_simmodel_gen}} {
 			name sadd_CTRL_s_axi \
 			ports {$port_CTRL} \
 			op interface \
-			is_flushable 0 \ 
-			is_datawidth64 0 \ 
+			interrupt_clear_mode TOW \
+			interrupt_trigger_type default \
+			is_flushable 0 \
+			is_datawidth64 0 \
+			is_addrwidth64 1 \
 		} "
 	} else {
 		puts "@W \[IMPL-110\] Cannot find AXI Lite interface model in the library. Ignored generation of AXI Lite  interface for 'CTRL'"
@@ -39,7 +48,7 @@ if {${::AESL::PGuard_simmodel_gen}} {
 }
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler sadd_CTRL_s_axi
+	::AP::rtl_comp_handler sadd_CTRL_s_axi BINDTYPE interface TYPE interface_s_axilite
 }
 
 # Native AXIS:
@@ -199,7 +208,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
     id 10 \
-    name OUTPUT_V_data_V \
+    name OUTPUT_r_V_data_V \
     reset_level 0 \
     sync_rst true \
     corename {OUTPUT_r} \
@@ -208,7 +217,7 @@ eval "::AESL_LIB_XILADAPTER::native_axis_add { \
     ports { OUTPUT_r_TDATA { O 32 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'OUTPUT_V_data_V'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'OUTPUT_r_V_data_V'"
 }
 }
 
@@ -218,7 +227,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
     id 11 \
-    name OUTPUT_V_keep_V \
+    name OUTPUT_r_V_keep_V \
     reset_level 0 \
     sync_rst true \
     corename {OUTPUT_r} \
@@ -227,7 +236,7 @@ eval "::AESL_LIB_XILADAPTER::native_axis_add { \
     ports { OUTPUT_r_TKEEP { O 4 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'OUTPUT_V_keep_V'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'OUTPUT_r_V_keep_V'"
 }
 }
 
@@ -237,7 +246,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
     id 12 \
-    name OUTPUT_V_strb_V \
+    name OUTPUT_r_V_strb_V \
     reset_level 0 \
     sync_rst true \
     corename {OUTPUT_r} \
@@ -246,7 +255,7 @@ eval "::AESL_LIB_XILADAPTER::native_axis_add { \
     ports { OUTPUT_r_TSTRB { O 4 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'OUTPUT_V_strb_V'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'OUTPUT_r_V_strb_V'"
 }
 }
 
@@ -256,7 +265,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
     id 13 \
-    name OUTPUT_V_last_V \
+    name OUTPUT_r_V_last_V \
     reset_level 0 \
     sync_rst true \
     corename {OUTPUT_r} \
@@ -265,24 +274,10 @@ eval "::AESL_LIB_XILADAPTER::native_axis_add { \
     ports { OUTPUT_r_TVALID { O 1 bit } OUTPUT_r_TREADY { I 1 bit } OUTPUT_r_TLAST { O 1 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'OUTPUT_V_last_V'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'OUTPUT_r_V_last_V'"
 }
 }
 
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id -1 \
-    name ap_ctrl \
-    type ap_ctrl \
-    reset_level 0 \
-    sync_rst true \
-    corename ap_ctrl \
-    op interface \
-    ports { ap_start { I 1 bit } ap_ready { O 1 bit } ap_done { O 1 bit } ap_idle { O 1 bit } } \
-} "
-}
 
 
 # Adapter definition:
@@ -291,7 +286,7 @@ set DataWd 1
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc cg_default_interface_gen_clock] == "cg_default_interface_gen_clock"} {
 eval "cg_default_interface_gen_clock { \
-    id -2 \
+    id -1 \
     name ${PortName} \
     reset_level 0 \
     sync_rst true \
@@ -311,7 +306,7 @@ set DataWd 1
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc cg_default_interface_gen_reset] == "cg_default_interface_gen_reset"} {
 eval "cg_default_interface_gen_reset { \
-    id -3 \
+    id -2 \
     name ${PortName} \
     reset_level 0 \
     sync_rst true \
@@ -340,7 +335,7 @@ set RegSliceName sadd_regslice_both
 set RegSliceInstName sadd_regslice_both_U
 set CoreName ap_simcore_sadd_regslice_both
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $RegSliceName
+	::AP::rtl_comp_handler $RegSliceName BINDTYPE interface TYPE interface_regslice INSTNAME $RegSliceInstName
 }
 
 
@@ -363,7 +358,7 @@ set RegSliceName sadd_regslice_both
 set RegSliceInstName sadd_regslice_both_U
 set CoreName ap_simcore_sadd_regslice_both
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $RegSliceName
+	::AP::rtl_comp_handler $RegSliceName BINDTYPE interface TYPE interface_regslice INSTNAME $RegSliceInstName
 }
 
 
@@ -386,7 +381,7 @@ set RegSliceName sadd_regslice_both
 set RegSliceInstName sadd_regslice_both_U
 set CoreName ap_simcore_sadd_regslice_both
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $RegSliceName
+	::AP::rtl_comp_handler $RegSliceName BINDTYPE interface TYPE interface_regslice INSTNAME $RegSliceInstName
 }
 
 
@@ -409,7 +404,7 @@ set RegSliceName sadd_regslice_both
 set RegSliceInstName sadd_regslice_both_U
 set CoreName ap_simcore_sadd_regslice_both
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $RegSliceName
+	::AP::rtl_comp_handler $RegSliceName BINDTYPE interface TYPE interface_regslice INSTNAME $RegSliceInstName
 }
 
 
@@ -432,7 +427,7 @@ set RegSliceName sadd_regslice_both
 set RegSliceInstName sadd_regslice_both_U
 set CoreName ap_simcore_sadd_regslice_both
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $RegSliceName
+	::AP::rtl_comp_handler $RegSliceName BINDTYPE interface TYPE interface_regslice INSTNAME $RegSliceInstName
 }
 
 
@@ -455,7 +450,7 @@ set RegSliceName sadd_regslice_both
 set RegSliceInstName sadd_regslice_both_U
 set CoreName ap_simcore_sadd_regslice_both
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $RegSliceName
+	::AP::rtl_comp_handler $RegSliceName BINDTYPE interface TYPE interface_regslice INSTNAME $RegSliceInstName
 }
 
 
@@ -478,7 +473,7 @@ set RegSliceName sadd_regslice_both
 set RegSliceInstName sadd_regslice_both_U
 set CoreName ap_simcore_sadd_regslice_both
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $RegSliceName
+	::AP::rtl_comp_handler $RegSliceName BINDTYPE interface TYPE interface_regslice INSTNAME $RegSliceInstName
 }
 
 
@@ -501,7 +496,7 @@ set RegSliceName sadd_regslice_both
 set RegSliceInstName sadd_regslice_both_U
 set CoreName ap_simcore_sadd_regslice_both
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $RegSliceName
+	::AP::rtl_comp_handler $RegSliceName BINDTYPE interface TYPE interface_regslice INSTNAME $RegSliceInstName
 }
 
 
@@ -524,7 +519,7 @@ set RegSliceName sadd_regslice_both
 set RegSliceInstName sadd_regslice_both_U
 set CoreName ap_simcore_sadd_regslice_both
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $RegSliceName
+	::AP::rtl_comp_handler $RegSliceName BINDTYPE interface TYPE interface_regslice INSTNAME $RegSliceInstName
 }
 
 
@@ -547,7 +542,7 @@ set RegSliceName sadd_regslice_both
 set RegSliceInstName sadd_regslice_both_U
 set CoreName ap_simcore_sadd_regslice_both
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $RegSliceName
+	::AP::rtl_comp_handler $RegSliceName BINDTYPE interface TYPE interface_regslice INSTNAME $RegSliceInstName
 }
 
 
@@ -570,7 +565,7 @@ set RegSliceName sadd_regslice_both
 set RegSliceInstName sadd_regslice_both_U
 set CoreName ap_simcore_sadd_regslice_both
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $RegSliceName
+	::AP::rtl_comp_handler $RegSliceName BINDTYPE interface TYPE interface_regslice INSTNAME $RegSliceInstName
 }
 
 
@@ -593,7 +588,7 @@ set RegSliceName sadd_regslice_both
 set RegSliceInstName sadd_regslice_both_U
 set CoreName ap_simcore_sadd_regslice_both
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $RegSliceName
+	::AP::rtl_comp_handler $RegSliceName BINDTYPE interface TYPE interface_regslice INSTNAME $RegSliceInstName
 }
 
 

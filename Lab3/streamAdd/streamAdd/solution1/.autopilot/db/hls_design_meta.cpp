@@ -2,10 +2,6 @@
 const Port_Property HLS_Design_Meta::port_props[]={
 	Port_Property("ap_clk", 1, hls_in, -1, "", "", 1),
 	Port_Property("ap_rst_n", 1, hls_in, -1, "", "", 1),
-	Port_Property("ap_start", 1, hls_in, -1, "", "", 1),
-	Port_Property("ap_done", 1, hls_out, -1, "", "", 1),
-	Port_Property("ap_idle", 1, hls_out, -1, "", "", 1),
-	Port_Property("ap_ready", 1, hls_out, -1, "", "", 1),
 	Port_Property("INPUT1_TDATA", 32, hls_in, 0, "axis", "in_data", 1),
 	Port_Property("INPUT1_TVALID", 1, hls_in, 3, "axis", "in_vld", 1),
 	Port_Property("INPUT1_TREADY", 1, hls_out, 3, "axis", "in_acc", 1),
@@ -20,7 +16,7 @@ const Port_Property HLS_Design_Meta::port_props[]={
 	Port_Property("INPUT2_TLAST", 1, hls_in, 7, "axis", "in_data", 1),
 	Port_Property("OUTPUT_r_TDATA", 32, hls_out, 8, "axis", "out_data", 1),
 	Port_Property("OUTPUT_r_TVALID", 1, hls_out, 11, "axis", "out_vld", 1),
-	Port_Property("OUTPUT_r_TREADY", 1, hls_in, 11, "axis", "out_acc", 1),
+	Port_Property("OUTPUT_r_TREADY", 1, hls_in, 8, "axis", "out_acc", 1),
 	Port_Property("OUTPUT_r_TKEEP", 4, hls_out, 9, "axis", "out_data", 1),
 	Port_Property("OUTPUT_r_TSTRB", 4, hls_out, 10, "axis", "out_data", 1),
 	Port_Property("OUTPUT_r_TLAST", 1, hls_out, 11, "axis", "out_data", 1),
@@ -41,5 +37,6 @@ const Port_Property HLS_Design_Meta::port_props[]={
 	Port_Property("s_axi_CTRL_BVALID", 1, hls_out, -1, "", "", 1),
 	Port_Property("s_axi_CTRL_BREADY", 1, hls_in, -1, "", "", 1),
 	Port_Property("s_axi_CTRL_BRESP", 2, hls_out, -1, "", "", 1),
+	Port_Property("interrupt", 1, hls_out, -1, "", "", 1),
 };
 const char* HLS_Design_Meta::dut_name = "sadd";

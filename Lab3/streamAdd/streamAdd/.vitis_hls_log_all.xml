@@ -11,7 +11,12 @@
   </errorLogs>
   <warningLogs>
     <logs>
-      <synLog/>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="streamAdd" solutionName="solution1" date="2023-01-26T16:22:35.270-0500" type="Warning"/>
+        <logs message="WARNING: [HLS 214-387] Ignore depth setting for top argument 'OUTPUT' (streamAdd.cpp:4:0)" projectName="streamAdd" solutionName="solution1" date="2023-01-26T16:22:34.537-0500" type="Warning"/>
+        <logs message="WARNING: [HLS 214-387] Ignore depth setting for top argument 'INPUT2' (streamAdd.cpp:4:0)" projectName="streamAdd" solutionName="solution1" date="2023-01-26T16:22:34.526-0500" type="Warning"/>
+        <logs message="WARNING: [HLS 214-387] Ignore depth setting for top argument 'INPUT1' (streamAdd.cpp:4:0)" projectName="streamAdd" solutionName="solution1" date="2023-01-26T16:22:34.516-0500" type="Warning"/>
+      </synLog>
       <simLog/>
       <mgLog/>
       <packageLog/>

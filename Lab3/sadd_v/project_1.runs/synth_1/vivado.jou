@@ -1,12 +1,13 @@
 #-----------------------------------------------------------
-# Vivado v2020.2 (64-bit)
-# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
-# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Sat Sep 18 15:10:55 2021
-# Process ID: 10324
-# Current directory: C:/Xilinx/project_1/project_1.runs/synth_1
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Jan 26 16:47:15 2023
+# Process ID: 35184
+# Current directory: D:/WSLg/HLS/Lab3/sadd_v/project_1.runs/synth_1
 # Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
-# Log file: C:/Xilinx/project_1/project_1.runs/synth_1/design_1_wrapper.vds
-# Journal file: C:/Xilinx/project_1/project_1.runs/synth_1\vivado.jou
+# Log file: D:/WSLg/HLS/Lab3/sadd_v/project_1.runs/synth_1/design_1_wrapper.vds
+# Journal file: D:/WSLg/HLS/Lab3/sadd_v/project_1.runs/synth_1\vivado.jou
+# Running On: LAPTOP-G315, OS: Windows, CPU Frequency: 3110 MHz, CPU Physical cores: 4, Host memory: 16952 MB
 #-----------------------------------------------------------
 source design_1_wrapper.tcl -notrace

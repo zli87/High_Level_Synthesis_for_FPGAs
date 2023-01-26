@@ -1,9 +1,9 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'sadd'" level="0">
-<item name = "Date">Thu Sep 16 05:15:27 2021
+<item name = "Date">Thu Jan 26 16:22:35 2023
 </item>
-<item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
+<item name = "Version">2022.2 (Build 3670227 on Oct 13 2022)</item>
 <item name = "Project">streamAdd</item>
 <item name = "Solution">solution1 (Vivado IP Flow Target)</item>
 <item name = "Product family">zynq</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 2.552 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 4.140 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">?, ?, ?, ?, ?, ?, none</column>
+<column name="">?, ?, ?, ?, ?, ?, no</column>
 </table>
 </item>
 <item name = "Detail">
@@ -48,12 +48,12 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, -, 0, 110, -</column>
+<column name="Expression">-, -, 0, 104, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">0, -, 68, 104, -</column>
+<column name="Instance">0, -, 74, 104, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, -, 74, -</column>
-<column name="Register">-, -, 113, -, -</column>
+<column name="Register">-, -, 111, -, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
 <specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
 </table>
@@ -62,7 +62,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="CTRL_s_axi_U">CTRL_s_axi, 0, 0, 68, 104, 0</column>
+<column name="CTRL_s_axi_U">CTRL_s_axi, 0, 0, 74, 104, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -79,13 +79,10 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="cur1_data_V_1_fu_158_p2">+, 0, 0, 39, 32, 32</column>
-<column name="i_1_fu_127_p2">+, 0, 0, 39, 32, 1</column>
-<column name="ap_block_state3_io">and, 0, 0, 2, 1, 1</column>
-<column name="ap_block_state4_io">and, 0, 0, 2, 1, 1</column>
-<column name="icmp_ln14_fu_133_p2">icmp, 0, 0, 18, 32, 32</column>
+<column name="cur1_data_V_fu_167_p2">+, 0, 0, 39, 32, 32</column>
+<column name="i_2_fu_141_p2">+, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln14_fu_136_p2">icmp, 0, 0, 18, 32, 32</column>
 <column name="ap_block_pp0_stage0_01001">or, 0, 0, 2, 1, 1</column>
-<column name="ap_block_pp0_stage0_11001">or, 0, 0, 2, 1, 1</column>
 <column name="ap_block_state2_pp0_stage0_iter0">or, 0, 0, 2, 1, 1</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 <column name="ap_enable_reg_pp0_iter1">xor, 0, 0, 2, 2, 1</column>
@@ -99,7 +96,7 @@
 <column name="ap_NS_fsm">20, 4, 1, 4</column>
 <column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
 <column name="ap_enable_reg_pp0_iter2">9, 2, 1, 2</column>
-<column name="i_reg_116">9, 2, 32, 64</column>
+<column name="i_fu_78">9, 2, 32, 64</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
@@ -108,14 +105,12 @@
 <column name="ap_enable_reg_pp0_iter0">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter2">1, 0, 1, 0</column>
-<column name="cur1_data_V_1_reg_193">32, 0, 32, 0</column>
-<column name="i_reg_116">32, 0, 32, 0</column>
-<column name="icmp_ln14_reg_174">1, 0, 1, 0</column>
-<column name="icmp_ln14_reg_174_pp0_iter1_reg">1, 0, 1, 0</column>
-<column name="length_read_reg_164">32, 0, 32, 0</column>
-<column name="tmp_i_keep_reg_178">4, 0, 4, 0</column>
-<column name="tmp_i_last_reg_188">1, 0, 1, 0</column>
-<column name="tmp_i_strb_reg_183">4, 0, 4, 0</column>
+<column name="cur1_data_V_reg_208">32, 0, 32, 0</column>
+<column name="i_fu_78">32, 0, 32, 0</column>
+<column name="length_r_read_reg_185">32, 0, 32, 0</column>
+<column name="tmp_keep_V_reg_193">4, 0, 4, 0</column>
+<column name="tmp_last_V_reg_203">1, 0, 1, 0</column>
+<column name="tmp_strb_V_reg_198">4, 0, 4, 0</column>
 </table>
 </item>
 </section>
@@ -144,10 +139,7 @@
 <column name="s_axi_CTRL_BRESP">out, 2, s_axi, CTRL, scalar</column>
 <column name="ap_clk">in, 1, ap_ctrl_hs, sadd, return value</column>
 <column name="ap_rst_n">in, 1, ap_ctrl_hs, sadd, return value</column>
-<column name="ap_start">in, 1, ap_ctrl_hs, sadd, return value</column>
-<column name="ap_done">out, 1, ap_ctrl_hs, sadd, return value</column>
-<column name="ap_idle">out, 1, ap_ctrl_hs, sadd, return value</column>
-<column name="ap_ready">out, 1, ap_ctrl_hs, sadd, return value</column>
+<column name="interrupt">out, 1, ap_ctrl_hs, sadd, return value</column>
 <column name="INPUT1_TDATA">in, 32, axis, INPUT1_V_data_V, pointer</column>
 <column name="INPUT1_TVALID">in, 1, axis, INPUT1_V_last_V, pointer</column>
 <column name="INPUT1_TREADY">out, 1, axis, INPUT1_V_last_V, pointer</column>
@@ -160,12 +152,12 @@
 <column name="INPUT2_TLAST">in, 1, axis, INPUT2_V_last_V, pointer</column>
 <column name="INPUT2_TKEEP">in, 4, axis, INPUT2_V_keep_V, pointer</column>
 <column name="INPUT2_TSTRB">in, 4, axis, INPUT2_V_strb_V, pointer</column>
-<column name="OUTPUT_r_TDATA">out, 32, axis, OUTPUT_V_data_V, pointer</column>
-<column name="OUTPUT_r_TVALID">out, 1, axis, OUTPUT_V_last_V, pointer</column>
-<column name="OUTPUT_r_TREADY">in, 1, axis, OUTPUT_V_last_V, pointer</column>
-<column name="OUTPUT_r_TLAST">out, 1, axis, OUTPUT_V_last_V, pointer</column>
-<column name="OUTPUT_r_TKEEP">out, 4, axis, OUTPUT_V_keep_V, pointer</column>
-<column name="OUTPUT_r_TSTRB">out, 4, axis, OUTPUT_V_strb_V, pointer</column>
+<column name="OUTPUT_r_TDATA">out, 32, axis, OUTPUT_r_V_data_V, pointer</column>
+<column name="OUTPUT_r_TVALID">out, 1, axis, OUTPUT_r_V_last_V, pointer</column>
+<column name="OUTPUT_r_TREADY">in, 1, axis, OUTPUT_r_V_last_V, pointer</column>
+<column name="OUTPUT_r_TLAST">out, 1, axis, OUTPUT_r_V_last_V, pointer</column>
+<column name="OUTPUT_r_TKEEP">out, 4, axis, OUTPUT_r_V_keep_V, pointer</column>
+<column name="OUTPUT_r_TSTRB">out, 4, axis, OUTPUT_r_V_strb_V, pointer</column>
 </table>
 </item>
 </section>

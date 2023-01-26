@@ -1,11 +1,10 @@
-// 67d7842dbbe25473c3c32b93c0da8047785f30d78e8a024de1b57352245f9689
-// (c) Copyright 2013 - 2019 Xilinx, Inc. All rights reserved.
-//
+// (c) Copyright 1995-2021 Xilinx, Inc. All rights reserved.
+// 
 // This file contains confidential and proprietary information
 // of Xilinx, Inc. and is protected under U.S. and
 // international copyright and other intellectual property
 // laws.
-//
+// 
 // DISCLAIMER
 // This disclaimer is not a license and does not grant any
 // rights to the materials distributed herewith. Except as
@@ -27,7 +26,7 @@
 // by a third party) even if such damage or loss was
 // reasonably foreseeable or Xilinx had been advised of the
 // possibility of the same.
-//
+// 
 // CRITICAL APPLICATIONS
 // Xilinx products are not designed or intended to be fail-
 // safe, or for use in any application requiring fail-safe
@@ -41,9 +40,12 @@
 // liability of any use of Xilinx products in Critical
 // Applications, subject only to applicable laws and
 // regulations governing limitations on product liability.
-//
+// 
 // THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
 // PART OF THIS FILE AT ALL TIMES.
+// 
+// DO NOT MODIFY THIS FILE.
+
 #include "axi_dwidth_converter.h"
 #define PAYLOAD_LOG_LEVEL 3
 
@@ -216,7 +218,7 @@ void axi_dwidth_converter::wr_downsizing() {
 	m_response_list = new std::list<xtlm::aximm_payload*>;
     
     std::string payload_log; 
-    m_rd_trans->get_log(payload_log, PAYLOAD_LOG_LEVEL);
+    m_wr_trans->get_log(payload_log, PAYLOAD_LOG_LEVEL);
     m_log_msg = "Down Sizing input transaction : " + payload_log;
     XSC_REPORT_INFO_VERB(m_logger, "DWIDTH::002",m_log_msg.c_str(), DEBUG); 
 	
@@ -368,9 +370,20 @@ void axi_dwidth_converter::wr_upsizing() {
 	t_trans->acquire();
 	t_trans->deep_copy_from(*m_wr_trans);
 	t_trans->set_address(si_addr);
-	t_trans->set_data_ptr(data, mi_len * MI_DATA_WIDTH );
-	if (strb != nullptr)
-		t_trans->set_byte_enable_ptr(strb, mi_len * MI_DATA_WIDTH);
+    auto data_new = t_trans->create_and_get_data_ptr(mi_len * MI_DATA_WIDTH);
+    memcpy(data_new,data,m_wr_trans->get_data_length());
+    memset(data_new+m_wr_trans->get_data_length(),0,((mi_len * MI_DATA_WIDTH)-m_wr_trans->get_data_length()));
+    auto str_new = t_trans->create_and_get_byte_enable_ptr(mi_len * MI_DATA_WIDTH);
+    if(strb ) 
+    {
+        memcpy(str_new,strb, m_wr_trans->get_byte_enable_length());
+        memset(str_new+m_wr_trans->get_byte_enable_length(),0,((mi_len * MI_DATA_WIDTH)-m_wr_trans->get_byte_enable_length()));
+    }
+    else 
+    {
+           memset(str_new, 0xFF, m_wr_trans->get_data_length());
+           memset(str_new, 0x00, mi_len * MI_DATA_WIDTH - m_wr_trans->get_data_length());
+    }
 	t_trans->set_burst_size(MI_DATA_WIDTH );
 	t_trans->set_burst_length(mi_len);
 	m_upsize_wr_payld_queue.push(t_trans);
@@ -406,9 +419,7 @@ void axi_dwidth_converter::rd_upsizing() {
 	t_trans->acquire();
 	t_trans->deep_copy_from(*m_rd_trans);
 	t_trans->set_address(si_addr);
-	t_trans->set_data_ptr(data, mi_len * MI_DATA_WIDTH );
-	if (strb != nullptr)
-		t_trans->set_byte_enable_ptr(strb, mi_len * MI_DATA_WIDTH);
+    auto data_new = t_trans->create_and_get_data_ptr(mi_len * MI_DATA_WIDTH);
 	t_trans->set_burst_size(MI_DATA_WIDTH);
 	t_trans->set_burst_length(mi_len);
 	m_upsize_rd_payld_queue.push(t_trans);
@@ -501,8 +512,11 @@ void axi_dwidth_converter::m_upsize_interface_response_sender() {
             m_log_msg = "Sending Response for Read : " + 
                 std::to_string(m_response_mapper_upsize[response_payld]->get_address());
             XSC_REPORT_INFO_VERB(m_logger, "DWIDTH::006",m_log_msg.c_str(), DEBUG);
+        
+            xtlm::aximm_payload *org_payload = m_response_mapper_upsize[response_payld];
+            memcpy(org_payload->get_data_ptr(),response_payld->get_data_ptr(),org_payload->get_data_length());
 
-			rd_target_util->send_data(*m_response_mapper_upsize[response_payld],
+			rd_target_util->send_data(*org_payload,
 					zero_delay);
             
 			response_payld->release();
@@ -522,6 +536,4 @@ axi_dwidth_converter::~axi_dwidth_converter() {
 	delete wr_target_util;
 	delete wr_initiator_util;
 	delete rd_initiator_util;
-	delete m_rd_trans;
-	delete m_wr_trans;
 }

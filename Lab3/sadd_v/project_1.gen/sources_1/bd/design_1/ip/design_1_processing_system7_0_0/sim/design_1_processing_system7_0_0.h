@@ -1,7 +1,7 @@
 #ifndef IP_DESIGN_1_PROCESSING_SYSTEM7_0_0_H_
 #define IP_DESIGN_1_PROCESSING_SYSTEM7_0_0_H_
 
-// (c) Copyright 1995-2021 Xilinx, Inc. All rights reserved.
+// (c) Copyright 1995-2023 Xilinx, Inc. All rights reserved.
 // 
 // This file contains confidential and proprietary information
 // of Xilinx, Inc. and is protected under U.S. and
@@ -212,6 +212,7 @@ public:
   sc_core::sc_in< sc_dt::sc_bv<6> > S_AXI_HP1_WID;
   sc_core::sc_in< sc_dt::sc_bv<64> > S_AXI_HP1_WDATA;
   sc_core::sc_in< sc_dt::sc_bv<8> > S_AXI_HP1_WSTRB;
+  sc_core::sc_in< sc_dt::sc_bv<1> > IRQ_F2P;
   sc_core::sc_out< bool > FCLK_CLK0;
   sc_core::sc_out< bool > FCLK_RESET0_N;
   sc_core::sc_out< sc_dt::sc_bv<54> > MIO;
@@ -424,29 +425,30 @@ public:
   sc_core::sc_in< sc_dt::sc_bv<6> > S_AXI_HP1_WID;
   sc_core::sc_in< sc_dt::sc_bv<64> > S_AXI_HP1_WDATA;
   sc_core::sc_in< sc_dt::sc_bv<8> > S_AXI_HP1_WSTRB;
+  sc_core::sc_in< sc_dt::sc_bv<1> > IRQ_F2P;
   sc_core::sc_out< bool > FCLK_CLK0;
   sc_core::sc_out< bool > FCLK_RESET0_N;
-  sc_core::sc_out< sc_dt::sc_bv<54> > MIO;
-  sc_core::sc_out< bool > DDR_CAS_n;
-  sc_core::sc_out< bool > DDR_CKE;
-  sc_core::sc_out< bool > DDR_Clk_n;
-  sc_core::sc_out< bool > DDR_Clk;
-  sc_core::sc_out< bool > DDR_CS_n;
-  sc_core::sc_out< bool > DDR_DRSTB;
-  sc_core::sc_out< bool > DDR_ODT;
-  sc_core::sc_out< bool > DDR_RAS_n;
-  sc_core::sc_out< bool > DDR_WEB;
-  sc_core::sc_out< sc_dt::sc_bv<3> > DDR_BankAddr;
-  sc_core::sc_out< sc_dt::sc_bv<15> > DDR_Addr;
-  sc_core::sc_out< bool > DDR_VRN;
-  sc_core::sc_out< bool > DDR_VRP;
-  sc_core::sc_out< sc_dt::sc_bv<4> > DDR_DM;
-  sc_core::sc_out< sc_dt::sc_bv<32> > DDR_DQ;
-  sc_core::sc_out< sc_dt::sc_bv<4> > DDR_DQS_n;
-  sc_core::sc_out< sc_dt::sc_bv<4> > DDR_DQS;
-  sc_core::sc_out< bool > PS_SRSTB;
-  sc_core::sc_out< bool > PS_CLK;
-  sc_core::sc_out< bool > PS_PORB;
+  sc_core::sc_inout< sc_dt::sc_bv<54> > MIO;
+  sc_core::sc_inout< bool > DDR_CAS_n;
+  sc_core::sc_inout< bool > DDR_CKE;
+  sc_core::sc_inout< bool > DDR_Clk_n;
+  sc_core::sc_inout< bool > DDR_Clk;
+  sc_core::sc_inout< bool > DDR_CS_n;
+  sc_core::sc_inout< bool > DDR_DRSTB;
+  sc_core::sc_inout< bool > DDR_ODT;
+  sc_core::sc_inout< bool > DDR_RAS_n;
+  sc_core::sc_inout< bool > DDR_WEB;
+  sc_core::sc_inout< sc_dt::sc_bv<3> > DDR_BankAddr;
+  sc_core::sc_inout< sc_dt::sc_bv<15> > DDR_Addr;
+  sc_core::sc_inout< bool > DDR_VRN;
+  sc_core::sc_inout< bool > DDR_VRP;
+  sc_core::sc_inout< sc_dt::sc_bv<4> > DDR_DM;
+  sc_core::sc_inout< sc_dt::sc_bv<32> > DDR_DQ;
+  sc_core::sc_inout< sc_dt::sc_bv<4> > DDR_DQS_n;
+  sc_core::sc_inout< sc_dt::sc_bv<4> > DDR_DQS;
+  sc_core::sc_inout< bool > PS_SRSTB;
+  sc_core::sc_inout< bool > PS_CLK;
+  sc_core::sc_inout< bool > PS_PORB;
 
   // Dummy Signals for IP Ports
 
@@ -636,6 +638,7 @@ public:
   sc_core::sc_in< sc_dt::sc_bv<6> > S_AXI_HP1_WID;
   sc_core::sc_in< sc_dt::sc_bv<64> > S_AXI_HP1_WDATA;
   sc_core::sc_in< sc_dt::sc_bv<8> > S_AXI_HP1_WSTRB;
+  sc_core::sc_in< sc_dt::sc_bv<1> > IRQ_F2P;
   sc_core::sc_out< bool > FCLK_CLK0;
   sc_core::sc_out< bool > FCLK_RESET0_N;
   sc_core::sc_out< sc_dt::sc_bv<54> > MIO;
@@ -852,6 +855,7 @@ public:
   sc_core::sc_in< sc_dt::sc_bv<6> > S_AXI_HP1_WID;
   sc_core::sc_in< sc_dt::sc_bv<64> > S_AXI_HP1_WDATA;
   sc_core::sc_in< sc_dt::sc_bv<8> > S_AXI_HP1_WSTRB;
+  sc_core::sc_in< sc_dt::sc_bv<1> > IRQ_F2P;
   sc_core::sc_out< bool > FCLK_CLK0;
   sc_core::sc_out< bool > FCLK_RESET0_N;
   sc_core::sc_out< sc_dt::sc_bv<54> > MIO;
@@ -1078,6 +1082,7 @@ public:
   sc_core::sc_in< sc_dt::sc_bv<6> > S_AXI_HP1_WID;
   sc_core::sc_in< sc_dt::sc_bv<64> > S_AXI_HP1_WDATA;
   sc_core::sc_in< sc_dt::sc_bv<8> > S_AXI_HP1_WSTRB;
+  sc_core::sc_in< sc_dt::sc_bv<1> > IRQ_F2P;
   sc_core::sc_out< bool > FCLK_CLK0;
   sc_core::sc_out< bool > FCLK_RESET0_N;
   sc_core::sc_out< sc_dt::sc_bv<54> > MIO;

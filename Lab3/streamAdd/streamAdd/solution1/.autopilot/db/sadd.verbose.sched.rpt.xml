@@ -1,9 +1,9 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'sadd'" level="0">
-<item name = "Date">Thu Sep 16 05:15:27 2021
+<item name = "Date">Thu Jan 26 16:22:35 2023
 </item>
-<item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
+<item name = "Version">2022.2 (Build 3670227 on Oct 13 2022)</item>
 <item name = "Project">streamAdd</item>
 <item name = "Solution">solution1 (Vivado IP Flow Target)</item>
 <item name = "Product family">zynq</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 2.552 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 4.140 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">?, ?, ?, ?, ?, ?, none</column>
+<column name="">?, ?, ?, ?, ?, ?, no</column>
 </table>
 </item>
 <item name = "Detail">

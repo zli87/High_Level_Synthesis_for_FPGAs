@@ -1,34 +1,42 @@
-INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/win64.o/vitis_hls.exe'
-INFO: [HLS 200-10] For user 'monja' on host 'desktop-x300' (Windows NT_amd64 version 6.2) on Thu Sep 16 05:16:53 -0400 2021
-INFO: [HLS 200-10] In directory 'C:/Xilinx/streamAdd'
-Sourcing Tcl script 'C:/Xilinx/streamAdd/streamAdd/solution1/export.tcl'
+INFO: [HLS 200-10] Running 'D:/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'monja' on host 'laptop-g315' (Windows NT_amd64 version 6.2) on Thu Jan 26 16:23:49 -0500 2023
+INFO: [HLS 200-10] In directory 'D:/WSLg/HLS/Lab3/streamAdd'
+Sourcing Tcl script 'D:/WSLg/HLS/Lab3/streamAdd/streamAdd/solution1/export.tcl'
+INFO: [HLS 200-1510] Running: source D:/WSLg/HLS/Lab3/streamAdd/streamAdd/solution1/export.tcl
 INFO: [HLS 200-1510] Running: open_project streamAdd 
-INFO: [HLS 200-10] Opening project 'C:/Xilinx/streamAdd/streamAdd'.
+INFO: [HLS 200-10] Opening project 'D:/WSLg/HLS/Lab3/streamAdd/streamAdd'.
 INFO: [HLS 200-1510] Running: set_top sadd 
-INFO: [HLS 200-1510] Running: add_files streamAdd.hpp 
-INFO: [HLS 200-10] Adding design file 'streamAdd.hpp' to the project
 INFO: [HLS 200-1510] Running: add_files streamAdd.cpp 
 INFO: [HLS 200-10] Adding design file 'streamAdd.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files streamAdd.hpp 
+INFO: [HLS 200-10] Adding design file 'streamAdd.hpp' to the project
 INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
-INFO: [HLS 200-10] Opening solution 'C:/Xilinx/streamAdd/streamAdd/solution1'.
+INFO: [HLS 200-10] Opening solution 'D:/WSLg/HLS/Lab3/streamAdd/streamAdd/solution1'.
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
 INFO: [HLS 200-1505] Using flow_target 'vivado'
-Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-1505.html
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
 INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
 INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./streamAdd/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name sadd sadd 
 INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
+Running Dispatch Server on port: 51412
 INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
 
-****** Vivado v2020.2 (64-bit)
-  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
-  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 
 source run_ippack.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
-INFO: [Common 17-206] Exiting Vivado at Thu Sep 16 05:16:59 2021...
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 26 16:24:09 2023...
 INFO: [HLS 200-802] Generated output file streamAdd/solution1/impl/export.zip
-INFO: [HLS 200-111] Finished Command export_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 6.237 seconds; current allocated memory: 91.843 MB.
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 8.466 seconds; current allocated memory: 8.227 MB.
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 19.585 seconds; peak allocated memory: 95.961 MB.

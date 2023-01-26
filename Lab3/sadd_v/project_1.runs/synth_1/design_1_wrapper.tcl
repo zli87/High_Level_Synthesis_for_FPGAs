@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Xilinx/project_1/project_1.runs/synth_1/design_1_wrapper.tcl"
+  variable script "D:/WSLg/HLS/Lab3/sadd_v/project_1.runs/synth_1/design_1_wrapper.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 2
 set_msg_config  -id {BD 41-1356}  -suppress 
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg400-1
@@ -78,46 +79,39 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Xilinx/project_1/project_1.cache/wt [current_project]
-set_property parent.project_path C:/Xilinx/project_1/project_1.xpr [current_project]
+set_property webtalk.parent_dir D:/WSLg/HLS/Lab3/sadd_v/project_1.cache/wt [current_project]
+set_property parent.project_path D:/WSLg/HLS/Lab3/sadd_v/project_1.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property board_part tul.com.tw:pynq-z2:part0:1.0 [current_project]
-set_property ip_repo_paths c:/Xilinx/streamAdd [current_project]
+set_property ip_repo_paths d:/WSLg/HLS/Lab3/streamAdd [current_project]
 update_ip_catalog
-set_property ip_output_repo c:/Xilinx/project_1/project_1.cache/ip [current_project]
+set_property ip_output_repo d:/WSLg/HLS/Lab3/sadd_v/project_1.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog -library xil_defaultlib c:/Xilinx/project_1/project_1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
-add_files C:/Xilinx/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd
-set_property used_in_implementation false [get_files -all c:/Xilinx/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Xilinx/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_xbar_1/design_1_xbar_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Xilinx/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Xilinx/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Xilinx/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Xilinx/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Xilinx/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Xilinx/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Xilinx/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Xilinx/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_sadd_0_0/constraints/sadd_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Xilinx/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_dma_1_0/design_1_axi_dma_1_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Xilinx/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_dma_1_0/design_1_axi_dma_1_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Xilinx/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_dma_1_0/design_1_axi_dma_1_0_ooc.xdc]
-set_property used_in_synthesis false [get_files -all c:/Xilinx/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Xilinx/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Xilinx/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_ooc.xdc]
-set_property used_in_synthesis false [get_files -all c:/Xilinx/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_us_1/design_1_auto_us_1_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Xilinx/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_us_1/design_1_auto_us_1_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Xilinx/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_us_1/design_1_auto_us_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Xilinx/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Xilinx/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc]
-set_property used_in_synthesis false [get_files -all c:/Xilinx/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_us_2/design_1_auto_us_2_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Xilinx/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_us_2/design_1_auto_us_2_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Xilinx/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_us_2/design_1_auto_us_2_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Xilinx/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Xilinx/project_1/project_1.gen/sources_1/bd/design_1/design_1_ooc.xdc]
+read_verilog -library xil_defaultlib D:/WSLg/HLS/Lab3/sadd_v/project_1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+add_files D:/WSLg/HLS/Lab3/sadd_v/project_1.srcs/sources_1/bd/design_1/design_1.bd
+set_property used_in_implementation false [get_files -all d:/WSLg/HLS/Lab3/sadd_v/project_1.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc]
+set_property used_in_implementation false [get_files -all d:/WSLg/HLS/Lab3/sadd_v/project_1.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_2/design_1_rst_ps7_0_100M_2_board.xdc]
+set_property used_in_implementation false [get_files -all d:/WSLg/HLS/Lab3/sadd_v/project_1.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_2/design_1_rst_ps7_0_100M_2.xdc]
+set_property used_in_implementation false [get_files -all d:/WSLg/HLS/Lab3/sadd_v/project_1.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_2/design_1_rst_ps7_0_100M_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/WSLg/HLS/Lab3/sadd_v/project_1.gen/sources_1/bd/design_1/ip/design_1_xbar_6/design_1_xbar_6_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/WSLg/HLS/Lab3/sadd_v/project_1.gen/sources_1/bd/design_1/ip/design_1_sadd_0_1/constraints/sadd_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/WSLg/HLS/Lab3/sadd_v/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_dma_2/design_1_axi_dma_2.xdc]
+set_property used_in_implementation false [get_files -all d:/WSLg/HLS/Lab3/sadd_v/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_dma_2/design_1_axi_dma_2_clocks.xdc]
+set_property used_in_implementation false [get_files -all d:/WSLg/HLS/Lab3/sadd_v/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_dma_2/design_1_axi_dma_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/WSLg/HLS/Lab3/sadd_v/project_1.gen/sources_1/bd/design_1/ip/design_1_xbar_7/design_1_xbar_7_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/WSLg/HLS/Lab3/sadd_v/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_dma_1_1/design_1_axi_dma_1_1.xdc]
+set_property used_in_implementation false [get_files -all d:/WSLg/HLS/Lab3/sadd_v/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_dma_1_1/design_1_axi_dma_1_1_clocks.xdc]
+set_property used_in_implementation false [get_files -all d:/WSLg/HLS/Lab3/sadd_v/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_dma_1_1/design_1_axi_dma_1_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/WSLg/HLS/Lab3/sadd_v/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc]
+set_property used_in_synthesis false [get_files -all d:/WSLg/HLS/Lab3/sadd_v/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all d:/WSLg/HLS/Lab3/sadd_v/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all d:/WSLg/HLS/Lab3/sadd_v/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/WSLg/HLS/Lab3/sadd_v/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/WSLg/HLS/Lab3/sadd_v/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/WSLg/HLS/Lab3/sadd_v/project_1.gen/sources_1/bd/design_1/design_1_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

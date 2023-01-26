@@ -1,16 +1,17 @@
 #-----------------------------------------------------------
-# Vivado v2020.2 (64-bit)
-# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
-# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Thu Sep 16 05:16:55 2021
-# Process ID: 2116
-# Current directory: C:/Xilinx/streamAdd/streamAdd/solution1/impl/ip
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Jan 26 16:24:02 2023
+# Process ID: 16812
+# Current directory: D:/WSLg/HLS/Lab3/streamAdd/streamAdd/solution1/impl/ip
 # Command line: vivado.exe -notrace -mode batch -source run_ippack.tcl
-# Log file: C:/Xilinx/streamAdd/streamAdd/solution1/impl/ip/vivado.log
-# Journal file: C:/Xilinx/streamAdd/streamAdd/solution1/impl/ip\vivado.jou
+# Log file: D:/WSLg/HLS/Lab3/streamAdd/streamAdd/solution1/impl/ip/vivado.log
+# Journal file: D:/WSLg/HLS/Lab3/streamAdd/streamAdd/solution1/impl/ip\vivado.jou
+# Running On: LAPTOP-G315, OS: Windows, CPU Frequency: 3110 MHz, CPU Physical cores: 4, Host memory: 16952 MB
 #-----------------------------------------------------------
 source run_ippack.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
-INFO: [Common 17-206] Exiting Vivado at Thu Sep 16 05:16:59 2021...
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 26 16:24:09 2023...

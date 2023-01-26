@@ -62,6 +62,36 @@
         <fractionWidth>0</fractionWidth>
       </RtlPort>
       <RtlPort>
+        <name>OUTPUT_r_TDATA</name>
+        <type>Signed</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>OUTPUT_r_TKEEP</name>
+        <type>Signed</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>OUTPUT_r_TLAST</name>
+        <type>Signed</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>OUTPUT_r_TREADY</name>
+        <type>Signed</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>OUTPUT_r_TSTRB</name>
+        <type>Signed</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>OUTPUT_r_TVALID</name>
+        <type>Signed</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
         <name>s_axi_CTRL_ARADDR</name>
         <type>Unsigned</type>
         <fractionWidth>0</fractionWidth>
@@ -154,6 +184,6 @@
   <modelParameters>
     <combinational>0</combinational>
     <latency>undef</latency>
-    <II>x</II>
+    <II>undef</II>
   </modelParameters>
 </AdditionalInfo>
